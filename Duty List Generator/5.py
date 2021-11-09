@@ -185,3 +185,4 @@ with open('output2.csv', 'w', encoding='UTF8', newline='') as f:
 
     # write multiple rows
     writer.writerows(temp_list)
+    #k
