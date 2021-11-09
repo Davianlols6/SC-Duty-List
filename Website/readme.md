@@ -1,0 +1,1 @@
+This website is used to help display the Student Council's duty list in a organised and neat way.

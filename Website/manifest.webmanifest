@@ -1,0 +1,14 @@
+{
+  "background_color": "white",
+  "description": "Use this site to check what duties you have to do. This website was created and supported by the QTSS Third Student Council EXCO.",
+  "display": "fullscreen",
+  "icons": [
+    {
+      "src": "https://www.davianeng.com/favicon/favicon.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    }
+  ],
+  "name": "SC Duty List",
+  "short_name": "Duty List"
+}
