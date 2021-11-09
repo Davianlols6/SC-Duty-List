@@ -184,4 +184,4 @@ with open('output2.csv', 'w', encoding='UTF8', newline='') as f:
     writer = csv.writer(f)
 
     # write multiple rows
-    writer.writerows(temp_list
+    writer.writerows(temp_list)
