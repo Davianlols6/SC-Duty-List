@@ -2,7 +2,7 @@ var jsonData;
 var flagData;
 var nameData;
 
-function show_personalised() {
+function showPersonalised() {
     $("#updated").text(jsonData["updated"]);
     $("#date2").remove();
 
@@ -14,7 +14,7 @@ function show_personalised() {
             $(jsonData["weeks"][v]).each(function (b, value) {
                 var a = new Date(value);
 
-                if (String(day) == String(a)) {
+                if (String(day) === String(a)) {
                     week = jsonData["weeks"][v];
                 }
 
@@ -27,7 +27,7 @@ function show_personalised() {
     DaysOfWeek(day);
     var week;
 
-    var per_dict = {
+    var perDict = {
         0: {
             "id": "day_1",
             "h4": "Monday",
@@ -55,9 +55,9 @@ function show_personalised() {
         2: "<span class='badge bg-secondary mb-1'>Second Recess (9:45 - 10:20)</span>",
         3: "<span class='badge bg-success mb-1'>Third Recess (10:20 - 10:55)</span>",
         4: "<span class='badge bg-info mb-1'>Fourth Recess (10:55 - 11:30)</span>"
-    }
+    };
 
-    var duty_trans = {
+    var dutyTrans = {
         "nb1": "NB1",
         "nb2": "NB2",
         "nb3": "NB3",
@@ -85,29 +85,29 @@ function show_personalised() {
     $(week).each(function (i, v) {
         if (counter < 5) {
         var dd = new Date(v);
-        var first_date = new Date(Object.keys(jsonData["dates"])[0])
+        var firstDate = new Date(Object.keys(jsonData["dates"])[0]);
         var lastDate = new Date(Object.keys(jsonData["dates"])[Object.keys(jsonData["dates"]).length - 1]);
         
         var flagDuty = "";
 
         if (flagData[v] != null) {
 
-            if (String($("#name").val()) == flagData[v]["singapore_flag"]) {
+            if (String($("#name").val()) === flagData[v]["singapore_flag"]) {
                 flagDuty = "<p><span class='fw-bold'></span><span class='badge bg-warning mb-1'>Flag Duty</span><br><span class='fw-bold'>Duty: </span><span id=''>Singapore Flag</span></p>";
             } else if (String($("#name").val()) === flagData[v]["school_flag"]) {
                 flagDuty = "<p><span class='fw-bold'></span><span class='badge bg-warning mb-1'>Flag Duty</span><br><span class='fw-bold'>Duty: </span><span id=''>School Flag</span></p>";
             }
 
         }
-        if (dd.getDay() === 6 || dd.getDay() === 0 || jsonData["dates"][v] === 11 || dd < first_date || dd > lastDate) {
+        if (dd.getDay() === 6 || dd.getDay() === 0 || jsonData["dates"][v] === 11 || dd < firstDate || dd > lastDate) {
             var b = new Date(v);
-            var a = '<div id="' + per_dict[i]["id"] + '" class="container shadow pt-3 pb-3 mb-3 bg-white rounded-3"><h4>' + days[b.getDay()] + ", " + String(b.getDate()) + " " + months[b.getMonth()] + '</h4><p><span class="fw-bold"></span>No data is available for this day</span></p></div>';
+            var a = "<div id='" + perDict[i]["id"] + "' class='container shadow pt-3 pb-3 mb-3 bg-white rounded-3'><h4>" + days[b.getDay()] + ", " + String(b.getDate()) + " " + months[b.getMonth()] + "</h4><p><span class='fw-bold'></span>No data is available for this day</span></p></div>";
             $(a).appendTo("#personalised");
         } else {
             $("#weekend").hide();
             var b = new Date(v);
-            var a = '<div id="' + per_dict[i]["id"] + '" class="container shadow pt-3 pb-3 mb-3 bg-white rounded-3"><h4>' + days[b.getDay()] + ", " + String(b.getDate()) + " " + months[b.getMonth()] + '</h4>' + flagDuty + '<p><span class="fw-bold"></span>' + recessBadge[nameData[String($("#name").val())][String(jsonData["dates"][v])]["recess"]] + '<br><span class="fw-bold">Duty: </span><span id="">' + duty_trans[nameData[String($("#name").val())][String(jsonData["dates"][v])]["duty"]] + '</span></p></div>';
-            var c = '<div id="' + per_dict[i]["id"] + '" class="container shadow pt-3 pb-3 mb-3 bg-white rounded-3"><h4>' + days[b.getDay()] + ", " + String(b.getDate()) + " " + months[b.getMonth()] + '</h4>' + flagDuty + '<p><span class="fw-bold"></span><span class="badge bg-warning mb-1">Morning Duty</span><br><span class="fw-bold">Duty: </span><span id="">' + duty_trans[nameData[String($("#name").val())]["morning_duty"]["duty"]] + '</span></p><p><span class="fw-bold"></span>' + recessBadge[nameData[String($("#name").val())][String(jsonData["dates"][v])]["recess"]] + '<br><span class="fw-bold">Duty: </span><span id="">' + duty_trans[nameData[String($("#name").val())][String(jsonData["dates"][v])]["duty"]] + '</span></p></div>';                    
+            var a = "<div id='" + perDict[i]["id"] + "' class='container shadow pt-3 pb-3 mb-3 bg-white rounded-3'><h4>" + days[b.getDay()] + ", " + String(b.getDate()) + " " + months[b.getMonth()] + "</h4>" + flagDuty + "<p><span class='fw-bold'></span>" + recessBadge[nameData[String($("#name").val())][String(jsonData["dates"][v])]["recess"]] + "<br><span class='fw-bold'>Duty: </span><span id=''>" + dutyTrans[nameData[String($("#name").val())][String(jsonData["dates"][v])]["duty"]] + "</span></p></div>";
+            var c = "<div id='" + perDict[i]["id"] + "' class='container shadow pt-3 pb-3 mb-3 bg-white rounded-3'><h4>" + days[b.getDay()] + ", " + String(b.getDate()) + " " + months[b.getMonth()] + "</h4>" + flagDuty + "<p><span class='fw-bold'></span><span class='badge bg-warning mb-1'>Morning Duty</span><br><span class='fw-bold'>Duty: </span><span id=''>" + dutyTrans[nameData[String($("#name").val())]["morning_duty"]["duty"]] + "</span></p><p><span class='fw-bold'></span>" + recessBadge[nameData[String($("#name").val())][String(jsonData["dates"][v])]["recess"]] + "<br><span class='fw-bold'>Duty: </span><span id=''>" + dutyTrans[nameData[String($("#name").val())][String(jsonData["dates"][v])]["duty"]] + "</span></p></div>";                    
 
             if (nameData[String($("#name").val())]["morning_duty_check"]) {
                 $(c).appendTo("#personalised");
@@ -117,8 +117,8 @@ function show_personalised() {
 
         }
     }
-        counter += 1
-    })
+        counter += 1;
+    });
 
     localStorage.setItem("name", String($("#name").val()));
     $("<div id='date2' class='text-center'><h4>Hello " + String($("#name").val()) + "!</h4><p>Here is your duty for the week you selected</p></div>").insertBefore("#date");
@@ -147,8 +147,8 @@ function nameChecker() {
         update();
     } else {
         $("#overview").hide();
-        $("#start").attr("onchange", "show_personalised()")
-        show_personalised();
+        $("#start").attr("onchange", "showPersonalised()");
+        showPersonalised();
     }
 }
 
@@ -206,7 +206,7 @@ function getNameData() {
 
             $.each(Object.keys(nameData), function (i, v) {
                 
-            if (localStorage.getItem("name") != null && localStorage.getItem("name") == v) {
+            if (localStorage.getItem("name") != null && localStorage.getItem("name") === v) {
                 $("option:selected", name_og).remove();
                 var a = "<option selected value='" + String(v) + "'>" + String(v) + "</option>";
                 $(a).appendTo("#name");
@@ -232,8 +232,8 @@ function recessTime(period) {
         $(".icon-blink").each(function () {
             var elem = $(this);
             setInterval(function () {
-                if (elem.css('visibility') == 'hidden') {
-                    elem.css('visibility', 'visible');
+                if (elem.css("visibility") == "hidden") {
+                    elem.css("visibility", "visible");
                 } else {
                     elem.css("visibility", "hidden");
                 }
@@ -243,10 +243,10 @@ function recessTime(period) {
 
     if (period === 1) {
         $(icon).prependTo("#first_recess");
-    } else if (period == 2) {
+    } else if (period === 2) {
         $(icon).prependTo("#second_recess");
         $("#first_recess").insertAfter("#fourth_recess");
-    } else if (period == 3) {
+    } else if (period === 3) {
         $(icon).prependTo("#third_recess");
         $("#first_recess").insertAfter("#fourth_recess");
         $("#second_recess").insertAfter("#first_recess");
@@ -266,16 +266,16 @@ function update() {
     $("#weekend").hide();
     var d = String($("#start").val());
     var dd = new Date(d);
-    var first_date = new Date(Object.keys(jsonData["dates"])[0])
+    var firstDate = new Date(Object.keys(jsonData["dates"])[0])
     var lastDate = new Date(Object.keys(jsonData["dates"])[Object.keys(jsonData["dates"]).length - 1]);
-    if (dd.getDay() == 6 || dd.getDay() == 0 || jsonData["dates"][String($("#start").val())] == 11 || dd < first_date || dd > lastDate) {
+    if (dd.getDay() === 6 || dd.getDay() === 0 || jsonData["dates"][String($("#start").val())] === 11 || dd < firstDate || dd > lastDate) {
         $("#date").hide();
         $.each(["#weekend", "#recess_duty_text", "#first_recess", "#second_recess", "#third_recess", "#fourth_recess", "#morning_duty_text", "#morning_duty_block"], function (i, v) {
             $(v).hide();
         });
         updateDate();
-        $("#date").fadeIn('slow');
-        $("#weekend").delay(500).fadeIn('slow');
+        $("#date").fadeIn("slow");
+        $("#weekend").delay(500).fadeIn("slow");
         return;
     }
 
@@ -287,15 +287,15 @@ function update() {
         var inputDate = new Date(date);
         var todaysDate = new Date();
         if (inputDate.setHours(0, 0, 0, 0) === todaysDate.setHours(0, 0, 0, 0)) {
-            return true
+            return true;
         } else {
             return false;
         }
     }
 
     function updateBlockArrangement() {
-        var startTime = '06:00:00';
-        var endTime = '08:00:00';
+        var startTime = "06:00:00";
+        var endTime = "08:00:00";
 
         currentDate = new Date();
 
@@ -320,7 +320,7 @@ function update() {
     }
 
     function listToString(list) {
-        if (list == "") {
+        if (list === "") {
             return "-";
         } else {
             return list.join(", ");
@@ -353,8 +353,8 @@ function update() {
 
     function updateDate() {
         var dtt = new Date(String($("#start").val()));
-        var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-        var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+        var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+        var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
         $("#date").text("Duty list for " + days[dtt.getDay()] + ", " + String(dtt.getDate()) + " " + months[dtt.getMonth()] + " " + String(dtt.getFullYear()));
     }
 
@@ -372,7 +372,7 @@ function update() {
             $("#first_on_break").text(listToString(data["on_break"]));
         }
 
-        function second_recess() {
+        function secondRecess() {
             var data = jsonData["presets"][jsonData["dates"][String($("#start").val())]]["recess_duty"]["second_recess"]
             $("#second_nb1").text(listToString(data["nb1"]));
             $("#second_nb2").text(listToString(data["nb2"]));
@@ -384,7 +384,7 @@ function update() {
             $("#second_on_break").text(listToString(data["on_break"]));
         }
 
-        function third_recess() {
+        function thirdRecess() {
             var data = jsonData["presets"][jsonData["dates"][String($("#start").val())]]["recess_duty"]["third_recess"]
             $("#third_nb1").text(listToString(data["nb1"]));
             $("#third_nb2").text(listToString(data["nb2"]));
@@ -396,7 +396,7 @@ function update() {
             $("#third_on_break").text(listToString(data["on_break"]));
         }
 
-        function fourth_recess() {
+        function fourthRecess() {
             var data = jsonData["presets"][jsonData["dates"][String($("#start").val())]]["recess_duty"]["fourth_recess"];
             $("#fourth_nb1").text(listToString(data["nb1"]));
             $("#fourth_nb2").text(listToString(data["nb2"]));
@@ -409,9 +409,9 @@ function update() {
         }
 
         firstRecess();
-        second_recess();
-        third_recess();
-        fourth_recess();
+        secondRecess();
+        thirdRecess();
+        fourthRecess();
     }
 
     function checkTimeValid(start, end) {
@@ -439,10 +439,10 @@ function update() {
         if (checkTimeValid("09:10:00", "09:45:00") && check1 === false) {
             recessTime(1)
             check1 = true;
-        } else if (checkTimeValid("09:45:00", "10:20:00") && check1 == false) {
+        } else if (checkTimeValid("09:45:00", "10:20:00") && check1 === false) {
             recessTime(2);
             check1 = true;
-        } else if (checkTimeValid("10:20:00", "10:55:00") && check1 == false) {
+        } else if (checkTimeValid("10:20:00", "10:55:00") && check1 === false) {
             recessTime(3)
             check1 = true;
         } else if (checkTimeValid("10:55:00", "11:30:00") && check1 === false) {
