@@ -76,7 +76,7 @@ function showPersonalised() {
         "side_gate": "Side Gate",
         "morning_patrol": "Morning Patrol",
         "hall": "Hall"
-    }
+    };
 
     var counter = 0;
     var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
@@ -123,7 +123,7 @@ function showPersonalised() {
     localStorage.setItem("name", String($("#name").val()));
     $("<div id='date2' class='text-center'><h4>Hello " + String($("#name").val()) + "!</h4><p>Here is your duty for the week you selected</p></div>").insertBefore("#date");
     $("#personalised").show();
-        $(["#date", "#date2", "#day_1", "#day_2", "#day_3", "#day_4", "#day_5"]).each(function (i,v) {$(v).hide()});
+        $(["#date", "#date2", "#day_1", "#day_2", "#day_3", "#day_4", "#day_5"]).each(function (i,v) {$(v).hide();});
         var eT = 0;
     $.each(["#date2", "#day_1", "#day_2", "#day_3", "#day_4", "#day_5"], function (i, v) {
         $(v).delay(eT).fadeIn("slow");
@@ -211,7 +211,7 @@ function getNameData() {
                 var a = "<option selected value='" + String(v) + "'>" + String(v) + "</option>";
                 $(a).appendTo("#name");
             } else {
-                var a = '<option value="' + String(v) + '">' + String(v) + '</option>';
+                var a = "<option value='" + String(v) + "'>" + String(v) + "</option>";
                 $(a).appendTo("#name");
             }
                 
@@ -232,7 +232,7 @@ function recessTime(period) {
         $(".icon-blink").each(function () {
             var elem = $(this);
             setInterval(function () {
-                if (elem.css("visibility") == "hidden") {
+                if (elem.css("visibility") === "hidden") {
                     elem.css("visibility", "visible");
                 } else {
                     elem.css("visibility", "hidden");
@@ -266,7 +266,7 @@ function update() {
     $("#weekend").hide();
     var d = String($("#start").val());
     var dd = new Date(d);
-    var firstDate = new Date(Object.keys(jsonData["dates"])[0])
+    var firstDate = new Date(Object.keys(jsonData["dates"])[0]);
     var lastDate = new Date(Object.keys(jsonData["dates"])[Object.keys(jsonData["dates"]).length - 1]);
     if (dd.getDay() === 6 || dd.getDay() === 0 || jsonData["dates"][String($("#start").val())] === 11 || dd < firstDate || dd > lastDate) {
         $("#date").hide();
@@ -361,7 +361,7 @@ function update() {
     function updateRecessDuty() {
 
         function firstRecess() {
-            var data = jsonData["presets"][jsonData["dates"][String($("#start").val())]]["recess_duty"]["first_recess"]
+            var data = jsonData["presets"][jsonData["dates"][String($("#start").val())]]["recess_duty"]["first_recess"];
             $("#first_nb1").text(listToString(data["nb1"]));
             $("#first_nb2").text(listToString(data["nb2"]));
             $("#first_nb3").text(listToString(data["nb3"]));
@@ -373,7 +373,7 @@ function update() {
         }
 
         function secondRecess() {
-            var data = jsonData["presets"][jsonData["dates"][String($("#start").val())]]["recess_duty"]["second_recess"]
+            var data = jsonData["presets"][jsonData["dates"][String($("#start").val())]]["recess_duty"]["second_recess"];
             $("#second_nb1").text(listToString(data["nb1"]));
             $("#second_nb2").text(listToString(data["nb2"]));
             $("#second_nb3").text(listToString(data["nb3"]));
@@ -385,7 +385,7 @@ function update() {
         }
 
         function thirdRecess() {
-            var data = jsonData["presets"][jsonData["dates"][String($("#start").val())]]["recess_duty"]["third_recess"]
+            var data = jsonData["presets"][jsonData["dates"][String($("#start").val())]]["recess_duty"]["third_recess"];
             $("#third_nb1").text(listToString(data["nb1"]));
             $("#third_nb2").text(listToString(data["nb2"]));
             $("#third_nb3").text(listToString(data["nb3"]));
@@ -431,26 +431,26 @@ function update() {
         endDate.setSeconds(endTime.split(":")[2]);
 
 
-        var valid = startDate < currentDate && endDate > currentDate
+        var valid = startDate < currentDate && endDate > currentDate;
         return valid;
     }
 
     if (checkTimeValid("09:10:00", "11:30:00") && today(String($("#start").val()))) {
         if (checkTimeValid("09:10:00", "09:45:00") && check1 === false) {
-            recessTime(1)
+            recessTime(1);
             check1 = true;
         } else if (checkTimeValid("09:45:00", "10:20:00") && check1 === false) {
             recessTime(2);
             check1 = true;
         } else if (checkTimeValid("10:20:00", "10:55:00") && check1 === false) {
-            recessTime(3)
+            recessTime(3);
             check1 = true;
         } else if (checkTimeValid("10:55:00", "11:30:00") && check1 === false) {
-            recessTime(4)
+            recessTime(4);
             check1 = true;
         }
     } else if (blink === true) {
-        $('.icon-blink').each(function () {
+        $(".icon-blink").each(function () {
             $(this).remove();
         });
         $("#second_recess").insertAfter("#first_recess");
@@ -466,7 +466,7 @@ function update() {
 
     var eT = 0;
     $.each(["#date", "#recess_duty_text", "#first_recess", "#second_recess", "#third_recess", "#fourth_recess", "#morning_duty_text", "#morning_duty_block"], function (i, v) {
-        $(v).delay(eT).fadeIn('slow');
+        $(v).delay(eT).fadeIn("slow");
         eT += 200;
     });
 }
