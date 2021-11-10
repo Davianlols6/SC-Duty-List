@@ -4,11 +4,7 @@ function show_personalised() {
 
     $("#personalised").empty();
 
-    var day = new Date(String($("#start").val()));
-    days_of_week(day);
-    var week;
-
-    function days_of_week(day) {
+    function DaysOfWeek(day) {
         $(Object.keys(jsonData["weeks"])).each(function (i, v) {
 
             $(jsonData["weeks"][v]).each(function (b, value) {
@@ -22,6 +18,10 @@ function show_personalised() {
 
         });
     }
+
+    var day = new Date(String($("#start").val()));
+    DaysOfWeek(day);
+    var week;
 
     var per_dict = {
         0: {
