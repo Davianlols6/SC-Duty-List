@@ -1,6 +1,5 @@
-from datetime import date, datetime, timedelta
+from datetime import datetime, timedelta
 import json
-from typing import Counter
 
 startDate = datetime.strptime(input("Input Start Date (YYYY-MM-DD): "), "%Y-%m-%d")
 endDate = datetime.strptime(input("Input End Date (YYYY-MM-DD): "), "%Y-%m-%d")
@@ -35,7 +34,7 @@ while startDate != endDate:
 
     try:
         bool(data["weeks"][str(counter3)])
-    except:
+    except Exception as e:
         data["weeks"][str(counter3)] = []
 
     data["weeks"][str(counter3)].append(datetime.strftime(startDate + timedelta(days=1), "%Y-%m-%d"))

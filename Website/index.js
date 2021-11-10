@@ -186,7 +186,7 @@ $.getJSON("Data/data.json?time=" + new Date().getTime(),
             day = "0" + day;
         }
 
-        $("#version").text(data.version)
+        $("#version").text(data.version);
 
         return [year, month, day].join("-");
         }
