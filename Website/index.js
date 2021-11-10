@@ -8,10 +8,12 @@ function showPersonalised() {
 
     $("#personalised").empty();
 
-    function DaysOfWeek(day) {
-        $(Object.keys(jsonData["weeks"])).each(function (i, v) {
+    var week;
 
-            $(jsonData["weeks"][v]).each(function (b, value) {
+    function DaysOfWeek(day) {
+        $(Object.keys(jsonData.weeks)).each(function (i, v) {
+
+            $(jsonData.weeks.v).each(function (b, value) {
                 var a = new Date(value);
 
                 if (String(day) === String(a)) {
@@ -25,7 +27,7 @@ function showPersonalised() {
 
     var day = new Date(String($("#start").val()));
     DaysOfWeek(day);
-    var week;
+    
 
     var perDict = {
         0: {
