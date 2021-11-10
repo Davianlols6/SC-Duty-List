@@ -37,3 +37,6 @@ The website link was sent to the Student Councillors on 12 July 2021. Since the 
 
 ### 5) Improving on the Solution
 Mass feedback is yet to be collated. However, some feedback from close friends has helped to make the website better.
+
+## License ⚖️
+This code is distributed under the MIT license. For more info, read the [LICENSE](https://github.com/Davianlols6/SC-Duty-List/blob/main/LICENSE) file distributed with the source code.
