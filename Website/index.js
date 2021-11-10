@@ -1,3 +1,7 @@
+var jsonData;
+var flagData;
+var nameData;
+
 function show_personalised() {
     $("#updated").text(jsonData["updated"]);
     $("#date2").remove();
@@ -95,7 +99,7 @@ function show_personalised() {
             }
 
         }
-        if (dd.getDay() == 6 || dd.getDay() == 0 || jsonData["dates"][v] == 11 || dd < first_date || dd > last_date) {
+        if (dd.getDay() === 6 || dd.getDay() === 0 || jsonData["dates"][v] === 11 || dd < first_date || dd > last_date) {
             var b = new Date(v);
             var a = '<div id="' + per_dict[i]["id"] + '" class="container shadow pt-3 pb-3 mb-3 bg-white rounded-3"><h4>' + days[b.getDay()] + ", " + String(b.getDate()) + " " + months[b.getMonth()] + '</h4><p><span class="fw-bold"></span>No data is available for this day</span></p></div>'
             $(a).appendTo("#personalised");
@@ -151,10 +155,6 @@ function name_checker() {
 $.each(["#weekend", "#date", "overview"], function (i, v) {
     $(v).hide();
 });
-
-var jsonData;
-var flagData;
-var nameData;
 
 $.getJSON("Data/data.json?time=" + new Date().getTime(),
     function (data) {
