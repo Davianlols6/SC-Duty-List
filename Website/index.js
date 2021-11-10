@@ -262,7 +262,8 @@ function update() {
     $("#updated").text(jsonData["updated"]);
 
     $("#weekend").hide();
-    var dd = new Date(String($("#start").val()));
+    var d = String($("#start").val())
+    var dd = new Date(d);
     var first_date = new Date(Object.keys(jsonData["dates"])[0])
     var last_date = new Date(Object.keys(jsonData["dates"])[Object.keys(jsonData["dates"]).length - 1]);
     if (dd.getDay() == 6 || dd.getDay() == 0 || jsonData["dates"][String($("#start").val())] == 11 || dd < first_date || dd > last_date) {
