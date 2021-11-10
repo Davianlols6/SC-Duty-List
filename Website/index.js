@@ -6,7 +6,7 @@ function showPersonalised() {
     $("#updated").text(jsonData["updated"]);
     $("#date2").remove();
     $("#version").hide();
-
+    $("#weekend").hide();
     $("#personalised").empty();
 
     var week;
