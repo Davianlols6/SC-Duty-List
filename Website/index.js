@@ -147,6 +147,7 @@ function nameChecker() {
         $.each(["#weekend", "#recess_duty_text", "#first_recess", "#second_recess", "#third_recess", "#fourth_recess", "#morning_duty_text", "#morning_duty_block"], function (i, v) {
             $(v).hide();
         });
+        
         $("#overview").show();
         $("#start").attr("onchange", "update()");
         update();
