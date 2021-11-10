@@ -35,6 +35,7 @@ while startDate != endDate:
     try:
         bool(data["weeks"][str(counter3)])
     except Exception as e:
+        print(e)
         data["weeks"][str(counter3)] = []
 
     data["weeks"][str(counter3)].append(datetime.strftime(startDate + timedelta(days=1), "%Y-%m-%d"))
