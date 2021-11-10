@@ -48,7 +48,7 @@ function show_personalised() {
             "id": "day_5",
             "h4": "Friday"
         }
-    }
+    };
 
     var recessBadge = {
         1: "<span class='badge bg-primary mb-1'>First Recess (9:10 - 9:45)</span>",
@@ -94,7 +94,7 @@ function show_personalised() {
 
             if (String($("#name").val()) == flagData[v]["singapore_flag"]) {
                 flagDuty = "<p><span class='fw-bold'></span><span class='badge bg-warning mb-1'>Flag Duty</span><br><span class='fw-bold'>Duty: </span><span id=''>Singapore Flag</span></p>";
-            } else if (String($("#name").val()) == flagData[v]["school_flag"]) {
+            } else if (String($("#name").val()) === flagData[v]["school_flag"]) {
                 flagDuty = "<p><span class='fw-bold'></span><span class='badge bg-warning mb-1'>Flag Duty</span><br><span class='fw-bold'>Duty: </span><span id=''>School Flag</span></p>";
             }
 
@@ -178,7 +178,7 @@ $.getJSON("Data/data.json?time=" + new Date().getTime(),
             day = "0" + day;
         }
 
-        return [year, month, day].join('-');
+        return [year, month, day].join("-");
         }
         $("#start").val(formatDate(dt));
 
@@ -207,11 +207,11 @@ function getNameData() {
             $.each(Object.keys(nameData), function (i, v) {
                 
             if (localStorage.getItem("name") != null && localStorage.getItem("name") == v) {
-                $('option:selected', name_og).remove();
-                var a = '<option selected value="' + String(v) + '">' + String(v) + '</option>'
+                $("option:selected", name_og).remove();
+                var a = "<option selected value='" + String(v) + "'>" + String(v) + "</option>";
                 $(a).appendTo("#name");
             } else {
-                var a = '<option value="' + String(v) + '">' + String(v) + '</option>'
+                var a = '<option value="' + String(v) + '">' + String(v) + '</option>';
                 $(a).appendTo("#name");
             }
                 
@@ -224,24 +224,24 @@ function getNameData() {
 
 var blink = false;
 
-function recess_time(period) {
-    var icon = '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-record-circle mx-1 icon-blink" style="fill: #ff0000" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" /><path d="M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" /></svg>'
+function recessTime(period) {
+    var icon = "<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-record-circle mx-1 icon-blink' style='fill: #ff0000' viewBox='0 0 16 16'><path d='M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z' /><path d='M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0z' /></svg>";
 
-    function blink_text() {
-        blink = true
-        $('.icon-blink').each(function () {
+    function blinkText() {
+        blink = true;
+        $(".icon-blink").each(function () {
             var elem = $(this);
             setInterval(function () {
                 if (elem.css('visibility') == 'hidden') {
                     elem.css('visibility', 'visible');
                 } else {
-                    elem.css('visibility', 'hidden');
+                    elem.css("visibility", "hidden");
                 }
             }, 700);
         });
     }
 
-    if (period == 1) {
+    if (period === 1) {
         $(icon).prependTo("#first_recess");
     } else if (period == 2) {
         $(icon).prependTo("#second_recess");
@@ -250,21 +250,21 @@ function recess_time(period) {
         $(icon).prependTo("#third_recess");
         $("#first_recess").insertAfter("#fourth_recess");
         $("#second_recess").insertAfter("#first_recess");
-    } else if (period == 4) {
+    } else if (period === 4) {
         $(icon).prependTo("#fourth_recess");
         $("#first_recess").insertAfter("#fourth_recess");
         $("#second_recess").insertAfter("#first_recess");
         $("#third_recess").insertAfter("#second_recess");
     }
 
-    blink_text();
+    blinkText();
 }
 
 function update() {
     $("#updated").text(jsonData["updated"]);
 
     $("#weekend").hide();
-    var d = String($("#start").val())
+    var d = String($("#start").val());
     var dd = new Date(d);
     var first_date = new Date(Object.keys(jsonData["dates"])[0])
     var lastDate = new Date(Object.keys(jsonData["dates"])[Object.keys(jsonData["dates"]).length - 1]);
@@ -273,10 +273,10 @@ function update() {
         $.each(["#weekend", "#recess_duty_text", "#first_recess", "#second_recess", "#third_recess", "#fourth_recess", "#morning_duty_text", "#morning_duty_block"], function (i, v) {
             $(v).hide();
         });
-        update_date();
+        updateDate();
         $("#date").fadeIn('slow');
         $("#weekend").delay(500).fadeIn('slow');
-        return
+        return;
     }
 
     $.each(["#date", "#recess_duty_text", "#first_recess", "#second_recess", "#third_recess", "#fourth_recess", "#morning_duty_text", "#morning_duty_block"], function (i, v) {
@@ -286,14 +286,14 @@ function update() {
     function today(date) {
         var inputDate = new Date(date);
         var todaysDate = new Date();
-        if (inputDate.setHours(0, 0, 0, 0) == todaysDate.setHours(0, 0, 0, 0)) {
+        if (inputDate.setHours(0, 0, 0, 0) === todaysDate.setHours(0, 0, 0, 0)) {
             return true
         } else {
-            return false
+            return false;
         }
     }
 
-    function update_block_arrangement() {
+    function updateBlockArrangement() {
         var startTime = '06:00:00';
         var endTime = '08:00:00';
 
@@ -310,7 +310,7 @@ function update() {
         endDate.setSeconds(endTime.split(":")[2]);
 
 
-        valid = startDate < currentDate && endDate > currentDate
+        valid = startDate < currentDate && endDate > currentDate;
         if (valid && today(String($("#start").val()))) {
             $("#recess_duty_block").insertAfter("#morning_duty_block");
         } else {
@@ -319,28 +319,28 @@ function update() {
 
     }
 
-    function list_to_string(list) {
+    function listToString(list) {
         if (list == "") {
-            return "-"
+            return "-";
         } else {
             return list.join(", ");
         }
     }
 
-    function update_morning_duty() {
-        morning_duty_data = jsonData["constants"][jsonData["presets"][jsonData["dates"][String($("#start").val())]]["constant_morning_duty"]];
-        $("#morning_main_gate").text(list_to_string(morning_duty_data["main_gate"]));
-        $("#morning_late_coming").text(list_to_string(morning_duty_data["late_coming"]));
-        $("#morning_canteen").text(list_to_string(morning_duty_data["canteen"]));
-        $("#morning_stairs_to_hall").text(list_to_string(morning_duty_data["stairs_to_hall"]));
-        $("#morning_side_gate").text(list_to_string(morning_duty_data["side_gate"]));
-        $("#morning_lift").text(list_to_string(morning_duty_data["lift"]));
-        $("#morning_morning_patrol").text(list_to_string(morning_duty_data["morning_patrol"]));
-        $("#morning_hall").text(list_to_string(morning_duty_data["hall"]));
+    function updateMorningDuty() {
+        var morningDutyData = jsonData["constants"][jsonData["presets"][jsonData["dates"][String($("#start").val())]]["constant_morning_duty"]];
+        $("#morning_main_gate").text(listToString(morningDutyData["main_gate"]));
+        $("#morning_late_coming").text(listToString(morningDutyData["late_coming"]));
+        $("#morning_canteen").text(listToString(morningDutyData["canteen"]));
+        $("#morning_stairs_to_hall").text(listToString(morningDutyData["stairs_to_hall"]));
+        $("#morning_side_gate").text(listToString(morningDutyData["side_gate"]));
+        $("#morning_lift").text(listToString(morningDutyData["lift"]));
+        $("#morning_morning_patrol").text(listToString(morningDutyData["morning_patrol"]));
+        $("#morning_hall").text(listToString(morningDutyData["hall"]));
 
     }
-    function update_flag_duty() {
-        data = flagData[String($("#start").val())]
+    function updateFlagDuty() {
+        var data = flagData[String($("#start").val())];
 
         if (data == null) {
             $("#morning_flag_singapore").text("Data is unavailable");
@@ -351,70 +351,70 @@ function update() {
         }
     }
 
-    function update_date() {
+    function updateDate() {
         var dtt = new Date(String($("#start").val()));
         var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
         var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
         $("#date").text("Duty list for " + days[dtt.getDay()] + ", " + String(dtt.getDate()) + " " + months[dtt.getMonth()] + " " + String(dtt.getFullYear()));
     }
 
-    function update_recess_duty() {
+    function updateRecessDuty() {
 
-        function first_recess() {
-            data = jsonData["presets"][jsonData["dates"][String($("#start").val())]]["recess_duty"]["first_recess"]
-            $("#first_nb1").text(list_to_string(data["nb1"]));
-            $("#first_nb2").text(list_to_string(data["nb2"]));
-            $("#first_nb3").text(list_to_string(data["nb3"]));
-            $("#first_stall").text(list_to_string(data["stall"]));
-            $("#first_pond").text(list_to_string(data["pond"]));
-            $("#first_lift").text(list_to_string(data["lift"]));
-            $("#first_central").text(list_to_string(data["central"]));
-            $("#first_on_break").text(list_to_string(data["on_break"]));
+        function firstRecess() {
+            var data = jsonData["presets"][jsonData["dates"][String($("#start").val())]]["recess_duty"]["first_recess"]
+            $("#first_nb1").text(listToString(data["nb1"]));
+            $("#first_nb2").text(listToString(data["nb2"]));
+            $("#first_nb3").text(listToString(data["nb3"]));
+            $("#first_stall").text(listToString(data["stall"]));
+            $("#first_pond").text(listToString(data["pond"]));
+            $("#first_lift").text(listToString(data["lift"]));
+            $("#first_central").text(listToString(data["central"]));
+            $("#first_on_break").text(listToString(data["on_break"]));
         }
 
         function second_recess() {
-            data = jsonData["presets"][jsonData["dates"][String($("#start").val())]]["recess_duty"]["second_recess"]
-            $("#second_nb1").text(list_to_string(data["nb1"]));
-            $("#second_nb2").text(list_to_string(data["nb2"]));
-            $("#second_nb3").text(list_to_string(data["nb3"]));
-            $("#second_stall").text(list_to_string(data["stall"]));
-            $("#second_pond").text(list_to_string(data["pond"]));
-            $("#second_lift").text(list_to_string(data["lift"]));
-            $("#second_central").text(list_to_string(data["central"]));
-            $("#second_on_break").text(list_to_string(data["on_break"]));
+            var data = jsonData["presets"][jsonData["dates"][String($("#start").val())]]["recess_duty"]["second_recess"]
+            $("#second_nb1").text(listToString(data["nb1"]));
+            $("#second_nb2").text(listToString(data["nb2"]));
+            $("#second_nb3").text(listToString(data["nb3"]));
+            $("#second_stall").text(listToString(data["stall"]));
+            $("#second_pond").text(listToString(data["pond"]));
+            $("#second_lift").text(listToString(data["lift"]));
+            $("#second_central").text(listToString(data["central"]));
+            $("#second_on_break").text(listToString(data["on_break"]));
         }
 
         function third_recess() {
-            data = jsonData["presets"][jsonData["dates"][String($("#start").val())]]["recess_duty"]["third_recess"]
-            $("#third_nb1").text(list_to_string(data["nb1"]));
-            $("#third_nb2").text(list_to_string(data["nb2"]));
-            $("#third_nb3").text(list_to_string(data["nb3"]));
-            $("#third_stall").text(list_to_string(data["stall"]));
-            $("#third_pond").text(list_to_string(data["pond"]));
-            $("#third_lift").text(list_to_string(data["lift"]));
-            $("#third_central").text(list_to_string(data["central"]));
-            $("#third_on_break").text(list_to_string(data["on_break"]));
+            var data = jsonData["presets"][jsonData["dates"][String($("#start").val())]]["recess_duty"]["third_recess"]
+            $("#third_nb1").text(listToString(data["nb1"]));
+            $("#third_nb2").text(listToString(data["nb2"]));
+            $("#third_nb3").text(listToString(data["nb3"]));
+            $("#third_stall").text(listToString(data["stall"]));
+            $("#third_pond").text(listToString(data["pond"]));
+            $("#third_lift").text(listToString(data["lift"]));
+            $("#third_central").text(listToString(data["central"]));
+            $("#third_on_break").text(listToString(data["on_break"]));
         }
 
         function fourth_recess() {
-            data = jsonData["presets"][jsonData["dates"][String($("#start").val())]]["recess_duty"]["fourth_recess"]
-            $("#fourth_nb1").text(list_to_string(data["nb1"]));
-            $("#fourth_nb2").text(list_to_string(data["nb2"]));
-            $("#fourth_nb3").text(list_to_string(data["nb3"]));
-            $("#fourth_stall").text(list_to_string(data["stall"]));
-            $("#fourth_pond").text(list_to_string(data["pond"]));
-            $("#fourth_lift").text(list_to_string(data["lift"]));
-            $("#fourth_central").text(list_to_string(data["central"]));
-            $("#fourth_on_break").text(list_to_string(data["on_break"]));
+            var data = jsonData["presets"][jsonData["dates"][String($("#start").val())]]["recess_duty"]["fourth_recess"];
+            $("#fourth_nb1").text(listToString(data["nb1"]));
+            $("#fourth_nb2").text(listToString(data["nb2"]));
+            $("#fourth_nb3").text(listToString(data["nb3"]));
+            $("#fourth_stall").text(listToString(data["stall"]));
+            $("#fourth_pond").text(listToString(data["pond"]));
+            $("#fourth_lift").text(listToString(data["lift"]));
+            $("#fourth_central").text(listToString(data["central"]));
+            $("#fourth_on_break").text(listToString(data["on_break"]));
         }
 
-        first_recess();
+        firstRecess();
         second_recess();
         third_recess();
         fourth_recess();
     }
 
-    function check_time_valid(start, end) {
+    function checkTimeValid(start, end) {
         var startTime = String(start);
         var endTime = String(end);
 
@@ -431,25 +431,25 @@ function update() {
         endDate.setSeconds(endTime.split(":")[2]);
 
 
-        valid = startDate < currentDate && endDate > currentDate
+        var valid = startDate < currentDate && endDate > currentDate
         return valid;
     }
 
-    if (check_time_valid("09:10:00", "11:30:00") && today(String($("#start").val()))) {
-        if (check_time_valid("09:10:00", "09:45:00") && check1 == false) {
-            recess_time(1)
+    if (checkTimeValid("09:10:00", "11:30:00") && today(String($("#start").val()))) {
+        if (checkTimeValid("09:10:00", "09:45:00") && check1 === false) {
+            recessTime(1)
             check1 = true;
-        } else if (check_time_valid("09:45:00", "10:20:00") && check1 == false) {
-            recess_time(2)
+        } else if (checkTimeValid("09:45:00", "10:20:00") && check1 == false) {
+            recessTime(2);
             check1 = true;
-        } else if (check_time_valid("10:20:00", "10:55:00") && check1 == false) {
-            recess_time(3)
+        } else if (checkTimeValid("10:20:00", "10:55:00") && check1 == false) {
+            recessTime(3)
             check1 = true;
-        } else if (check_time_valid("10:55:00", "11:30:00") && check1 == false) {
-            recess_time(4)
+        } else if (checkTimeValid("10:55:00", "11:30:00") && check1 === false) {
+            recessTime(4)
             check1 = true;
         }
-    } else if (blink == true) {
+    } else if (blink === true) {
         $('.icon-blink').each(function () {
             $(this).remove();
         });
@@ -458,11 +458,11 @@ function update() {
         $("#fourth_recess").insertAfter("#third_recess");
     }
 
-    update_morning_duty();
-    update_flag_duty();
-    update_date();
-    update_block_arrangement();
-    update_recess_duty();
+    updateMorningDuty();
+    updateFlagDuty();
+    updateDate();
+    updateBlockArrangement();
+    updateRecessDuty();
 
     var eT = 0;
     $.each(["#date", "#recess_duty_text", "#first_recess", "#second_recess", "#third_recess", "#fourth_recess", "#morning_duty_text", "#morning_duty_block"], function (i, v) {
