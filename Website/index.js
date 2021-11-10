@@ -16,7 +16,7 @@ function show_personalised() {
 
                 if (String(day) == String(a)) {
                     week = jsonData["weeks"][v]
-                };
+                }
 
             });
 
@@ -92,9 +92,9 @@ function show_personalised() {
                 flagDuty = '<p><span class="fw-bold"></span><span class="badge bg-warning mb-1">Flag Duty</span><br><span class="fw-bold">Duty: </span><span id="">Singapore Flag</span></p>';
             } else if (String($("#name").val()) == flagData[v]["school_flag"]) {
                 flagDuty = '<p><span class="fw-bold"></span><span class="badge bg-warning mb-1">Flag Duty</span><br><span class="fw-bold">Duty: </span><span id="">School Flag</span></p>';
-            };
+            }
 
-        };
+        }
         if (dd.getDay() == 6 || dd.getDay() == 0 || jsonData["dates"][v] == 11 || dd < first_date || dd > last_date) {
             var b = new Date(v);
             var a = '<div id="' + per_dict[i]["id"] + '" class="container shadow pt-3 pb-3 mb-3 bg-white rounded-3"><h4>' + days[b.getDay()] + ", " + String(b.getDate()) + " " + months[b.getMonth()] + '</h4><p><span class="fw-bold"></span>No data is available for this day</span></p></div>'
@@ -126,7 +126,7 @@ function show_personalised() {
         eT += 200;
     });
 
-};
+}
 
 function name_checker() {
     if ($("#name").val() == "Overview") {
@@ -146,7 +146,7 @@ function name_checker() {
         $("#start").attr("onchange", "show_personalised()")
         show_personalised();
     }
-};
+}
 
 $.each(["#weekend", "#date", "overview"], function (i, v) {
     $(v).hide();
@@ -157,7 +157,7 @@ var flagData;
 var nameData;
 
 $.getJSON("Data/data.json?time=" + new Date().getTime(),
-    function (data, textStatus, jqXHR) {
+    function (data) {
         var dt = new Date();
         const monthFixer = ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"];
 
@@ -189,7 +189,7 @@ $.getJSON("Data/data.json?time=" + new Date().getTime(),
 function getFlagsData() {
 
     $.getJSON("Data/flag.json?time=" + new Date().getTime(),
-        function (data, textStatus, jqXHR) {
+        function (data) {
             flagData = data;
             getNameData();
         }
@@ -199,7 +199,7 @@ function getFlagsData() {
 function getNameData() {
 
     $.getJSON("Data/names.json?time=" + new Date().getTime(),
-        function (data, textStatus, jqXHR) {
+        function (data) {
             nameData = data;
 
             $.each(Object.keys(nameData), function (i, v) {
@@ -314,7 +314,7 @@ function update() {
             $("#recess_duty_block").insertBefore("#morning_duty_block");
         }
 
-    };
+    }
 
     function list_to_string(list) {
         if (list == "") {
@@ -367,7 +367,7 @@ function update() {
             $("#first_lift").text(list_to_string(data["lift"]));
             $("#first_central").text(list_to_string(data["central"]));
             $("#first_on_break").text(list_to_string(data["on_break"]));
-        };
+        }
 
         function second_recess() {
             data = jsonData["presets"][jsonData["dates"][String($("#start").val())]]["recess_duty"]["second_recess"]
@@ -379,7 +379,7 @@ function update() {
             $("#second_lift").text(list_to_string(data["lift"]));
             $("#second_central").text(list_to_string(data["central"]));
             $("#second_on_break").text(list_to_string(data["on_break"]));
-        };
+        }
 
         function third_recess() {
             data = jsonData["presets"][jsonData["dates"][String($("#start").val())]]["recess_duty"]["third_recess"]
@@ -391,7 +391,7 @@ function update() {
             $("#third_lift").text(list_to_string(data["lift"]));
             $("#third_central").text(list_to_string(data["central"]));
             $("#third_on_break").text(list_to_string(data["on_break"]));
-        };
+        }
 
         function fourth_recess() {
             data = jsonData["presets"][jsonData["dates"][String($("#start").val())]]["recess_duty"]["fourth_recess"]
@@ -403,7 +403,7 @@ function update() {
             $("#fourth_lift").text(list_to_string(data["lift"]));
             $("#fourth_central").text(list_to_string(data["central"]));
             $("#fourth_on_break").text(list_to_string(data["on_break"]));
-        };
+        }
 
         first_recess();
         second_recess();
@@ -430,7 +430,7 @@ function update() {
 
         valid = startDate < currentDate && endDate > currentDate
         return valid;
-    };
+    }
 
     if (check_time_valid("09:10:00", "11:30:00") && today(String($("#start").val()))) {
         if (check_time_valid("09:10:00", "09:45:00") && check1 == false) {
