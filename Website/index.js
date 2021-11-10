@@ -15,7 +15,7 @@ function show_personalised() {
                 var a = new Date(value);
 
                 if (String(day) == String(a)) {
-                    week = jsonData["weeks"][v]
+                    week = jsonData["weeks"][v];
                 }
 
             });
@@ -50,11 +50,11 @@ function show_personalised() {
         }
     }
 
-    var recess_badge = {
-        1: '<span class="badge bg-primary mb-1">First Recess (9:10 - 9:45)</span>',
-        2: '<span class="badge bg-secondary mb-1">Second Recess (9:45 - 10:20)</span>',
-        3: '<span class="badge bg-success mb-1">Third Recess (10:20 - 10:55)</span>',
-        4: '<span class="badge bg-info mb-1">Fourth Recess (10:55 - 11:30)</span>'
+    var recessBadge = {
+        1: "<span class='badge bg-primary mb-1'>First Recess (9:10 - 9:45)</span>",
+        2: "<span class='badge bg-secondary mb-1'>Second Recess (9:45 - 10:20)</span>",
+        3: "<span class='badge bg-success mb-1'>Third Recess (10:20 - 10:55)</span>",
+        4: "<span class='badge bg-info mb-1'>Fourth Recess (10:55 - 11:30)</span>"
     }
 
     var duty_trans = {
@@ -79,35 +79,35 @@ function show_personalised() {
     }
 
     var counter = 0;
-    var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-    var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+    var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
     $(week).each(function (i, v) {
         if (counter < 5) {
         var dd = new Date(v);
         var first_date = new Date(Object.keys(jsonData["dates"])[0])
-        var last_date = new Date(Object.keys(jsonData["dates"])[Object.keys(jsonData["dates"]).length - 1]);
+        var lastDate = new Date(Object.keys(jsonData["dates"])[Object.keys(jsonData["dates"]).length - 1]);
         
         var flagDuty = "";
 
         if (flagData[v] != null) {
 
             if (String($("#name").val()) == flagData[v]["singapore_flag"]) {
-                flagDuty = '<p><span class="fw-bold"></span><span class="badge bg-warning mb-1">Flag Duty</span><br><span class="fw-bold">Duty: </span><span id="">Singapore Flag</span></p>';
+                flagDuty = "<p><span class='fw-bold'></span><span class='badge bg-warning mb-1'>Flag Duty</span><br><span class='fw-bold'>Duty: </span><span id=''>Singapore Flag</span></p>";
             } else if (String($("#name").val()) == flagData[v]["school_flag"]) {
-                flagDuty = '<p><span class="fw-bold"></span><span class="badge bg-warning mb-1">Flag Duty</span><br><span class="fw-bold">Duty: </span><span id="">School Flag</span></p>';
+                flagDuty = "<p><span class='fw-bold'></span><span class='badge bg-warning mb-1'>Flag Duty</span><br><span class='fw-bold'>Duty: </span><span id=''>School Flag</span></p>";
             }
 
         }
-        if (dd.getDay() === 6 || dd.getDay() === 0 || jsonData["dates"][v] === 11 || dd < first_date || dd > last_date) {
+        if (dd.getDay() === 6 || dd.getDay() === 0 || jsonData["dates"][v] === 11 || dd < first_date || dd > lastDate) {
             var b = new Date(v);
-            var a = '<div id="' + per_dict[i]["id"] + '" class="container shadow pt-3 pb-3 mb-3 bg-white rounded-3"><h4>' + days[b.getDay()] + ", " + String(b.getDate()) + " " + months[b.getMonth()] + '</h4><p><span class="fw-bold"></span>No data is available for this day</span></p></div>'
+            var a = '<div id="' + per_dict[i]["id"] + '" class="container shadow pt-3 pb-3 mb-3 bg-white rounded-3"><h4>' + days[b.getDay()] + ", " + String(b.getDate()) + " " + months[b.getMonth()] + '</h4><p><span class="fw-bold"></span>No data is available for this day</span></p></div>';
             $(a).appendTo("#personalised");
         } else {
             $("#weekend").hide();
             var b = new Date(v);
-            var a = '<div id="' + per_dict[i]["id"] + '" class="container shadow pt-3 pb-3 mb-3 bg-white rounded-3"><h4>' + days[b.getDay()] + ", " + String(b.getDate()) + " " + months[b.getMonth()] + '</h4>' + flagDuty + '<p><span class="fw-bold"></span>' + recess_badge[nameData[String($("#name").val())][String(jsonData["dates"][v])]["recess"]] + '<br><span class="fw-bold">Duty: </span><span id="">' + duty_trans[nameData[String($("#name").val())][String(jsonData["dates"][v])]["duty"]] + '</span></p></div>'
-            var c = '<div id="' + per_dict[i]["id"] + '" class="container shadow pt-3 pb-3 mb-3 bg-white rounded-3"><h4>' + days[b.getDay()] + ", " + String(b.getDate()) + " " + months[b.getMonth()] + '</h4>' + flagDuty + '<p><span class="fw-bold"></span><span class="badge bg-warning mb-1">Morning Duty</span><br><span class="fw-bold">Duty: </span><span id="">' + duty_trans[nameData[String($("#name").val())]["morning_duty"]["duty"]] + '</span></p><p><span class="fw-bold"></span>' + recess_badge[nameData[String($("#name").val())][String(jsonData["dates"][v])]["recess"]] + '<br><span class="fw-bold">Duty: </span><span id="">' + duty_trans[nameData[String($("#name").val())][String(jsonData["dates"][v])]["duty"]] + '</span></p></div>'                    
+            var a = '<div id="' + per_dict[i]["id"] + '" class="container shadow pt-3 pb-3 mb-3 bg-white rounded-3"><h4>' + days[b.getDay()] + ", " + String(b.getDate()) + " " + months[b.getMonth()] + '</h4>' + flagDuty + '<p><span class="fw-bold"></span>' + recessBadge[nameData[String($("#name").val())][String(jsonData["dates"][v])]["recess"]] + '<br><span class="fw-bold">Duty: </span><span id="">' + duty_trans[nameData[String($("#name").val())][String(jsonData["dates"][v])]["duty"]] + '</span></p></div>';
+            var c = '<div id="' + per_dict[i]["id"] + '" class="container shadow pt-3 pb-3 mb-3 bg-white rounded-3"><h4>' + days[b.getDay()] + ", " + String(b.getDate()) + " " + months[b.getMonth()] + '</h4>' + flagDuty + '<p><span class="fw-bold"></span><span class="badge bg-warning mb-1">Morning Duty</span><br><span class="fw-bold">Duty: </span><span id="">' + duty_trans[nameData[String($("#name").val())]["morning_duty"]["duty"]] + '</span></p><p><span class="fw-bold"></span>' + recessBadge[nameData[String($("#name").val())][String(jsonData["dates"][v])]["recess"]] + '<br><span class="fw-bold">Duty: </span><span id="">' + duty_trans[nameData[String($("#name").val())][String(jsonData["dates"][v])]["duty"]] + '</span></p></div>';                    
 
             if (nameData[String($("#name").val())]["morning_duty_check"]) {
                 $(c).appendTo("#personalised");
@@ -126,14 +126,14 @@ function show_personalised() {
         $(["#date", "#date2", "#day_1", "#day_2", "#day_3", "#day_4", "#day_5"]).each(function (i,v) {$(v).hide()});
         var eT = 0;
     $.each(["#date2", "#day_1", "#day_2", "#day_3", "#day_4", "#day_5"], function (i, v) {
-        $(v).delay(eT).fadeIn('slow');
+        $(v).delay(eT).fadeIn("slow");
         eT += 200;
     });
 
 }
 
-function name_checker() {
-    if ($("#name").val() == "Overview") {
+function nameChecker() {
+    if ($("#name").val() === "Overview") {
         localStorage.setItem("name", String($("#name").val()));
         $("#personalised").hide();
         $("#date2").remove();
@@ -143,7 +143,7 @@ function name_checker() {
             $(v).hide();
         });
         $("#overview").show();
-        $("#start").attr("onchange", "update()")
+        $("#start").attr("onchange", "update()");
         update();
     } else {
         $("#overview").hide();
@@ -161,20 +161,22 @@ $.getJSON("Data/data.json?time=" + new Date().getTime(),
         var dt = new Date();
         const monthFixer = ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"];
 
-        date = String(dt.getFullYear()) + "-" + String(monthFixer[dt.getMonth()]) + "-" + String(dt.getDate());
+        var date = String(dt.getFullYear()) + "-" + String(monthFixer[dt.getMonth()]) + "-" + String(dt.getDate());
         $("#start").attr("min", Object.keys(data["dates"])[0]);
         $("#start").attr("max", Object.keys(data["dates"])[Object.keys(data["dates"]).length - 1]);
 
         function formatDate(date) {
         var d = new Date(date),
-            month = '' + (d.getMonth() + 1),
-            day = '' + d.getDate(),
+            month = "" + (d.getMonth() + 1),
+            day = "" + d.getDate(),
             year = d.getFullYear();
 
-        if (month.length < 2) 
-            month = '0' + month;
-        if (day.length < 2) 
-            day = '0' + day;
+        if (month.length < 2) {
+            month = "0" + month;
+        }
+        if (day.length < 2) {
+            day = "0" + day;
+        }
 
         return [year, month, day].join('-');
         }
@@ -215,7 +217,7 @@ function getNameData() {
                 
             });
 
-            name_checker();
+            nameChecker();
         }
     );
 }
@@ -265,8 +267,8 @@ function update() {
     var d = String($("#start").val())
     var dd = new Date(d);
     var first_date = new Date(Object.keys(jsonData["dates"])[0])
-    var last_date = new Date(Object.keys(jsonData["dates"])[Object.keys(jsonData["dates"]).length - 1]);
-    if (dd.getDay() == 6 || dd.getDay() == 0 || jsonData["dates"][String($("#start").val())] == 11 || dd < first_date || dd > last_date) {
+    var lastDate = new Date(Object.keys(jsonData["dates"])[Object.keys(jsonData["dates"]).length - 1]);
+    if (dd.getDay() == 6 || dd.getDay() == 0 || jsonData["dates"][String($("#start").val())] == 11 || dd < first_date || dd > lastDate) {
         $("#date").hide();
         $.each(["#weekend", "#recess_duty_text", "#first_recess", "#second_recess", "#third_recess", "#fourth_recess", "#morning_duty_text", "#morning_duty_block"], function (i, v) {
             $(v).hide();
