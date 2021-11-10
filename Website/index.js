@@ -17,7 +17,7 @@ function showPersonalised() {
                 var a = new Date(value);
 
                 if (String(day) === String(a)) {
-                    week = jsonData.weeks[v]
+                    week = jsonData.weeks[v];
                 }
 
             });
