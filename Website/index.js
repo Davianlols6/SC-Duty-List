@@ -210,13 +210,14 @@ function getNameData() {
             nameData = data;
 
             $.each(Object.keys(nameData), function (i, v) {
-                
+            
+            var a;
             if (localStorage.getItem("name") != null && localStorage.getItem("name") === v) {
                 $("option:selected", name_og).remove();
-                var a = "<option selected value='" + String(v) + "'>" + String(v) + "</option>";
+                a = "<option selected value='" + String(v) + "'>" + String(v) + "</option>";
                 $(a).appendTo("#name");
             } else {
-                var a = "<option value='" + String(v) + "'>" + String(v) + "</option>";
+                a = "<option value='" + String(v) + "'>" + String(v) + "</option>";
                 $(a).appendTo("#name");
             }
                 
@@ -302,20 +303,19 @@ function update() {
         var startTime = "06:00:00";
         var endTime = "08:00:00";
 
-        currentDate = new Date();
+        let currentDate = new Date();
 
-        startDate = new Date(currentDate.getTime());
+        let startDate = new Date(currentDate.getTime());
         startDate.setHours(startTime.split(":")[0]);
         startDate.setMinutes(startTime.split(":")[1]);
         startDate.setSeconds(startTime.split(":")[2]);
 
-        endDate = new Date(currentDate.getTime());
+        let endDate = new Date(currentDate.getTime());
         endDate.setHours(endTime.split(":")[0]);
         endDate.setMinutes(endTime.split(":")[1]);
         endDate.setSeconds(endTime.split(":")[2]);
 
-
-        valid = startDate < currentDate && endDate > currentDate;
+        let valid = startDate < currentDate && endDate > currentDate;
         if (valid && today(String($("#start").val()))) {
             $("#recess_duty_block").insertAfter("#morning_duty_block");
         } else {
@@ -423,14 +423,14 @@ function update() {
         var startTime = String(start);
         var endTime = String(end);
 
-        currentDate = new Date();
+        let currentDate = new Date();
 
-        startDate = new Date(currentDate.getTime());
+        let startDate = new Date(currentDate.getTime());
         startDate.setHours(startTime.split(":")[0]);
         startDate.setMinutes(startTime.split(":")[1]);
         startDate.setSeconds(startTime.split(":")[2]);
 
-        endDate = new Date(currentDate.getTime());
+        let endDate = new Date(currentDate.getTime());
         endDate.setHours(endTime.split(":")[0]);
         endDate.setMinutes(endTime.split(":")[1]);
         endDate.setSeconds(endTime.split(":")[2]);
