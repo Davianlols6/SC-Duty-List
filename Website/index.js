@@ -5,6 +5,7 @@ var nameData;
 function showPersonalised() {
     $("#updated").text(jsonData["updated"]);
     $("#date2").remove();
+    $("#version").hide();
 
     $("#personalised").empty();
 
@@ -130,7 +131,7 @@ function showPersonalised() {
     $("#personalised").show();
         $(["#date", "#date2", "#day_1", "#day_2", "#day_3", "#day_4", "#day_5"]).each(function (i,v) {$(v).hide();});
         var eT = 0;
-    $.each(["#date2", "#day_1", "#day_2", "#day_3", "#day_4", "#day_5"], function (i, v) {
+    $.each(["#date2", "#day_1", "#day_2", "#day_3", "#day_4", "#day_5", "#version"], function (i, v) {
         $(v).delay(eT).fadeIn("slow");
         eT += 200;
     });
@@ -147,7 +148,9 @@ function nameChecker() {
         $.each(["#weekend", "#recess_duty_text", "#first_recess", "#second_recess", "#third_recess", "#fourth_recess", "#morning_duty_text", "#morning_duty_block"], function (i, v) {
             $(v).hide();
         });
+        
         $("#overview").show();
+        $("#version").show();
         $("#start").attr("onchange", "update()");
         update();
     } else {
@@ -157,7 +160,7 @@ function nameChecker() {
     }
 }
 
-$.each(["#weekend", "#date", "overview"], function (i, v) {
+$.each(["#weekend", "#date", "overview", "#version"], function (i, v) {
     $(v).hide();
 });
 
@@ -182,6 +185,8 @@ $.getJSON("Data/data.json?time=" + new Date().getTime(),
         if (day.length < 2) {
             day = "0" + day;
         }
+
+        $("#version").text(data.version);
 
         return [year, month, day].join("-");
         }
@@ -270,6 +275,7 @@ function update() {
     $("#updated").text(jsonData["updated"]);
 
     $("#weekend").hide();
+    $("#version").hide();
     var d = String($("#start").val());
     var dd = new Date(d);
     var firstDate = new Date(Object.keys(jsonData["dates"])[0]);
@@ -282,6 +288,7 @@ function update() {
         updateDate();
         $("#date").fadeIn("slow");
         $("#weekend").delay(500).fadeIn("slow");
+        $("#version").delay(500).fadeIn("slow");
         return;
     }
 
@@ -470,7 +477,7 @@ function update() {
     updateRecessDuty();
 
     var eT = 0;
-    $.each(["#date", "#recess_duty_text", "#first_recess", "#second_recess", "#third_recess", "#fourth_recess", "#morning_duty_text", "#morning_duty_block"], function (i, v) {
+    $.each(["#date", "#recess_duty_text", "#first_recess", "#second_recess", "#third_recess", "#fourth_recess", "#morning_duty_text", "#morning_duty_block", "#version"], function (i, v) {
         $(v).delay(eT).fadeIn("slow");
         eT += 200;
     });
