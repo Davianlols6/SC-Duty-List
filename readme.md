@@ -1,6 +1,6 @@
 ﻿# SC Duty List Web Page
 
-The SC (Student Councillor for short) Duty List Web Page is for Student Councillors to use to easily check for their duty spots. 
+The SC (Student Councillor for short) Duty List Web Page is for Student Councillors to use to easily check for their duty spots.
 
 The website is meant for private use but I am making it public in good faith that it will help others who are looking for examples for these kinds of projects.
 
