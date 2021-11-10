@@ -10,14 +10,14 @@ function showPersonalised() {
 
     var week;
 
-    function DaysOfWeek(day) {
+    function daysOfWeek(day) {
         $(Object.keys(jsonData.weeks)).each(function (i, v) {
 
-            $(jsonData.weeks.v).each(function (b, value) {
+            $(jsonData.weeks[v]).each(function (b, value) {
                 var a = new Date(value);
 
                 if (String(day) === String(a)) {
-                    week = jsonData["weeks"][v];
+                    week = jsonData.weeks[v]
                 }
 
             });
@@ -26,7 +26,7 @@ function showPersonalised() {
     }
 
     var day = new Date(String($("#start").val()));
-    DaysOfWeek(day);
+    daysOfWeek(day);
     
 
     var perDict = {
@@ -92,24 +92,27 @@ function showPersonalised() {
         
         var flagDuty = "";
 
-        if (flagData[v] != null) {
+        if (flagData.v != null) {
 
-            if (String($("#name").val()) === flagData[v]["singapore_flag"]) {
+            if (String($("#name").val()) === flagData[v].singapore_flag) {
                 flagDuty = "<p><span class='fw-bold'></span><span class='badge bg-warning mb-1'>Flag Duty</span><br><span class='fw-bold'>Duty: </span><span id=''>Singapore Flag</span></p>";
-            } else if (String($("#name").val()) === flagData[v]["school_flag"]) {
+            } else if (String($("#name").val()) === flagData[v].school_flag) {
                 flagDuty = "<p><span class='fw-bold'></span><span class='badge bg-warning mb-1'>Flag Duty</span><br><span class='fw-bold'>Duty: </span><span id=''>School Flag</span></p>";
             }
 
         }
-        if (dd.getDay() === 6 || dd.getDay() === 0 || jsonData["dates"][v] === 11 || dd < firstDate || dd > lastDate) {
-            var b = new Date(v);
-            var a = "<div id='" + perDict[i]["id"] + "' class='container shadow pt-3 pb-3 mb-3 bg-white rounded-3'><h4>" + days[b.getDay()] + ", " + String(b.getDate()) + " " + months[b.getMonth()] + "</h4><p><span class='fw-bold'></span>No data is available for this day</span></p></div>";
+
+        var b;
+        var a;
+        if (dd.getDay() === 6 || dd.getDay() === 0 || jsonData.dates[v] === 11 || dd < firstDate || dd > lastDate) {
+            b = new Date(v);
+            a = "<div id='" + perDict[i].id + "' class='container shadow pt-3 pb-3 mb-3 bg-white rounded-3'><h4>" + days[b.getDay()] + ", " + String(b.getDate()) + " " + months[b.getMonth()] + "</h4><p><span class='fw-bold'></span>No data is available for this day</span></p></div>";
             $(a).appendTo("#personalised");
         } else {
             $("#weekend").hide();
-            var b = new Date(v);
-            var a = "<div id='" + perDict[i]["id"] + "' class='container shadow pt-3 pb-3 mb-3 bg-white rounded-3'><h4>" + days[b.getDay()] + ", " + String(b.getDate()) + " " + months[b.getMonth()] + "</h4>" + flagDuty + "<p><span class='fw-bold'></span>" + recessBadge[nameData[String($("#name").val())][String(jsonData["dates"][v])]["recess"]] + "<br><span class='fw-bold'>Duty: </span><span id=''>" + dutyTrans[nameData[String($("#name").val())][String(jsonData["dates"][v])]["duty"]] + "</span></p></div>";
-            var c = "<div id='" + perDict[i]["id"] + "' class='container shadow pt-3 pb-3 mb-3 bg-white rounded-3'><h4>" + days[b.getDay()] + ", " + String(b.getDate()) + " " + months[b.getMonth()] + "</h4>" + flagDuty + "<p><span class='fw-bold'></span><span class='badge bg-warning mb-1'>Morning Duty</span><br><span class='fw-bold'>Duty: </span><span id=''>" + dutyTrans[nameData[String($("#name").val())]["morning_duty"]["duty"]] + "</span></p><p><span class='fw-bold'></span>" + recessBadge[nameData[String($("#name").val())][String(jsonData["dates"][v])]["recess"]] + "<br><span class='fw-bold'>Duty: </span><span id=''>" + dutyTrans[nameData[String($("#name").val())][String(jsonData["dates"][v])]["duty"]] + "</span></p></div>";                    
+            b = new Date(v);
+            a = "<div id='" + perDict[i].id + "' class='container shadow pt-3 pb-3 mb-3 bg-white rounded-3'><h4>" + days[b.getDay()] + ", " + String(b.getDate()) + " " + months[b.getMonth()] + "</h4>" + flagDuty + "<p><span class='fw-bold'></span>" + recessBadge[nameData[String($("#name").val())][String(jsonData["dates"][v])]["recess"]] + "<br><span class='fw-bold'>Duty: </span><span id=''>" + dutyTrans[nameData[String($("#name").val())][String(jsonData["dates"][v])]["duty"]] + "</span></p></div>";
+            var c = "<div id='" + perDict[i].id + "' class='container shadow pt-3 pb-3 mb-3 bg-white rounded-3'><h4>" + days[b.getDay()] + ", " + String(b.getDate()) + " " + months[b.getMonth()] + "</h4>" + flagDuty + "<p><span class='fw-bold'></span><span class='badge bg-warning mb-1'>Morning Duty</span><br><span class='fw-bold'>Duty: </span><span id=''>" + dutyTrans[nameData[String($("#name").val())]["morning_duty"]["duty"]] + "</span></p><p><span class='fw-bold'></span>" + recessBadge[nameData[String($("#name").val())][String(jsonData["dates"][v])]["recess"]] + "<br><span class='fw-bold'>Duty: </span><span id=''>" + dutyTrans[nameData[String($("#name").val())][String(jsonData["dates"][v])]["duty"]] + "</span></p></div>";                    
 
             if (nameData[String($("#name").val())]["morning_duty_check"]) {
                 $(c).appendTo("#personalised");
