@@ -2,10 +2,12 @@ var jsonData;
 var flagData;
 var nameData;
 
+// This function loads out the personalised mode
 function showPersonalised() {
     $("#updated").text(jsonData["updated"]);
     $("#date2").remove();
     $("#version").hide();
+    $("#footer").hide();
     $("#weekend").hide();
     $("#personalised").empty();
 
@@ -92,8 +94,8 @@ function showPersonalised() {
         var lastDate = new Date(Object.keys(jsonData["dates"])[Object.keys(jsonData["dates"]).length - 1]);
         
         var flagDuty = "";
-
-        if (flagData.v != null) {
+        
+        if (flagData[v] != null) {
 
             if (String($("#name").val()) === flagData[v].singapore_flag) {
                 flagDuty = "<p><span class='fw-bold'></span><span class='badge bg-warning mb-1'>Flag Duty</span><br><span class='fw-bold'>Duty: </span><span id=''>Singapore Flag</span></p>";
@@ -107,13 +109,13 @@ function showPersonalised() {
         var a;
         if (dd.getDay() === 6 || dd.getDay() === 0 || jsonData.dates[v] === 11 || dd < firstDate || dd > lastDate) {
             b = new Date(v);
-            a = "<div id='" + perDict[i].id + "' class='container shadow pt-3 pb-3 mb-3 bg-white rounded-3'><h4>" + days[b.getDay()] + ", " + String(b.getDate()) + " " + months[b.getMonth()] + "</h4><p><span class='fw-bold'></span>No data is available for this day</span></p></div>";
+            a = "<div id='" + perDict[i].id + "' class='bg-black container shadow pt-3 pb-3 mb-3 bg-white rounded-3'><h4>" + days[b.getDay()] + ", " + String(b.getDate()) + " " + months[b.getMonth()] + "</h4><p><span class='fw-bold'></span>No data is available for this day</span></p></div>";
             $(a).appendTo("#personalised");
         } else {
             $("#weekend").hide();
             b = new Date(v);
-            a = "<div id='" + perDict[i].id + "' class='container shadow pt-3 pb-3 mb-3 bg-white rounded-3'><h4>" + days[b.getDay()] + ", " + String(b.getDate()) + " " + months[b.getMonth()] + "</h4>" + flagDuty + "<p><span class='fw-bold'></span>" + recessBadge[nameData[String($("#name").val())][String(jsonData["dates"][v])]["recess"]] + "<br><span class='fw-bold'>Duty: </span><span id=''>" + dutyTrans[nameData[String($("#name").val())][String(jsonData["dates"][v])]["duty"]] + "</span></p></div>";
-            var c = "<div id='" + perDict[i].id + "' class='container shadow pt-3 pb-3 mb-3 bg-white rounded-3'><h4>" + days[b.getDay()] + ", " + String(b.getDate()) + " " + months[b.getMonth()] + "</h4>" + flagDuty + "<p><span class='fw-bold'></span><span class='badge bg-warning mb-1'>Morning Duty</span><br><span class='fw-bold'>Duty: </span><span id=''>" + dutyTrans[nameData[String($("#name").val())]["morning_duty"]["duty"]] + "</span></p><p><span class='fw-bold'></span>" + recessBadge[nameData[String($("#name").val())][String(jsonData["dates"][v])]["recess"]] + "<br><span class='fw-bold'>Duty: </span><span id=''>" + dutyTrans[nameData[String($("#name").val())][String(jsonData["dates"][v])]["duty"]] + "</span></p></div>";                    
+            a = "<div id='" + perDict[i].id + "' class='bg-black container shadow pt-3 pb-3 mb-3 bg-white rounded-3'><h4>" + days[b.getDay()] + ", " + String(b.getDate()) + " " + months[b.getMonth()] + "</h4>" + flagDuty + "<p><span class='fw-bold'></span>" + recessBadge[nameData[String($("#name").val())][String(jsonData["dates"][v])]["recess"]] + "<br><span class='fw-bold'>Duty: </span><span id=''>" + dutyTrans[nameData[String($("#name").val())][String(jsonData["dates"][v])]["duty"]] + "</span></p></div>";
+            var c = "<div id='" + perDict[i].id + "' class='bg-black container shadow pt-3 pb-3 mb-3 bg-white rounded-3'><h4>" + days[b.getDay()] + ", " + String(b.getDate()) + " " + months[b.getMonth()] + "</h4>" + flagDuty + "<p><span class='fw-bold'></span><span class='badge bg-warning mb-1'>Morning Duty</span><br><span class='fw-bold'>Duty: </span><span id=''>" + dutyTrans[nameData[String($("#name").val())]["morning_duty"]["duty"]] + "</span></p><p><span class='fw-bold'></span>" + recessBadge[nameData[String($("#name").val())][String(jsonData["dates"][v])]["recess"]] + "<br><span class='fw-bold'>Duty: </span><span id=''>" + dutyTrans[nameData[String($("#name").val())][String(jsonData["dates"][v])]["duty"]] + "</span></p></div>";                    
 
             if (nameData[String($("#name").val())]["morning_duty_check"]) {
                 $(c).appendTo("#personalised");
@@ -131,13 +133,14 @@ function showPersonalised() {
     $("#personalised").show();
         $(["#date", "#date2", "#day_1", "#day_2", "#day_3", "#day_4", "#day_5"]).each(function (i,v) {$(v).hide();});
         var eT = 0;
-    $.each(["#date2", "#day_1", "#day_2", "#day_3", "#day_4", "#day_5", "#version"], function (i, v) {
+    $.each(["#date2", "#day_1", "#day_2", "#day_3", "#day_4", "#day_5", "#footer", "#version"], function (i, v) {
         $(v).delay(eT).fadeIn("slow");
         eT += 200;
     });
 
 }
 
+// This function checks whether it is in personalised or overview mode
 function nameChecker() {
     if ($("#name").val() === "Overview") {
         localStorage.setItem("name", String($("#name").val()));
@@ -151,6 +154,7 @@ function nameChecker() {
         
         $("#overview").show();
         $("#version").show();
+        $("#footer").show();
         $("#start").attr("onchange", "update()");
         update();
     } else {
@@ -160,10 +164,11 @@ function nameChecker() {
     }
 }
 
-$.each(["#weekend", "#date", "overview", "#version"], function (i, v) {
+$.each(["#weekend", "#date", "overview", "#version", "#footer"], function (i, v) {
     $(v).hide();
 });
 
+//The code block below gets data.json and processes its data
 $.getJSON("Data/data.json?time=" + new Date().getTime(),
     function (data) {
         var dt = new Date();
@@ -187,6 +192,7 @@ $.getJSON("Data/data.json?time=" + new Date().getTime(),
         }
 
         $("#version").text(data.version);
+        $("#versionurl").attr("href", data.releaseNotesURL);
 
         return [year, month, day].join("-");
         }
@@ -198,6 +204,7 @@ $.getJSON("Data/data.json?time=" + new Date().getTime(),
     }
 );
 
+// This function gets flag duty data
 function getFlagsData() {
 
     $.getJSON("Data/flag.json?time=" + new Date().getTime(),
@@ -208,6 +215,7 @@ function getFlagsData() {
     );
 }
 
+// This function gets personalised mode data
 function getNameData() {
 
     $.getJSON("Data/names.json?time=" + new Date().getTime(),
@@ -271,11 +279,14 @@ function recessTime(period) {
     blinkText();
 }
 
+// This function loads out the overview mode
 function update() {
     $("#updated").text(jsonData["updated"]);
 
     $("#weekend").hide();
     $("#version").hide();
+    $("#footer").hide();
+
     var d = String($("#start").val());
     var dd = new Date(d);
     var firstDate = new Date(Object.keys(jsonData["dates"])[0]);
@@ -289,6 +300,7 @@ function update() {
         $("#date").fadeIn("slow");
         $("#weekend").delay(500).fadeIn("slow");
         $("#version").delay(500).fadeIn("slow");
+        $("#footer").delay(500).fadeIn("slow");
         return;
     }
 
@@ -363,6 +375,7 @@ function update() {
         }
     }
 
+    // updateDate() job is to update the text on element #date in overview mode
     function updateDate() {
         var dtt = new Date(String($("#start").val()));
         var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
@@ -477,7 +490,7 @@ function update() {
     updateRecessDuty();
 
     var eT = 0;
-    $.each(["#date", "#recess_duty_text", "#first_recess", "#second_recess", "#third_recess", "#fourth_recess", "#morning_duty_text", "#morning_duty_block", "#version"], function (i, v) {
+    $.each(["#date", "#recess_duty_text", "#first_recess", "#second_recess", "#third_recess", "#fourth_recess", "#morning_duty_text", "#morning_duty_block", "#version", "#footer"], function (i, v) {
         $(v).delay(eT).fadeIn("slow");
         eT += 200;
     });
