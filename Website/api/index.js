@@ -153,7 +153,7 @@ app.get("/api/metadata", (req, res) => {
   let data = JSON.parse(rawdata);
 
   let draft = [];
-  for (key in data) {
+  for (let key in data) {
     draft.push(key);
   }
 
@@ -320,8 +320,8 @@ app.get("/api/personalised/:name/:date", (req, res) => {
                 if (String(day) === String(jsonData.weeks[v][items])) {
                     week = v;
                 }
-            };
-        };
+            }
+        }
       }
 
     daysOfWeek(day);
@@ -422,7 +422,7 @@ app.get("/api/personalised/:name/:date", (req, res) => {
         }  
            
         counter += 1; 
-        };
+        }
     
     res.send(JSON.stringify(draft));
 });
