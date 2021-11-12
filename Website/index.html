@@ -30,7 +30,6 @@
 
     <script src="https://www.davianeng.com/jquery.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
 
     <script src="https://kit.fontawesome.com/861a567b6f.js" crossorigin="anonymous"></script>
 
@@ -45,14 +44,14 @@
     <title>QTSS Student Council Duty List</title>
     <meta name="title" content="QTSS Student Council Duty List">
     <meta name="description"
-        content="Use this site to check what duties you have to do. This website was created and supported by the QTSS Third Student Council EXCO.">
+        content="Use this site to check what duties you have to do. This website was created and maintained by QTSS Third Student Council EXCO.">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.davianeng.com/sc_duty_list/">
     <meta property="og:title" content="QTSS Student Council Duty List">
     <meta property="og:description"
-        content="Use this site to check what duties you have to do. This website was created and supported by the QTSS Third Student Council EXCO.">
+        content="Use this site to check what duties you have to do. This website was created and maintained by QTSS Third Student Council EXCO.">
     <meta property="og:image" content="">
 
     <!-- Twitter -->
@@ -60,7 +59,7 @@
     <meta property="twitter:url" content="https://www.davianeng.com/sc_duty_list/">
     <meta property="twitter:title" content="QTSS Student Council Duty List">
     <meta property="twitter:description"
-        content="Use this site to check what duties you have to do. This website was created and supported by the QTSS Third Student Council EXCO.">
+        content="Use this site to check what duties you have to do. This website was created and maintained by QTSS Third Student Council EXCO.">
     <meta property="twitter:image" content="">
 
     <link rel="apple-touch-icon" sizes="180x180" href="https://www.davianeng.com/favicon/apple-touch-icon.png">
@@ -77,6 +76,8 @@
 </head>
 
 <body>
+
+    <div id="status"></div>
 
     <div class="container-fluid mb-5">
         <div class="text-center">
@@ -117,7 +118,8 @@
             </div> -->
 
             <div class="mb-5 mt-5">
-                <h5 id="date" class="text-center"></h5>
+                <div id="top"></div>
+                
                 <div class="row align-items-center mt-5">
                     <div class="col">
                         <input style="width: 100%;" type="date" id="start" onchange="update()" name="date">
@@ -130,78 +132,11 @@
                     </div>
                 </div>
             </div>
-            <div id="personalised" class="text-start"></div>
+            <div id="main" class="text-start"></div>
         </div>
 
-        <div id="overview" class="mt-5">
-            <div id="recess_duty_block">
-                <h4 id="recess_duty_text" class="bg-black container shadow pt-3 pb-3 bg-white rounded-pill text-center">
-                    Recess
-                    Duty</h4>
-                <div id="first_recess" class="bg-black container shadow pt-3 pb-3 mb-3 bg-white rounded-3">
-                    <span class="badge bg-primary mb-3">First Recess (9:10 - 9:45)</span>
-                    <p><span class="fw-bold">NB1</span><br><span id="first_nb1"></span></p>
-                    <p><span class="fw-bold">NB2</span><br><span id="first_nb2"></span></p>
-                    <p><span class="fw-bold">NB3</span><br><span id="first_nb3"></span></p>
-                    <p><span class="fw-bold">Stall</span><br><span id="first_stall"></span></p>
-                    <p><span class="fw-bold">Pond</span><br><span id="first_pond"></span></p>
-                    <p><span class="fw-bold">Lift</span><br><span id="first_lift"></span></p>
-                    <p><span class="fw-bold">Central</span><br><span id="first_central"></span></p>
-                    <p><span class="fw-bold">On Break</span><br><span id="first_on_break"></span></p>
-                </div>
-                <div id="second_recess" class="bg-black container shadow pt-3 pb-3 mb-3 bg-white rounded-3">
-                    <span class="badge bg-secondary mb-3">Second Recess (9:45 - 10:20)</span>
-                    <p><span class="fw-bold">NB1</span><br><span id="second_nb1"></span></p>
-                    <p><span class="fw-bold">NB2</span><br><span id="second_nb2"></span></p>
-                    <p><span class="fw-bold">NB3</span><br><span id="second_nb3"></span></p>
-                    <p><span class="fw-bold">Stall</span><br><span id="second_stall"></span></p>
-                    <p><span class="fw-bold">Pond</span><br><span id="second_pond"></span></p>
-                    <p><span class="fw-bold">Lift</span><br><span id="second_lift"></span></p>
-                    <p><span class="fw-bold">Central</span><br><span id="second_central"></span></p>
-                    <p><span class="fw-bold">On Break</span><br><span id="second_on_break"></span></p>
-                </div>
-                <div id="third_recess" class="bg-black container shadow pt-3 pb-3 mb-3 bg-white rounded-3">
-                    <span class="badge bg-success mb-3">Third Recess (10:20 - 10:55)</span>
-                    <p><span class="fw-bold">NB1</span><br><span id="third_nb1"></span></p>
-                    <p><span class="fw-bold">NB2</span><br><span id="third_nb2"></span></p>
-                    <p><span class="fw-bold">NB3</span><br><span id="third_nb3"></span></p>
-                    <p><span class="fw-bold">Stall</span><br><span id="third_stall"></span></p>
-                    <p><span class="fw-bold">Pond</span><br><span id="third_pond"></span></p>
-                    <p><span class="fw-bold">Lift</span><br><span id="third_lift"></span></p>
-                    <p><span class="fw-bold">Central</span><br><span id="third_central"></span></p>
-                    <p><span class="fw-bold">On Break</span><br><span id="third_on_break"></span></p>
-                </div>
-                <div id="fourth_recess" class="bg-black container shadow pt-3 pb-3 mb-5 bg-white rounded-3">
-                    <span class="badge bg-info mb-3">Fourth Recess (10:55 - 11:30)</span>
-                    <p><span class="fw-bold">NB1</span><br><span id="fourth_nb1"></span></p>
-                    <p><span class="fw-bold">NB2</span><br><span id="fourth_nb2"></span></p>
-                    <p><span class="fw-bold">NB3</span><br><span id="fourth_nb3"></span></p>
-                    <p><span class="fw-bold">Stall</span><br><span id="fourth_stall"></span></p>
-                    <p><span class="fw-bold">Pond</span><br><span id="fourth_pond"></span></p>
-                    <p><span class="fw-bold">Lift</span><br><span id="fourth_lift"></span></p>
-                    <p><span class="fw-bold">Central</span><br><span id="fourth_central"></span></p>
-                    <p><span class="fw-bold">On Break</span><br><span id="fourth_on_break"></span>
-                </div>
-            </div>
-            <div id="morning_duty_block">
-                <h4 id="morning_duty_text"
-                    class="bg-black container shadow pt-3 pb-3 bg-white rounded-pill text-center">Morning
-                    Duty</h4>
-                <div class="bg-black container shadow pt-3 pb-3 mb-5 bg-white rounded-3">
-                    <p><span class="fw-bold">Flag Raising</span><br><span>Singapore Flag: </span><spanid="morning_flag_singapore"></span><br><span>School Flag: </span><spanid="morning_flag_school"></span></p>
-                    <p><span class="fw-bold">Main Gate</span><br><span id="morning_main_gate"></span></p>
-                    <p><span class="fw-bold">Late Coming</span><br><span id="morning_late_coming"></span></p>
-                    <p><span class="fw-bold">Canteen</span><br><span id="morning_canteen"></span></p>
-                    <p><span class="fw-bold">Stairs To Hall</span><br><span id="morning_stairs_to_hall"></span></p>
-                    <p><span class="fw-bold">Side Gate</span><br><span id="morning_side_gate"></span></p>
-                    <p><span class="fw-bold">Lift</span><br><span id="morning_lift"></span></p>
-                    <p><span class="fw-bold">Morning Patrol</span><br><span id="morning_morning_patrol"></span></p>
-                    <p><span class="fw-bold">Hall</span><br><span id="morning_hall"></span></p>
-                </div>
-            </div>
-        </div>
+
     </div>
-    <h4 id="weekend" class="bg-black container shadow pt-3 pb-3 bg-white rounded-pill text-center">No data is available for this day</h4>
 </div>
 
     <footer class="text-center text-lg-start" id="footer" style="margin-top: 5rem!important;">
@@ -220,6 +155,7 @@
     </footer>
 
     <script src="index.js"></script>
+    <script src="engine.js"></script>
 
 </body>
 
