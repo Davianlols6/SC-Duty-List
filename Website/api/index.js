@@ -261,7 +261,7 @@ app.get("/api/overview/:date", (req, res) => {
 
 let draft2 = {"type": "morningBlock", "blocks": []};
 
-draft2.blocks.push({"type": "flagRaisingDuty", "singaporeFlag": flagDuty['singapore_flag'], "schoolFlag": flagDuty["school_flag"]});
+draft2.blocks.push({"type": "flagRaisingDuty", "singaporeFlag": flagDuty["singapore_flag"], "schoolFlag": flagDuty["school_flag"]});
 
 var morningDutyTrans = {
     "main_gate": "Main Gate",
