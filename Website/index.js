@@ -1,4 +1,4 @@
-var baseURL = ["", "http://localhost:3000/"][0]
+var baseURL = ["", "http://localhost:3000/"][0];
 
 $("#start").val(formatDate(new Date()));
 

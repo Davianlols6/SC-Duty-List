@@ -8,10 +8,10 @@ function engine(data) {
     if (data.type === "overview") {
         ao = overview(data.data);
     } else if (data.type === "personalised") {
-        ab = personalised(data.data)
+        ab = personalised(data.data);
     }
 
-    $('#main').children().each(function () { 
+    $("#main").children().each(function () { 
         $(this).hide();
     });
 
@@ -30,7 +30,7 @@ function engine(data) {
 
 function scrollTo(ab, et) {
     if (ab.scroll) {
-        setTimeout(function(){ document.getElementById('day' + String(ab.data)).scrollIntoView(); }, et);
+        setTimeout(function(){ document.getElementById("day" + String(ab.data)).scrollIntoView(); }, et);
     }
 }
 
@@ -61,19 +61,19 @@ function personalisedBlockText(data) {
 
 function personalised(data) {
 
-    let date = `<h4>Hello ${data.dateText}!</h4><p>Here is your duty for the week you selected</p>`
+    let date = `<h4>Hello ${data.dateText}!</h4><p>Here is your duty for the week you selected</p>`;
     $(date).appendTo("#top");
 
-    let counter = 1
+    let counter = 1;
     let today;
     $(data.blocks).each((i, v) => {
         if (v.type === "personalisedBlock") {
 
-            personalisedBlockTitleStore = [];
-            personalisedFlagDutyStore = [];
-            personalisedMorningDutyStore = [];
-            personalisedRecessDutyStore = [];
-            personalisedBlockTextStore = [];
+            let personalisedBlockTitleStore = [];
+            let personalisedFlagDutyStore = [];
+            let personalisedMorningDutyStore = [];
+            let personalisedRecessDutyStore = [];
+            let personalisedBlockTextStore = [];
 
             $(v.blocks).each((i,a) => {
                 if (a.type === "personalisedBlockTitle"){
@@ -89,26 +89,26 @@ function personalised(data) {
                 }
             });
 
-            let draft = `<div id="day${String(counter)}" class="bg-black container shadow pt-3 pb-3 mb-3 bg-white rounded-3">${personalisedBlockTextStore.join("") + personalisedBlockTitleStore.join("") + personalisedFlagDutyStore.join("") + personalisedMorningDutyStore.join("") + personalisedRecessDutyStore.join("")}</div>`
-            $(draft).appendTo("#main")
+            let draft = `<div id="day${String(counter)}" class="bg-black container shadow pt-3 pb-3 mb-3 bg-white rounded-3">${personalisedBlockTextStore.join("") + personalisedBlockTitleStore.join("") + personalisedFlagDutyStore.join("") + personalisedMorningDutyStore.join("") + personalisedRecessDutyStore.join("")}</div>`;
+            $(draft).appendTo("#main");
            if (v.today) {
-               today = counter
+               today = counter;
            }
 
-           counter += 1
+           counter += 1;
         }
     });
 
     if (today !== null) {
-        return {"scroll": true, "data": today}
+        return {"scroll": true, "data": today};
     } else {
-        return {"scroll": false}
+        return {"scroll": false};
     }
     
 }
 
 function overview(data) {
-    let date = "<h5 class='text-center'>" + data.dateText + "</h5>"
+    let date = "<h5 class='text-center'>" + data.dateText + "</h5>";
     $(date).appendTo("#top");
     let num = null;
     $(data.blocks).each((i, v) => {
@@ -165,7 +165,7 @@ function recessBlock(data) {
         }
     });
     
-    let draft = "<div id='day" + String(counter1) + "' class='bg-black container shadow pt-3 pb-3 mb-3 bg-white rounded-3'>" + recessTitleStore.join("") + dutySpotsStore.join("") + "</div>"
+    let draft = "<div id='day" + String(counter1) + "' class='bg-black container shadow pt-3 pb-3 mb-3 bg-white rounded-3'>" + recessTitleStore.join("") + dutySpotsStore.join("") + "</div>";
     $(draft).appendTo("#main");
     counter1 += 1;
     if (data.active) {
@@ -192,11 +192,11 @@ function morningBlock(data) {
         }
     });
 
-    let draft = "<div class='bg-black container shadow pt-3 pb-3 mb-5 bg-white rounded-3'>" + flagRaisingDutyStore.join("") + dutySpotsStore.join("") + "</div>"
+    let draft = "<div class='bg-black container shadow pt-3 pb-3 mb-5 bg-white rounded-3'>" + flagRaisingDutyStore.join("") + dutySpotsStore.join("") + "</div>";
     $(draft).appendTo("#main");
 }
 
 function heading(data) {
-    let draft = "<h4 class='bg-black container shadow pt-3 pb-3 bg-white rounded-pill text-center'>" + data.text + "</h4>"
+    let draft = "<h4 class='bg-black container shadow pt-3 pb-3 bg-white rounded-pill text-center'>" + data.text + "</h4>";
     $(draft).appendTo("#main");
 }

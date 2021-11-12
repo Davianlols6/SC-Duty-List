@@ -195,7 +195,7 @@ app.get("/api/overview/:date", (req, res) => {
 
   var recessDuty = jsonData["presets"][jsonData["dates"][String(d)]]["recess_duty"];
   var morningDutyData = jsonData["constants"][jsonData["presets"][jsonData["dates"][String(d)]]["constant_morning_duty"]];
-  var flagDuty = overviewFlagDuty(d)
+  var flagDuty = overviewFlagDuty(d);
 
   var recessBadge = {
     1: {"colour": "bg-primary", "text": "First Recess (9:10 - 9:45)"},
@@ -254,14 +254,14 @@ app.get("/api/overview/:date", (req, res) => {
     for (const items in recessDuty[recess]) {
         draft1.blocks.push({"type": "dutySpots", "title": dutyTrans[items], "text": listToString(recessDuty[recess][items])});
     }
-    counter1 += 1
+    counter1 += 1;
 
     draft.data.blocks.push(draft1);
 }
 
 let draft2 = {"type": "morningBlock", "blocks": []};
 
-draft2.blocks.push({"type": "flagRaisingDuty", "singaporeFlag": flagDuty['singapore_flag'], "schoolFlag": flagDuty['school_flag']})
+draft2.blocks.push({"type": "flagRaisingDuty", "singaporeFlag": flagDuty['singapore_flag'], "schoolFlag": flagDuty['school_flag']});
 
 var morningDutyTrans = {
     "main_gate": "Main Gate",
@@ -272,7 +272,7 @@ var morningDutyTrans = {
     "lift": "Lift",
     "morning_patrol": "Morning Patrol",
     "hall": "Hall"
-}
+};
 
 for (const duty in morningDutyData){
     draft2.blocks.push({"type": "dutySpots", "title": morningDutyTrans[duty], "text": listToString(morningDutyData[duty])});
@@ -308,14 +308,14 @@ app.get("/api/personalised/:name/:date", (req, res) => {
     let day = String(req.params.date);
     let name = String(req.params.name);
 
-    let draft = { "type": "personalised", "data": { "dateText": name, "blocks": [ ] } }
+    let draft = { "type": "personalised", "data": { "dateText": name, "blocks": [ ] } };
 
     let week;
 
     function daysOfWeek(day) {
         for (const v in jsonData.weeks) {
             
-            value = jsonData.weeks[v]
+            value = jsonData.weeks[v];
             for (var items in jsonData.weeks[v]) {
                 if (String(day) === String(jsonData.weeks[v][items])) {
                     week = v;
@@ -380,10 +380,10 @@ app.get("/api/personalised/:name/:date", (req, res) => {
       "December",
     ];
     
-    var flagData = overviewFlagDuty(day)
+    var flagData = overviewFlagDuty(day);
     for (const i in jsonData.weeks[week]) {
         let draft1;
-        let v = jsonData.weeks[week][i]
+        let v = jsonData.weeks[week][i];
 
         if (today(v)) {
             draft1 = {"type": "personalisedBlock", "today": true, "blocks": []};
