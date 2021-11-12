@@ -11,129 +11,7 @@ app.get("/", (req, res) => {
   res.send("Hello World!!!");
 });
 
-app.get("/api/data", (req, res) => {
-  res.send(
-    JSON.stringify({
-      type: "overview",
-      data: {
-        dateText: "Duty list for Friday, 12 November 2021",
-        blocks: [
-          { type: "heading", text: "Recess Duty" },
-          {
-            type: "recessBlock",
-            active: true,
-            blocks: [
-              {
-                type: "recessTitle",
-                colour: "bg-primary",
-                text: "First Recess (9:10 - 9:45)",
-              },
-              {
-                type: "dutySpots",
-                title: "NB1",
-                text: "Jerome, Kah Sin, Inshirah",
-              },
-            ],
-          },
-          {
-            type: "recessBlock",
-            active: false,
-            blocks: [
-              {
-                type: "recessTitle",
-                colour: "bg-primary",
-                text: "First Recess (9:10 - 9:45)",
-              },
-              {
-                type: "dutySpots",
-                title: "NB1",
-                text: "Jerome, Kah Sin, Inshirah",
-              },
-            ],
-          },
-          { type: "heading", text: "Morning Duty" },
-          {
-            type: "morningBlock",
-            blocks: [
-              {
-                type: "flagRaisingDuty",
-                singaporeFlag: "fsd",
-                schoolFlag: "fds",
-              },
-              {
-                type: "dutySpots",
-                title: "Main Gate",
-                text: "Roshini, Kah Sin, Kristine",
-              },
-              {
-                type: "dutySpots",
-                title: "Main Gate",
-                text: "Roshini, Kah Sin, Kristine",
-              },
-            ],
-          },
-        ],
-      },
-    })
-  );
-});
-
-app.get("/api/data1", (req, res) => {
-  res.send(
-    JSON.stringify({
-      type: "personalised",
-      data: {
-        dateText: "Lincoln",
-        blocks: [
-          {
-            type: "personalisedBlock",
-            today: false,
-            blocks: [
-              { type: "personalisedBlockTitle", text: "Monday, 4 October" },
-              { type: "personalisedFlagDuty", text: "School Flag" },
-              { type: "personalisedMorningDuty", text: "Canteen" },
-              {
-                type: "personalisedRecessDuty",
-                title: "Third Recess (10:20 - 10:55)",
-                text: "On Breaks",
-              },
-            ],
-          },
-          {
-            type: "personalisedBlock",
-            today: false,
-            blocks: [
-              { type: "personalisedBlockTitle", text: "Tuesday, 5 October" },
-              { type: "personalisedFlagDuty", text: "School Flag" },
-              { type: "personalisedMorningDuty", text: "Canteen" },
-              {
-                type: "personalisedRecessDuty",
-                title: "Third Recess (10:20 - 10:55)",
-                text: "On Break",
-              },
-            ],
-          },
-          {
-            type: "personalisedBlock",
-            today: true,
-            blocks: [
-              { type: "personalisedBlockTitle", text: "Wednesday, 6 October" },
-              { type: "personalisedFlagDuty", text: "School Flag" },
-              { type: "personalisedMorningDuty", text: "Canteen" },
-              {
-                type: "personalisedRecessDuty",
-                title: "Third Recess (10:20 - 10:55)",
-                text: "On Break",
-              },
-            ],
-          },
-        ],
-      },
-    })
-  );
-});
-
-app.get("/api/version", (req, res) => {
+app.get("/version", (req, res) => {
   var jsonPath = path.join(__dirname, "..", "Data", "data.json");
   let rawdata = fs.readFileSync(jsonPath);
   let data = JSON.parse(rawdata);
@@ -147,7 +25,7 @@ app.get("/api/version", (req, res) => {
   );
 });
 
-app.get("/api/metadata", (req, res) => {
+app.get("/metadata", (req, res) => {
   var jsonPath = path.join(__dirname, "..", "Data", "names.json");
   let rawdata = fs.readFileSync(jsonPath);
   let data = JSON.parse(rawdata);
@@ -172,7 +50,7 @@ app.get("/api/metadata", (req, res) => {
   );
 });
 
-app.get("/api/overview/:date", (req, res) => {
+app.get("/overview/:date", (req, res) => {
   var jsonPath = path.join(__dirname, "..", "Data", "data.json");
   let rawdata = fs.readFileSync(jsonPath);
   let jsonData = JSON.parse(rawdata);
@@ -296,7 +174,7 @@ res.send(JSON.stringify(draft));
 
 });
 
-app.get("/api/personalised/:name/:date", (req, res) => {
+app.get("/personalised/:name/:date", (req, res) => {
     var jsonPath = path.join(__dirname, "..", "Data", "data.json");
     let rawdata = fs.readFileSync(jsonPath);
     let jsonData = JSON.parse(rawdata);
