@@ -19,7 +19,7 @@ function engine(data) {
     $("#top").fadeIn("slow");
 
     let eT = 0;
-    $('#main').children().each(function () { 
+    $("#main").children().each(function () { 
         $(this).delay(eT).fadeIn("slow");
         eT += 200;
     });

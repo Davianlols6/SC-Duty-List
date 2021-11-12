@@ -261,7 +261,7 @@ app.get("/api/overview/:date", (req, res) => {
 
 let draft2 = {"type": "morningBlock", "blocks": []};
 
-draft2.blocks.push({"type": "flagRaisingDuty", "singaporeFlag": flagDuty['singapore_flag'], "schoolFlag": flagDuty['school_flag']});
+draft2.blocks.push({"type": "flagRaisingDuty", "singaporeFlag": flagDuty['singapore_flag'], "schoolFlag": flagDuty["school_flag"]});
 
 var morningDutyTrans = {
     "main_gate": "Main Gate",
@@ -414,7 +414,7 @@ app.get("/api/personalised/:name/:date", (req, res) => {
         draft1.blocks.push({"type": "personalisedRecessDuty", "colour": recessBadge[nameData[name][String(jsonData["dates"][v])]["recess"]].colour, "title": recessBadge[nameData[name][String(jsonData["dates"][v])]["recess"]].text, "text": dutyTrans[nameData[name][String(jsonData["dates"][v])]["duty"]]});
         //console.log(dutyTrans[nameData[name]["morning_duty"]["duty"]]);
         if (nameData[name]["morning_duty_check"]) {
-            draft1.blocks.push({"type": "personalisedMorningDuty", "text": dutyTrans[nameData[name]["morning_duty"]["duty"]]})
+            draft1.blocks.push({"type": "personalisedMorningDuty", "text": dutyTrans[nameData[name]["morning_duty"]["duty"]]});
         }
     }
 
