@@ -38,7 +38,7 @@ if (online) {
 }
 
 function showPersonalised() {
-  if ($("#name") !== "Overview") {
+  if ($("#name").val() !== "Overview") {
 
   if (online) {
   $.getJSON(`${baseURL}personalised/${$("#name").val()}/${$("#start").val()}`, function (data) {
@@ -55,6 +55,7 @@ localStorage.setItem("name", String($("#name").val()));
 function nameChecker() {
   if ($("#name").val() === "Overview") {
     localStorage.setItem("name", String($("#name").val()));
+    $("#start").attr("onchange", "update();");
     update();
   } else {
     $("#start").attr("onchange", "showPersonalised()");
@@ -73,7 +74,8 @@ function version() {
 }
 
   function process(data) {
-    $("#versionurl").attr("href", data.releaseNotesURL);
+    $("#versionurl").text("");
+    $(`<span>View the latest release details </span><a style="color: inherit;" target="_blank" href="${data.releaseNotesURL}">here</a><span>.</span>`).prependTo("#versionurl");
     $("#version").text(data.version);
     $("#updated").text(data.updated);
     checkUpdate();
