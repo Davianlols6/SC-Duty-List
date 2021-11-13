@@ -31,7 +31,7 @@
     <script src="https://www.davianeng.com/jquery.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
-    <script src="https://kit.fontawesome.com/861a567b6f.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://kit.fontawesome.com/861a567b6f.js" crossorigin="anonymous"></script> -->
 
     <meta name="keywords"
         content="SC Duty List, Student Council Duty List, QTSS Student Council Duty List, QTSS SC Duty List">
@@ -80,8 +80,48 @@
     <div id="status"></div>
 
     <div class="container-fluid mb-5">
+
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+            <symbol id="check-circle-fill" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+            </symbol>
+            <symbol id="info-fill" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+            </symbol>
+            <symbol id="exclamation-triangle-fill" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+            </symbol>
+          </svg>
+        
         <div class="text-center">
-            <div id="alert" class="mt-3 alert alert-warning alert-dismissible fade show text-start" role="alert">
+            <div id="offlineBanner" class="position-sticky top-0">
+                <div class="pt-1">
+                    <div id="alert1" class="mt-3 d-flex alert alert-danger alert-dismissible fade show text-start" role="alert">
+                        <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:"><use xlink:href="#exclamation-triangle-fill"/></svg>
+    
+                        <div>
+                            <small>You are currently in <b>Offline Mode</b>. Please note that the data displayed <b>may not be up to date</b>.</small>
+                    </div>
+                        <button onclick="$('#offlineBanner').fadeOut();" type="button" class="btn-close" aria-label="Close"></button>
+                    </div>
+            </div>
+            </div>
+
+            <div id="updateBanner" class="position-sticky top-0">
+                <div class="pt-1">
+                    <div id="" class="mt-3 d-flex alert alert-info alert-dismissible fade show text-start" role="alert">
+                        <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:"><use xlink:href="#info-fill"/></svg>
+    
+                        <div>
+                        <small><b>An update is avaliable.</b> Press the install button below to ensure that you have the latest version.</small><hr>
+                        <button type="button" class="btn btn-warning" onclick="window.location.reload(true);"><small>Install Update</small></button>
+                    </div>
+                        <button onclick="$('#updateBanner').fadeOut();" type="button" class="btn-close" aria-label="Close"></button>
+                    </div>
+            </div>
+            </div>
+
+            <div id="alert" style="z-index: 0;" class="mt-3 alert alert-warning alert-dismissible fade show text-start" role="alert">
                 You can change "Overview" to your own name for a more personalised view. You can also select the date to
                 check the duty list for that specific date.<br><br>If you change to personalised view mode, the website
                 will remember it and will always show you the personalised view. To set it back, just select
@@ -144,11 +184,12 @@
         <div class="text-center p-3 figure-caption" style="background-color: rgba(0, 0, 0, 0.2);">
             <a class="btn btn-outline-light btn-floating m-1" style="background-color: #212222; outline-color: inherit;"
                 href="https://github.com/Davianlols6/SC-Duty-List" target="_blank" role="button">
-                <i class="fab fa-github fa-lg"></i>
+                <svg style="height: 23px;" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" class="svg-inline--fa fa-github fa-w-16" role="img" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+                <!-- <i class="fab fa-github fa-lg"></i> -->
             </a><br>
             <span id="version"></span><br>
             View the latest release details
-            <a style="color: inherit;" target="_blank" href="https://mdbootstrap.com/" id="versionurl">here</a>.<br>
+            <a style="color: inherit;" target="_blank" href="" id="versionurl">here</a>.<br>
             <span id="updated"></span>
         </div>
         <!-- Copyright -->
@@ -156,6 +197,29 @@
 
     <script src="index.js"></script>
     <script src="engine.js"></script>
+    <script src="offline.js"></script>
+
+    <script>
+        if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("service-worker.js")
+
+navigator.serviceWorker.register('service-worker.js').then(reg => {
+  reg.onupdatefound = () => {
+    const installingWorker = reg.installing;
+    installingWorker.onstatechange = () => {
+        window.location.reload(true);
+      if (installingWorker.state === 'installed' &&
+          navigator.serviceWorker.controller) {
+        console.log("Registered:", registration);
+      }
+    };
+  };
+}).catch(function(error) {
+    console.log("Registration failed: ", error);
+  });
+
+        }
+    </script>
 
 </body>
 
