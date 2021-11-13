@@ -144,11 +144,27 @@ function formatDate(date) {
 
 function checkUpdate() {
   if (online) {
+    let realData;
+    let cacheData;
+
     $.getJSON(`${baseURL}version`, function (data) {
-      if (data.version !== $("#version").text()) {
+      realData = data;
+      two();
+  });
+
+  function two() {
+  $.getJSON(`Data/data.json`, function (data) {
+      cacheData = data;
+      process();
+    });
+  }
+
+    function process() {
+      if (realData.version !== cacheData.version) {
         $("#updateBanner").fadeIn();
       }
-  });
+    }
+
   }
 }
 
