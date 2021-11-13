@@ -10,7 +10,6 @@ function engine(data) {
     } else if (data.type === "personalised") {
         ab = personalised(data.data);
     }
-
     $("#main").children().each(function () { 
         $(this).hide();
     });
