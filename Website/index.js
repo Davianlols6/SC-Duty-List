@@ -76,6 +76,7 @@ function version() {
     $("#versionurl").attr("href", data.releaseNotesURL);
     $("#version").text(data.version);
     $("#updated").text(data.updated);
+    checkUpdate();
   }
 
 }
@@ -164,7 +165,6 @@ function updateOnlineStatus() {
     }
 }
 
-checkUpdate();
 $("#updateBanner").hide();
 
 setInterval(function(){ checkUpdate(); }, 300000)
