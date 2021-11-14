@@ -130,16 +130,6 @@
 
         <div class="text-center" id="homediv">
 
-            <div id="alert" style="z-index: 0;" class="mt-3 alert alert-warning alert-dismissible fade show text-start" role="alert">
-                You can change "Overview" to your own name for a more personalised view. You can also select the date to
-                check the duty list for that specific date.<br><br>If you change to personalised view mode, the website
-                will remember it and will always show you the personalised view. To set it back, just select
-                "Overview"<br><small class="fw-bold">Click the X button to close and to never
-                    see this message again</small>
-                <button type="button" onclick="no_alert(1)" class="btn-close" data-bs-dismiss="alert"
-                    aria-label="Close"></button>
-            </div>
-
             <script>
                 $("#alert").hide();
                 var alerted = localStorage.getItem('alert_level') || '';

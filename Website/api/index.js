@@ -20,10 +20,21 @@ app.get("/version", (req, res) => {
   const queryObject = url.parse(req.url,true).query;
   const event = new Date();
 
-  var jsonPath1 = path.join(__dirname, "..", "log.txt");
-  fs.appendFile(jsonPath1, JSON.stringify({"time": event.toISOString(), "userAgent": req.headers['user-agent'], "type": queryObject.type, "uuid": queryObject.uuid}) + "\n\n", function (err) {
-    if (err) throw err;
-  });
+  var jsonPath1 = path.join(__dirname, "..", "log.json");
+
+fs.readFile(jsonPath1, 'utf8', function readFileCallback(err, data){
+  if (err){
+      console.log(err);
+  } else {
+  obj = JSON.parse(data); //now it an object
+  obj.data.push({"time": event.toISOString(), "userAgent": req.headers['user-agent'], "type": queryObject.type, "uuid": queryObject.uuid}); //add some data
+  json = JSON.stringify(obj); //convert it back to json
+  fs.writeFile(jsonPath1, json, 'utf8', err => {
+    if (err) {
+     console.error('Failed to write starter kits file: ', err);
+    } else console.log('Fetched 1 file: ');
+   }); // write it back 
+}});
 
   res.send(
     JSON.stringify({
