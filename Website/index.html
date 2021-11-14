@@ -121,17 +121,18 @@
             </div>
             </div>
 
-            <div id="alert12">
             <div class="mt-3 d-flex alert alert-info alert-dismissible fade show text-start" role="alert">
                 <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:"><use xlink:href="#info-fill"/></svg>
 
                 <div>
-                <small><b>Did you know</b> that you can install this website as an web app for a better experience? To automatically install, click on the button below. If the button does not work, you may do it manually. Click <a target="_blank" href="https://mobilesyrup.com/2020/05/24/how-install-progressive-web-app-pwa-android-ios-pc-mac/">here</a> for more information.</small><hr>
+                <small><b>Did you know</b> that you can install this website as a web app for a better experience? <span id="installtext">On iOS, in Safari, under this website, press the share button. Tap on the "Add to Home Screen" button and wait for a few seconds for the logo to load in before pressing the add button.</span> Click <a target="_blank" href="https://mobilesyrup.com/2020/05/24/how-install-progressive-web-app-pwa-android-ios-pc-mac/">here</a> for more information.</small>
+                <span id="alert12">
+                <hr>
                 <button type="button" id="pwainstall" class="btn btn-warning"><small>Install App</small></button>
+                </span>
             </div>
                 <button type="button" class="btn-close" aria-label="Close" data-bs-dismiss="alert"></button>
             </div>
-        </div>
 
             <script>
                 let deferredPrompt;
@@ -143,6 +144,7 @@ window.addEventListener('beforeinstallprompt', (e) => {
   // Stash the event so it can be triggered later.
   deferredPrompt = e;
   $("#alert12").fadeIn();
+  $("#installtext").text("To automatically install, click on the button below. If the button does not work, you may do it manually.");
 });
 
 var buttonInstall = document.getElementById("pwainstall");
