@@ -2,6 +2,8 @@ const express = require("express");
 const cors = require("cors");
 const fs = require("fs");
 const path = require("path");
+const { v4: uuidv4 } = require('uuid');
+const url = require('url');
 
 const app = express();
 
@@ -15,6 +17,13 @@ app.get("/version", (req, res) => {
   var jsonPath = path.join(__dirname, "..", "Data", "data.json");
   let rawdata = fs.readFileSync(jsonPath);
   let data = JSON.parse(rawdata);
+  const queryObject = url.parse(req.url,true).query;
+  const event = new Date();
+
+  var jsonPath1 = path.join(__dirname, "..", "log.txt");
+  fs.appendFile(jsonPath1, JSON.stringify({"time": event.toISOString(), "userAgent": req.headers['user-agent'], "type": queryObject.type, "uuid": queryObject.uuid}) + "\n\n", function (err) {
+    if (err) throw err;
+  });
 
   res.send(
     JSON.stringify({
@@ -303,6 +312,10 @@ app.get("/personalised/:name/:date", (req, res) => {
         }
     
     res.send(JSON.stringify(draft));
+});
+
+app.get("/getuuid", (req, res) => {
+  res.send(JSON.stringify({"uuid": uuidv4()}));
 });
 
 function checkTimeValid(start, end) {
