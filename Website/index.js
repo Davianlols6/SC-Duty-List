@@ -143,11 +143,12 @@ function formatDate(date) {
 }
 
 function checkUpdate() {
+  
   if (online) {
     let realData;
     let cacheData;
 
-    $.getJSON(`${baseURL}version`, function (data) {
+    $.getJSON(`${baseURL}version?type=${type}&uuid=${localStorage.getItem("uuid")}`, function (data) {
       realData = data;
       two();
   });
@@ -170,6 +171,11 @@ function checkUpdate() {
 
 if (online) {
   $("#offlineBanner").hide();
+  if (localStorage.getItem("uuid") === null) {
+    $.getJSON(`${baseURL}getuuid`, function (data) {
+      localStorage.setItem("uuid", data.uuid);
+      });
+  }
 }
 
 function updateOnlineStatus() {

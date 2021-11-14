@@ -1,14 +1,31 @@
 {
   "background_color": "white",
-  "description": "Use this site to check what duties you have to do. This website was created and supported by the QTSS Third Student Council EXCO.",
+  "description": "Use this site to check what duties you have to do. This website was created and maintained by QTSS Third Student Council EXCO.",
   "display": "fullscreen",
   "icons": [
     {
-      "src": "https://www.davianeng.com/favicon/favicon.png",
-      "sizes": "32x32",
+      "src": "https://www.davianeng.com/sc_duty_list/icons/icon-192x192.png",
+      "sizes": "192x192",
       "type": "image/png"
-    }
+  },
+  {
+      "src": "https://www.davianeng.com/sc_duty_list/icons/icon-256x256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+  },
+  {
+      "src": "https://www.davianeng.com/sc_duty_list/icons/icon-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png"
+  },
+  {
+      "src": "https://www.davianeng.com/sc_duty_list/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+  }
   ],
+  "start_url": "/sc_duty_list/app.html",
+  "scope": "/sc_duty_list/",
   "name": "SC Duty List",
   "short_name": "Duty List"
 }

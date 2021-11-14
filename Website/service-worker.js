@@ -38,6 +38,8 @@ var whitelistPath = [
     "/favicon/favicon-32x32.png",
     "/sc_duty_list/Data/flag.json",
     "/sc_duty_list/Data/names.json",
+    "/app.html",
+    "/app.js"
 ]
 
 function blacklisted(event) {

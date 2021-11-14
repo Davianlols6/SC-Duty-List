@@ -21,6 +21,8 @@
 
     <!-- Bootstrap CSS -->
     <meta name="color-scheme" content="light dark">
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="white">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)"  content="#222222">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-dark-5@1.1.3/dist/css/bootstrap-dark.min.css" rel="stylesheet">
 
     <!-- Bootstrap Bundle with Popper -->
@@ -79,6 +81,12 @@
 
     <div id="status"></div>
 
+    <div class="pb-3">
+    <div class="container-fluid text-center shadow-sm py-1 fixed-top bg-body lead fs-6 fw-bold">
+        <span id="titleBar"></span>
+    </div>
+    </div>
+
     <div class="container-fluid mb-5">
 
         <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -92,73 +100,45 @@
               <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
             </symbol>
           </svg>
-        
-        <div class="text-center">
-            <div id="offlineBanner" class="position-sticky top-0">
-                <div class="pt-1">
-                    <div id="alert1" class="mt-3 d-flex alert alert-danger alert-dismissible fade show text-start" role="alert">
-                        <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:"><use xlink:href="#exclamation-triangle-fill"/></svg>
-    
-                        <div>
-                            <small>You are currently in <b>Offline Mode</b>. Please note that the data displayed <b>may not be up to date</b>.</small>
-                    </div>
-                        <button onclick="$('#offlineBanner').fadeOut();" type="button" class="btn-close" aria-label="Close"></button>
-                    </div>
-            </div>
-            </div>
+          
+          <div id="offlineBanner" class="position-sticky top-0">
+            <div class="pt-1">
+                <div id="alert1" class="mt-3 d-flex alert alert-danger alert-dismissible fade show text-start" role="alert">
+                    <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:"><use xlink:href="#exclamation-triangle-fill"/></svg>
 
-            <div id="updateBanner" class="position-sticky top-0">
-                <div class="pt-1">
-                    <div id="" class="mt-3 d-flex alert alert-info alert-dismissible fade show text-start" role="alert">
-                        <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:"><use xlink:href="#info-fill"/></svg>
-    
-                        <div>
-                        <small><b>An update is avaliable.</b> Press the install button below to ensure that you have the latest version.</small><hr>
-                        <button type="button" class="btn btn-warning" onclick="window.location.reload(true);"><small>Install Update</small></button>
-                    </div>
-                        <button onclick="$('#updateBanner').fadeOut();" type="button" class="btn-close" aria-label="Close"></button>
-                    </div>
-            </div>
-            </div>
-
-            <div id="alert12">
-            <div class="mt-3 d-flex alert alert-info alert-dismissible fade show text-start" role="alert">
-                <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:"><use xlink:href="#info-fill"/></svg>
-
-                <div>
-                <small><b>Did you know</b> that you can install this website as an web app for a better experience? To automatically install, click on the button below. If the button does not work, you may do it manually. Click <a target="_blank" href="https://mobilesyrup.com/2020/05/24/how-install-progressive-web-app-pwa-android-ios-pc-mac/">here</a> for more information.</small><hr>
-                <button type="button" id="pwainstall" class="btn btn-warning"><small>Install App</small></button>
-            </div>
-                <button type="button" class="btn-close" aria-label="Close" data-bs-dismiss="alert"></button>
-            </div>
+                    <div>
+                        <small>You are currently in <b>Offline Mode</b>. Please note that the data displayed <b>may not be up to date</b>.</small>
+                </div>
+                    <button onclick="$('#offlineBanner').fadeOut();" type="button" class="btn-close" aria-label="Close"></button>
+                </div>
+        </div>
         </div>
 
-            <script>
-                let deferredPrompt;
-                $("#alert12").hide();
+        <div id="updateBanner" class="position-sticky top-0">
+            <div class="pt-1">
+                <div id="" class="mt-3 d-flex alert alert-info alert-dismissible fade show text-start" role="alert">
+                    <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:"><use xlink:href="#info-fill"/></svg>
 
-window.addEventListener('beforeinstallprompt', (e) => {
-  // Prevent the mini-infobar from appearing on mobile
-  e.preventDefault();
-  // Stash the event so it can be triggered later.
-  deferredPrompt = e;
-  $("#alert12").fadeIn();
-});
+                    <div>
+                    <small><b>An update is avaliable.</b> Press the install button below to ensure that you have the latest version.</small><hr>
+                    <button type="button" class="btn btn-warning" onclick="window.location.reload(true);"><small>Install Update</small></button>
+                </div>
+                    <button onclick="$('#updateBanner').fadeOut();" type="button" class="btn-close" aria-label="Close"></button>
+                </div>
+        </div>
+        </div>
 
-var buttonInstall = document.getElementById("pwainstall");
+        <div class="text-center" id="homediv">
 
-buttonInstall.addEventListener('click', async () => {
-
-  // Show the install prompt
-  deferredPrompt.prompt();
-  // Wait for the user to respond to the prompt
-  const { outcome } = await deferredPrompt.userChoice;
-  // Optionally, send analytics event with outcome of user choice
-  console.log(`User response to the install prompt: ${outcome}`);
-  // We've used the prompt, and can't use it again, throw it away
-  deferredPrompt = null;
-});
-            </script>
+            <div id="alert" style="z-index: 0;" class="mt-3 alert alert-warning alert-dismissible fade show text-start" role="alert">
+                You can change "Overview" to your own name for a more personalised view. You can also select the date to
+                check the duty list for that specific date.<br><br>If you change to personalised view mode, the website
+                will remember it and will always show you the personalised view. To set it back, just select
+                "Overview"<br><small class="fw-bold">Click the X button to close and to never
+                    see this message again</small>
+                <button type="button" onclick="no_alert(1)" class="btn-close" data-bs-dismiss="alert"
+                    aria-label="Close"></button>
+            </div>
 
             <script>
                 $("#alert").hide();
@@ -186,6 +166,7 @@ buttonInstall.addEventListener('click', async () => {
                 </div>
             </div> -->
 
+
             <div class="mb-5 mt-5">
                 <div id="top"></div>
                 
@@ -204,17 +185,26 @@ buttonInstall.addEventListener('click', async () => {
             <div id="main" class="text-start"></div>
         </div>
 
+        <div class="text-center mt-5 mx-2" id="settingsdiv">
+            <div class="list-group text-start dark" style="border-radius: 10px">
+                <a onclick="settings('about')" class="dark list-group-item list-group-item-action position-relative">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="position-absolute top-50 start-0 translate-middle-y mx-3 symb bi bi-info-circle" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                        <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                      </svg>
+                    <span class="ms-4">About</span> <span class="position-absolute top-50 end-0 translate-middle-y me-3 fs-5" style="color: #D3D3D3;">＞</span></a>
+              </div>
+        </div>
 
-    </div>
-</div>
-
-    <footer class="text-center text-lg-start" id="footer" style="margin-top: 5rem!important;">
-        <!-- Copyright -->
-        <div class="text-center p-3 figure-caption" style="background-color: rgba(0, 0, 0, 0.2);">
+        <div class="text-center mt-5 mx-2" id="settingsabout">
+            <div class="text-start" style="color: #147EFB;"><a onclick="menuBarChange('settings')"><span class="fs-5">< </span><span class="">Back</span></a></div>
+               
+            <div class="mt-3">
+        <footer class="text-center text-lg-start align-middle" id="footer">
+        <div class="text-center p-3 figure-caption">
             <a class="btn btn-outline-light btn-floating m-1" style="background-color: #212222; outline-color: inherit;"
                 href="https://github.com/Davianlols6/SC-Duty-List" target="_blank" role="button">
                 <svg style="height: 23px;" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" class="svg-inline--fa fa-github fa-w-16" role="img" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
-                <!-- <i class="fab fa-github fa-lg"></i> -->
             </a><br>
             <span id="version" class="placeholder-glow"><span class="placeholder col-1"></span></span><br>
             
@@ -222,15 +212,78 @@ buttonInstall.addEventListener('click', async () => {
             <br>
             <span id="updated" class="placeholder-glow"><span class="placeholder col-4"></span></span>
         </div>
-        <!-- Copyright -->
     </footer>
+</div>
+        </div>
+
+    </div>
+</div>
+
+    <div class="pt-5">
+        <div class="container-fluid text-center shadow-sm py-1 fixed-bottom bg-body fs-6">
+            <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                <symbol id="house" viewBox="0 0 24 24">
+                    <path d="M 12 2.0996094 L 1 12 L 4 12 L 4 21 L 11 21 L 11 15 L 13 15 L 13 21 L 20 21 L 20 12 L 23 12 L 12 2.0996094 z M 12 4.7910156 L 18 10.191406 L 18 11 L 18 19 L 15 19 L 15 13 L 9 13 L 9 19 L 6 19 L 6 10.191406 L 12 4.7910156 z"></path>
+                </symbol>
+                <symbol id="house-fill" viewBox="0 0 24 24">
+                    <path d="M 12 2.0996094 L 1 12 L 4 12 L 4 21 L 10 21 L 10 15 L 14 15 L 14 21 L 20 21 L 20 12 L 23 12 L 12 2.0996094 z"></path>
+                </symbol>
+                <symbol id="gear" viewBox="0 0 16 16">
+                    <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z"/>
+                    <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z"/>
+                </symbol>
+                <symbol id="gear-fill" viewBox="0 0 16 16">
+                    <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"/>
+                </symbol>
+              </svg>
+            <div class="row align-items-center">
+                <div class="col">
+                    <svg onclick="menuBarChange('home')" class="symb" x="0px" y="0px" width="24" height="24"><use id="housebox" xlink:href="#house-fill"/></svg>
+                    <div onclick="menuBarChange('home')" style="font-size: 2vh;"><span class="figure-caption">Home</span></div>
+                </div>
+                <div class="col">
+                    <svg onclick="menuBarChange('settings')" class="symb" x="0px" y="0px" width="23" height="23"><use id="gearbox" xlink:href="#gear"/></svg>
+                    <div onclick="menuBarChange('settings')"style="font-size: 2vh;"><span class="figure-caption">Settings</span></div>
+                </div>
+            </div>
+            <style>
+                @media (prefers-color-scheme: dark) {
+                    .symb {
+                        fill:#ffffff;
+                    }
+
+                    .dark {
+                        background-color: #000000;
+                    }
+
+                    .list-group-item {
+                        border: 1px solid rgba(256,256,256,0.4);
+                    }
+                }
+                @media (prefers-color-scheme: light) {
+                    .symb {
+                        fill:#000000;
+                    }
+
+                    .dark {
+                        background-color: #ffffff;
+                    }
+
+                    .list-group-item {
+                        border: 1px solid rgba(0,0,0,.125);
+                    }
+                }
+            </style>
+        </div>
+    </div>
 
     <script src="index.js"></script>
     <script src="engine.js"></script>
     <script src="offline.js"></script>
+    <script src="app.js"></script>
 
     <script>
-        const type = "website";
+        const type = "pwa";
         if ("serviceWorker" in navigator) {
   navigator.serviceWorker.register("service-worker.js")
 
