@@ -17,6 +17,10 @@ function menuBarChange(data) {
         $("#settingsdiv").show();
         $("#titleBar").text("Settings");
 
+        if (localStorage.getItem("settings") === null) {
+            localStorage.setItem("settings", "none");
+        }
+
         if (inSettings) {
             localStorage.setItem("settings", "none");
         } else if (localStorage.getItem("settings") !== "none") {
