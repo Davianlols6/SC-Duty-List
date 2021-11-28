@@ -39,7 +39,9 @@ var whitelistPath = [
     "/sc_duty_list/Data/flag.json",
     "/sc_duty_list/Data/names.json",
     "/app.html",
-    "/app.js"
+    "/acknowledgment.html",
+    "/app.js",
+    "/walkthrough.html"
 ]
 
 function blacklisted(event) {

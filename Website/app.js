@@ -35,14 +35,30 @@ function settings(data) {
     hideAll();
     
     if (data === "about") {
-        $("#titleBar").text("Settings > About");
+        $("#titleBar").text("About");
         $("#settingsabout").show();
         localStorage.setItem("settings", "about");
+    } else if (data === "theme") {
+        $("#titleBar").text("Settings > Theme");
+        $("#settingstheme").show();
+        localStorage.setItem("settings", "theme");
+    } else if (data === "acknowledgment") {
+        $("#titleBar").text("Acknowledgment");
+        $("#settingsacknowledgment").show();
+        localStorage.setItem("settings", "acknowledgment");
+    } else if (data === "update") {
+        $("#titleBar").text("Settings > Update");
+        $("#settingsupdate").show();
+        localStorage.setItem("settings", "update");
+    } else if (data === "walkthrough") {
+        $("#titleBar").text("Settings > Walkthrough");
+        $("#settingswalkthrough").show();
+        localStorage.setItem("settings", "walkthrough");
     }
 }
 
 function hideAll() {
-    let a = ["#settingsdiv", "#homediv", "#settingsabout"];
+    let a = ["#settingsdiv", "#homediv", "#settingsabout", "#settingstheme", "#settingsacknowledgment", "#settingsupdate", "#settingswalkthrough"];
 
     a.forEach(function(item) {
         $(item).hide();

@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="background-color: rgba(var(--bs-body-rgb-alt),var(--bs-bg-opacity))!important;">
 
 <head>
+    <meta charset="UTF-8">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
     <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-172906175-1"></script>
@@ -22,8 +23,10 @@
     <!-- Bootstrap CSS -->
     <meta name="color-scheme" content="light dark">
     <meta name="theme-color" media="(prefers-color-scheme: light)" content="white">
-    <meta name="theme-color" media="(prefers-color-scheme: dark)"  content="#222222">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-dark-5@1.1.3/dist/css/bootstrap-dark.min.css" rel="stylesheet">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#222222">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap-dark-5@1.1.3/dist/css/bootstrap-dark.min.css" rel="stylesheet"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-dark-5@1.1.3/dist/css/bootstrap-nightshade.min.css"
+        rel="stylesheet">
 
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
@@ -82,50 +85,64 @@
     <div id="status"></div>
 
     <div class="pb-3">
-    <div class="container-fluid text-center shadow-sm py-1 fixed-top bg-body lead fs-6 fw-bold">
-        <span id="titleBar"></span>
-    </div>
+        <div id="titleBarHead" class="container-fluid text-center shadow-sm py-1 fixed-top lead fs-6 fw-bold">
+            <span id="titleBar"></span>
+        </div>
     </div>
 
     <div class="container-fluid mb-5">
 
         <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
             <symbol id="check-circle-fill" fill="currentColor" viewBox="0 0 16 16">
-              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                <path
+                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
             </symbol>
             <symbol id="info-fill" fill="currentColor" viewBox="0 0 16 16">
-              <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+                <path
+                    d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
             </symbol>
             <symbol id="exclamation-triangle-fill" fill="currentColor" viewBox="0 0 16 16">
-              <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                <path
+                    d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
             </symbol>
-          </svg>
-          
-          <div id="offlineBanner" class="position-sticky top-0">
+        </svg>
+
+        <div id="offlineBanner" class="position-sticky top-0">
             <div class="pt-1">
-                <div id="alert1" class="mt-3 d-flex alert alert-danger alert-dismissible fade show text-start" role="alert">
-                    <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:"><use xlink:href="#exclamation-triangle-fill"/></svg>
+                <div id="alert1" class="mt-3 d-flex alert alert-danger alert-dismissible fade show text-start"
+                    role="alert">
+                    <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:">
+                        <use xlink:href="#exclamation-triangle-fill" />
+                    </svg>
 
                     <div>
-                        <small>You are currently in <b>Offline Mode</b>. Please note that the data displayed <b>may not be up to date</b>.</small>
+                        <small>You are currently in <b>Offline Mode</b>. Please note that the data displayed <b>may not
+                                be up to date</b>. A check for updates will occur once you are online. Alternatively, you can go to settings > updates to manually check for updates.</small>
+                    </div>
+                    <button onclick="$('#offlineBanner').fadeOut();" type="button" class="btn-close"
+                        aria-label="Close"></button>
                 </div>
-                    <button onclick="$('#offlineBanner').fadeOut();" type="button" class="btn-close" aria-label="Close"></button>
-                </div>
-        </div>
+            </div>
         </div>
 
         <div id="updateBanner" class="position-sticky top-0">
             <div class="pt-1">
                 <div id="" class="mt-3 d-flex alert alert-info alert-dismissible fade show text-start" role="alert">
-                    <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:"><use xlink:href="#info-fill"/></svg>
+                    <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:">
+                        <use xlink:href="#info-fill" />
+                    </svg>
 
                     <div>
-                    <small><b>An update is avaliable.</b> Press the install button below to ensure that you have the latest version.</small><hr>
-                    <button type="button" class="btn btn-warning" onclick="window.location.reload(true);"><small>Install Update</small></button>
+                        <small><b>An update is avaliable.</b> Press the install button below to ensure that you have the
+                            latest version.</small>
+                        <hr>
+                        <button type="button" class="btn btn-warning"
+                            onclick="window.location.reload(true);"><small>Install Update</small></button>
+                    </div>
+                    <button onclick="$('#updateBanner').fadeOut();" type="button" class="btn-close"
+                        aria-label="Close"></button>
                 </div>
-                    <button onclick="$('#updateBanner').fadeOut();" type="button" class="btn-close" aria-label="Close"></button>
-                </div>
-        </div>
+            </div>
         </div>
 
         <div class="text-center" id="homediv">
@@ -159,7 +176,7 @@
 
             <div class="mb-5 mt-5">
                 <div id="top"></div>
-                
+
                 <div class="row align-items-center mt-5">
                     <div class="col">
                         <input style="width: 100%;" type="date" id="start" onchange="update()" name="date">
@@ -176,94 +193,212 @@
         </div>
 
         <div class="text-center mt-5 mx-2" id="settingsdiv">
-            <div class="list-group text-start dark" style="border-radius: 10px">
-                <a onclick="settings('about')" class="dark list-group-item list-group-item-action position-relative">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="position-absolute top-50 start-0 translate-middle-y mx-3 symb bi bi-info-circle" viewBox="0 0 16 16">
-                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                        <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
-                      </svg>
-                    <span class="ms-4">About</span> <span class="position-absolute top-50 end-0 translate-middle-y me-3 fs-5" style="color: #D3D3D3;">＞</span></a>
-              </div>
+
+            <div class="list-group text-start dark-class mb-3" style="border-radius: 10px">
+                <a onclick="settings('theme')"
+                    class="dark-class list-group-item list-group-item-action position-relative">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                        class="position-absolute top-50 start-0 translate-middle-y mx-3 symb bi bi-info-circle"
+                        viewBox="0 0 100 100">
+                        <path xmlns="http://www.w3.org/2000/svg"
+                            d="M50,77.62A27.62,27.62,0,1,0,22.38,50,27.61,27.61,0,0,0,50,77.62ZM50,26A24,24,0,1,1,26,50,24,24,0,0,1,50,26ZM69.62,50.52A19.36,19.36,0,0,0,50.26,31.15V69.88A19.36,19.36,0,0,0,69.62,50.52Zm-19.88,31a1.81,1.81,0,0,0-1.81,1.81V95.69a1.81,1.81,0,0,0,3.62,0V83.3A1.81,1.81,0,0,0,49.74,81.49Zm24.9-9A1.81,1.81,0,0,0,72.09,75l8.76,8.76a1.81,1.81,0,0,0,2.55-2.56Zm6.85-22.19a1.81,1.81,0,0,0,1.81,1.81H95.69a1.81,1.81,0,1,0,0-3.62H83.3A1.81,1.81,0,0,0,81.49,50.26ZM75,27.91l8.76-8.76a1.81,1.81,0,0,0-2.56-2.55l-8.76,8.76A1.81,1.81,0,0,0,75,27.91Zm-24.75-9.4a1.81,1.81,0,0,0,1.81-1.81V4.31a1.81,1.81,0,0,0-3.62,0V16.7A1.81,1.81,0,0,0,50.26,18.51Zm-24.9,9A1.81,1.81,0,0,0,27.91,25l-8.76-8.76a1.81,1.81,0,1,0-2.55,2.56Zm-21,24H16.7a1.81,1.81,0,0,0,0-3.62H4.31a1.81,1.81,0,1,0,0,3.62Zm22,20a1.78,1.78,0,0,0-1.28.53l-8.76,8.76a1.8,1.8,0,0,0,0,2.56,1.82,1.82,0,0,0,2.56,0l8.76-8.77a1.81,1.81,0,0,0-1.28-3.08Z" />
+                    </svg>
+                    <span class="ms-4">Theme</span> <span
+                        class="position-absolute top-50 end-0 translate-middle-y me-3 fs-5"
+                        style="color: #D3D3D3;">＞</span></a>
+            </div>
+
+            <div class="list-group text-start dark-class mb-3" style="border-radius: 10px">
+                <a onclick="settings('update')"
+                    class="dark-class list-group-item list-group-item-action position-relative">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                        class="position-absolute top-50 start-0 translate-middle-y mx-3 symb bi bi-info-circle"
+                        viewBox="0 0 100 100">
+                        <g xmlns="http://www.w3.org/2000/svg"><path d="M89.8,49c0,0.1,1.5-1.3,1.5-1.2h8.7L84.9,65.3L69.6,47.8h8.7c0-0.1,1.9,1.3,1.9,1.2c0-16.7-12.9-30.2-28.8-30.2   c-7.2,0-13.8,2.8-18.8,7.4l-6.4-7.6c6.8-6.2,15.6-9.9,25.2-9.9C72.6,8.7,89.8,26.8,89.8,49z"/><path d="M10.2,51c0-0.1-1.5,1.3-1.5,1.2H0l15.1-17.5l15.3,17.5h-8.7c0,0.1-1.9-1.3-1.9-1.2c0,16.7,12.9,30.2,28.8,30.2   c7.2,0,13.8-2.8,18.8-7.4l6.4,7.6c-6.8,6.2-15.6,9.9-25.2,9.9C27.4,91.3,10.2,73.2,10.2,51z"/></g>                    </svg>
+                    <span class="ms-4">Update</span> <span
+                        class="position-absolute top-50 end-0 translate-middle-y me-3 fs-5"
+                        style="color: #D3D3D3;">＞</span></a>
+            </div>
+
+            <div class="list-group text-start dark-class" style="border-radius: 10px">
+
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSea5lGPcb_Pn28J9wPY5SjV_h6muB8ZseeScRwJdzTskvA5zQ/viewform?usp=sf_link" target="_blank"
+                    class="dark-class list-group-item list-group-item-action position-relative">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23"
+                        class="position-absolute top-50 start-0 translate-middle-y mx-3 symb bi bi-info-circle"
+                        viewBox="0 0 100 100">
+                        <g xmlns="http://www.w3.org/2000/svg" data-name="Group"><path data-name="Compound Path" d="M95.5,91.9A18.9,18.9,0,0,0,83.1,74.2a11.6,11.6,0,1,0-12.9,0A18.9,18.9,0,0,0,57.8,91.9v3.7H95.5Zm-18.9-35A7.6,7.6,0,1,1,69,64.5,7.6,7.6,0,0,1,76.7,56.9ZM61.8,91.5a14.9,14.9,0,0,1,29.8,0Z"/><path data-name="Compound Path" d="M42.2,43.5A18.9,18.9,0,0,0,29.8,25.7a11.6,11.6,0,1,0-12.9,0A18.9,18.9,0,0,0,4.5,43.5v3.7H42.2ZM23.3,8.5a7.6,7.6,0,1,1-7.6,7.6A7.6,7.6,0,0,1,23.3,8.5ZM8.5,43.1a14.9,14.9,0,0,1,29.8,0Z"/><polygon data-name="Path" points="63.8 3.4 50.2 17 63.8 30.6 66.6 27.8 57.8 19 84 19 84 45 88 45 88 15 57.8 15 66.6 6.2 63.8 3.4"/><polygon data-name="Path" points="36.2 96.6 49.8 83 36.2 69.4 33.4 72.2 42.2 81 16 81 16 55 12 55 12 85 42.2 85 33.4 93.8 36.2 96.6"/></g>                    </svg>
+                    <span class="ms-4">Feedback</span> <span
+                        class="position-absolute top-50 end-0 translate-middle-y me-3 fs-5"
+                        style="color: #D3D3D3;">＞</span>
+                </a>
+
+                <a onclick="settings('walkthrough')"
+                    class="dark-class list-group-item list-group-item-action position-relative">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23"
+                        class="position-absolute top-50 start-0 translate-middle-y mx-3 symb bi bi-info-circle"
+                        viewBox="0 0 24 24">
+                        <path xmlns="http://www.w3.org/2000/svg" d="M3,5V18h7.99994v1h2.00012V18H21V5ZM4,17V6h7.5V17Zm16,0H12.5V6H20ZM10,9H5.5V8H10Zm0,2H5.5V10H10Zm0,2H5.5V12H10Zm8.5-4H14V8h4.5Zm0,2H14V10h4.5Zm0,2H14V12h4.5ZM10,15H5.5V14H10Zm8.5,0H14V14h4.5Z"/>
+                    </svg>
+                    <span class="ms-4">Walkthrough</span> <span
+                        class="position-absolute top-50 end-0 translate-middle-y me-3 fs-5"
+                        style="color: #D3D3D3;">＞</span>
+                </a>
+
+                <a onclick="settings('about')"
+                    class="dark-class list-group-item list-group-item-action position-relative">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                        class="position-absolute top-50 start-0 translate-middle-y mx-3 symb bi bi-info-circle"
+                        viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                        <path
+                            d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                    </svg>
+                    <span class="ms-4">About</span> <span
+                        class="position-absolute top-50 end-0 translate-middle-y me-3 fs-5"
+                        style="color: #D3D3D3;">＞</span></a>
+
+                <a onclick="settings('acknowledgment')"
+                    class="dark-class list-group-item list-group-item-action position-relative">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                        class="position-absolute top-50 start-0 translate-middle-y mx-3 symb bi bi-info-circle"
+                        viewBox="0 0 100 100">
+                        <path xmlns="http://www.w3.org/2000/svg"
+                            d="M75.038,57.913l19.07-29.891l-2.381-1.519l-18.74,29.375L57.71,41.351c-0.502-0.474-1.338-0.502-1.868-0.028l-9.231,8.506  c-0.53,0.53-1.227,0.809-1.952,0.809c-0.725,0-1.422-0.279-1.952-0.809c-0.53-0.53-0.809-1.227-0.809-1.952s0.279-1.422,0.809-1.952  l9.34-9.339H62.94l11.481-17.999l-2.381-1.519L61.391,33.761H35.22L21.085,19.626l-1.997,1.997l14.962,14.962h14.146l-7.443,7.443  c-2.12,2.12-2.12,5.634,0,7.781c2.119,2.12,5.606,2.12,7.781,0.028l8.255-7.558l15.897,15.116c0.112,0.112,0.223,0.195,0.39,0.251  l0.446,0.167l-0.111,0.446c-0.084,0.614-0.362,1.171-0.781,1.618c-1.088,1.088-2.873,1.088-3.932,0l-7.446-7.446  c-0.53-0.53-1.394-0.53-1.924,0c-0.111,0.112-0.195,0.223-0.251,0.39c-0.111,0.279-0.167,0.586-0.084,0.892  c0.056,0.223,0.167,0.474,0.362,0.641l10.207,10.207c0.53,0.53,0.809,1.227,0.809,1.952s-0.279,1.422-0.809,1.952  c-0.53,0.53-1.227,0.809-1.952,0.809c-0.725,0-1.422-0.279-1.952-0.809L55.452,60.259c-0.251-0.251-0.614-0.418-0.976-0.418  c-0.362,0-0.697,0.139-0.976,0.418c-0.251,0.251-0.418,0.614-0.418,0.976c0,0.363,0.14,0.697,0.418,0.976l10.207,10.207  c0.53,0.53,0.809,1.227,0.809,1.952c0,0.725-0.279,1.422-0.809,1.952s-1.227,0.809-1.952,0.809c-0.725,0-1.422-0.279-1.952-0.809  L49.567,66.116c-0.53-0.53-1.394-0.53-1.924,0c-0.53,0.53-0.53,1.394,0,1.924l7.446,7.446c0.53,0.53,0.809,1.227,0.809,1.952  c0,0.725-0.279,1.422-0.809,1.952c-0.53,0.53-1.227,0.809-1.952,0.809c-0.725,0-1.422-0.279-1.952-0.809l-3.626-3.542l0.056-0.335  c0.028-0.223,0.056-0.502,0.056-0.725c0-1.199-0.474-2.343-1.311-3.207l-0.474-0.474c-0.391-0.39-0.809-0.697-1.311-0.892  l-0.502-0.223l0.14-0.53c0.474-1.618,0.056-3.319-1.143-4.49l-0.474-0.474c-0.725-0.725-1.646-1.171-2.622-1.283l-0.502-0.056  l-0.056-0.502c-0.111-1.032-0.586-1.924-1.283-2.622l-0.474-0.474c-1.004-1.004-2.37-1.45-3.765-1.283l-0.502,0.056l-0.167-0.474  c-0.223-0.641-0.586-1.227-1.088-1.729l-0.474-0.474c-1.189-1.189-2.951-1.615-4.58-1.113L7.889,35.351l-1.997,1.997l18.895,18.895  L21.77,59.26c-1.43,1.773-1.344,4.402,0.299,6.019l0.474,0.474c0.502,0.502,1.087,0.837,1.729,1.088l0.474,0.167L24.69,67.51  c-0.167,1.394,0.279,2.789,1.283,3.765l0.474,0.474c0.725,0.725,1.646,1.171,2.622,1.283l0.502,0.056l0.056,0.502  c0.111,1.032,0.586,1.924,1.283,2.622l0.474,0.474c0.837,0.837,1.98,1.311,3.207,1.311c0.446,0,0.865-0.056,1.311-0.195l0.53-0.139  l0.223,0.502c0.223,0.502,0.53,0.948,0.893,1.311l0.474,0.474c0.837,0.837,1.98,1.311,3.207,1.311c1.199,0,2.343-0.474,3.207-1.311  l1.729-1.729l3.096,3.096c1.06,1.06,2.426,1.618,3.876,1.618c1.45,0,2.873-0.586,3.877-1.618c0.53-0.53,0.948-1.143,1.227-1.841  l0.251-0.641l0.614,0.335c0.781,0.446,1.701,0.641,2.594,0.641c1.45,0,2.873-0.586,3.877-1.618c0.976-0.976,1.562-2.287,1.617-3.653  l0.028-0.586l0.586-0.028c1.367-0.056,2.677-0.641,3.654-1.618c1.06-1.06,1.617-2.426,1.617-3.877c0-0.892-0.223-1.813-0.641-2.594  l-0.335-0.614l0.641-0.251c0.697-0.251,1.311-0.669,1.841-1.227c1.238-1.238,1.803-3.025,1.527-4.76L75.038,57.913z M25.638,64.387  c-0.502,0-0.948-0.167-1.283-0.53l-0.474-0.474c-0.362-0.363-0.53-0.781-0.53-1.283c0-0.502,0.167-0.948,0.53-1.283l3.263-3.263  c0.363-0.363,0.781-0.53,1.283-0.53c0.502,0,0.948,0.167,1.283,0.53l0.474,0.474c0.362,0.363,0.53,0.781,0.53,1.283  c0,0.502-0.167,0.948-0.53,1.283l-3.263,3.263C26.587,64.191,26.14,64.387,25.638,64.387z M30.77,69.909  c-0.362,0.335-0.781,0.474-1.199,0.474c-0.474,0-0.948-0.167-1.283-0.53l-0.474-0.474c-0.697-0.697-0.697-1.841,0-2.538l5.355-5.355  c0.697-0.697,1.841-0.697,2.538,0l0.474,0.474c0.669,0.669,0.697,1.785,0.056,2.482l-0.056,0.056L30.77,69.909z M35.79,74.789  c-0.362,0.363-0.781,0.53-1.283,0.53s-0.948-0.167-1.283-0.53l-0.474-0.474c-0.362-0.363-0.53-0.781-0.53-1.283  s0.167-0.948,0.53-1.283l5.355-5.355c0.362-0.363,0.781-0.53,1.283-0.53c0.502,0,0.948,0.167,1.283,0.53l0.474,0.474  c0.697,0.697,0.697,1.841,0,2.538L35.79,74.789z M44.407,76.1l-1.952,1.952c-0.362,0.363-0.781,0.53-1.283,0.53  c-0.502,0-0.948-0.167-1.283-0.53l-0.474-0.474c-0.362-0.363-0.53-0.781-0.53-1.283c0-0.502,0.167-0.948,0.53-1.283l1.952-1.952  c0.362-0.363,0.781-0.53,1.283-0.53c0.502,0,0.948,0.167,1.283,0.53l0.474,0.474c0.363,0.363,0.53,0.781,0.53,1.283  C44.937,75.319,44.742,75.765,44.407,76.1z" />
+                    </svg>
+                    <span class="ms-4">Acknowledgment</span> <span
+                        class="position-absolute top-50 end-0 translate-middle-y me-3 fs-5"
+                        style="color: #D3D3D3;">＞</span>
+                </a>
+            </div>
         </div>
 
         <div class="text-center mt-5 mx-2" id="settingsabout">
-            <div class="text-start" style="color: #147EFB;"><a onclick="menuBarChange('settings')"><span class="fs-5">< </span><span class="">Back</span></a></div>
-               
+            <div class="text-start" style="color: #147EFB;"><a onclick="menuBarChange('settings')"><span class="fs-5">&lt; </span><span class="">Back</span></a></div>
+
             <div class="mt-3">
-        <footer class="text-center text-lg-start align-middle" id="footer">
-        <div class="text-center p-3 figure-caption">
-            <a class="btn btn-outline-light btn-floating m-1" style="background-color: #212222; outline-color: inherit;"
-                href="https://github.com/Davianlols6/SC-Duty-List" target="_blank" role="button">
-                <svg style="height: 23px;" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" class="svg-inline--fa fa-github fa-w-16" role="img" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
-            </a><br>
-            <span id="version" class="placeholder-glow"><span class="placeholder col-1"></span></span><br>
-            
-            <span id="versionurl" class="placeholder-glow"><span class="placeholder col-3"></span></span>
-            <br>
-            <span id="updated" class="placeholder-glow"><span class="placeholder col-4"></span></span>
-        </div>
-    </footer>
-</div>
+                <footer class="text-center text-lg-start align-middle" id="footer">
+                    <div class="text-center p-3 figure-caption">
+                        <a class="btn btn-outline-light btn-floating m-1"
+                            style="background-color: #212222; outline-color: inherit;"
+                            href="https://github.com/Davianlols6/SC-Duty-List" target="_blank" role="button">
+                            <svg style="height: 23px;" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                focusable="false" data-prefix="fab" data-icon="github"
+                                class="svg-inline--fa fa-github fa-w-16" role="img" viewBox="0 0 496 512">
+                                <path fill="currentColor"
+                                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+                            </svg>
+                        </a><br>
+                        <span id="version" class="placeholder-glow"><span class="placeholder col-1"></span></span><br>
+                        <span class="placeholder-glow">Code licensed <a style="color: inherit;" target="_blank"
+                                href="https://github.com/Davianlols6/SC-Duty-List/blob/main/LICENSE">MIT</a></span>
+                        <br>
+                        <span id="versionurl" class="placeholder-glow"><span class="placeholder col-3"></span></span>
+                        <br>
+                        <span id="updated" class="placeholder-glow"><span class="placeholder col-4"></span></span>
+                    </div>
+                </footer>
+            </div>
         </div>
 
+        <div class="text-center mt-5 mx-2" id="settingstheme">
+            <div class="text-start" style="color: #147EFB;"><a onclick="menuBarChange('settings')"><span class="fs-5">&lt; </span><span class="">Back</span></a></div>
+
+            <div class="mt-3">
+                <ul class="list-group text-start dark-class" style="border-radius: 10px;">
+                    <li class="list-group-item" id="themeDevice" onclick="changeThemeSettings('auto')">Use Device
+                        Settings</li>
+                    <li class="list-group-item" id="themeLight" onclick="changeThemeSettings('light')">Always use Light
+                        Mode</li>
+                    <li class="list-group-item" id="themeDark" onclick="changeThemeSettings('dark')">Always use Dark
+                        Mode</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="text-center mt-5 mx-2" id="settingsacknowledgment">
+            <div class="text-start" style="color: #147EFB;"><a onclick="menuBarChange('settings')"><span class="fs-5">&lt; </span><span class="">Back</span></a></div>
+
+            <div class="mt-3" id="acknowledgmentbox">
+
+            </div>
+
+            <script>
+                $.get("/acknowledgment.html", function (data) {
+                    $("#acknowledgmentbox").html(data);
+                });
+            </script>
+        </div>
+
+        <div class="text-center mt-5 mx-2" id="settingsupdate">
+            <div class="text-start" style="color: #147EFB;"><a onclick="menuBarChange('settings')"><span class="fs-5">&lt; </span><span class="">Back</span></a></div>
+
+            <div class="mt-3">
+                <ul class="list-group text-start dark-class" style="border-radius: 10px;">
+                    <li class="list-group-item" onclick="checkUpdate()" id="checkUpdateButton">Check for updates</li>
+                </ul>
+                <div class="figure-caption text-start mt-2">Last checked: <span id="lastCheckText">-</span></div>
+                <ul class="list-group text-start dark-class mt-3" style="border-radius: 10px;">
+                    <li class="list-group-item" style="color: red;" onclick="window.location.reload(true);" id="forceUpdateButton">Force Update</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="text-center mt-5 mx-2" id="settingswalkthrough">
+            <div class="text-start" style="color: #147EFB;"><a onclick="menuBarChange('settings')"><span class="fs-5">&lt; </span><span class="">Back</span></a></div>
+
+            <div class="mt-3" id="walkthroughbox">
+
+            </div>
+
+            <script>
+                $.get("/walkthrough.html", function (data) {
+                    $("#walkthroughbox").html(data);
+                });
+            </script>
+        </div>
     </div>
-</div>
 
     <div class="pt-5">
-        <div class="container-fluid text-center shadow-sm py-1 fixed-bottom bg-body fs-6">
+        <div class="container-fluid text-center shadow-sm py-1 fixed-bottom bg-white fs-6">
             <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
                 <symbol id="house" viewBox="0 0 24 24">
-                    <path d="M 12 2.0996094 L 1 12 L 4 12 L 4 21 L 11 21 L 11 15 L 13 15 L 13 21 L 20 21 L 20 12 L 23 12 L 12 2.0996094 z M 12 4.7910156 L 18 10.191406 L 18 11 L 18 19 L 15 19 L 15 13 L 9 13 L 9 19 L 6 19 L 6 10.191406 L 12 4.7910156 z"></path>
+                    <path
+                        d="M 12 2.0996094 L 1 12 L 4 12 L 4 21 L 11 21 L 11 15 L 13 15 L 13 21 L 20 21 L 20 12 L 23 12 L 12 2.0996094 z M 12 4.7910156 L 18 10.191406 L 18 11 L 18 19 L 15 19 L 15 13 L 9 13 L 9 19 L 6 19 L 6 10.191406 L 12 4.7910156 z">
+                    </path>
                 </symbol>
                 <symbol id="house-fill" viewBox="0 0 24 24">
-                    <path d="M 12 2.0996094 L 1 12 L 4 12 L 4 21 L 10 21 L 10 15 L 14 15 L 14 21 L 20 21 L 20 12 L 23 12 L 12 2.0996094 z"></path>
+                    <path
+                        d="M 12 2.0996094 L 1 12 L 4 12 L 4 21 L 10 21 L 10 15 L 14 15 L 14 21 L 20 21 L 20 12 L 23 12 L 12 2.0996094 z">
+                    </path>
                 </symbol>
                 <symbol id="gear" viewBox="0 0 16 16">
-                    <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z"/>
-                    <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z"/>
+                    <path
+                        d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z" />
+                    <path
+                        d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z" />
                 </symbol>
                 <symbol id="gear-fill" viewBox="0 0 16 16">
-                    <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"/>
+                    <path
+                        d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z" />
                 </symbol>
-              </svg>
+            </svg>
             <div class="row align-items-center">
                 <div class="col">
-                    <svg onclick="menuBarChange('home')" class="symb" x="0px" y="0px" width="24" height="24"><use id="housebox" xlink:href="#house-fill"/></svg>
-                    <div onclick="menuBarChange('home')" style="font-size: 2vh;"><span class="figure-caption">Home</span></div>
+                    <svg onclick="menuBarChange('home')" class="symb" x="0px" y="0px" width="24" height="24">
+                        <use id="housebox" xlink:href="#house-fill" />
+                    </svg>
+                    <div onclick="menuBarChange('home')" style="font-size: 2vh;"><span
+                            class="figure-caption">Home</span></div>
                 </div>
                 <div class="col">
-                    <svg onclick="menuBarChange('settings')" class="symb" x="0px" y="0px" width="23" height="23"><use id="gearbox" xlink:href="#gear"/></svg>
-                    <div onclick="menuBarChange('settings')"style="font-size: 2vh;"><span class="figure-caption">Settings</span></div>
+                    <svg onclick="menuBarChange('settings')" class="symb" x="0px" y="0px" width="23" height="23">
+                        <use id="gearbox" xlink:href="#gear" />
+                    </svg>
+                    <div onclick="menuBarChange('settings')" style="font-size: 2vh;"><span
+                            class="figure-caption">Settings</span></div>
                 </div>
             </div>
-            <style>
-                @media (prefers-color-scheme: dark) {
-                    .symb {
-                        fill:#ffffff;
-                    }
-
-                    .dark {
-                        background-color: #000000;
-                    }
-
-                    .list-group-item {
-                        border: 1px solid rgba(256,256,256,0.4);
-                    }
-                }
-                @media (prefers-color-scheme: light) {
-                    .symb {
-                        fill:#000000;
-                    }
-
-                    .dark {
-                        background-color: #ffffff;
-                    }
-
-                    .list-group-item {
-                        border: 1px solid rgba(0,0,0,.125);
-                    }
-                }
-            </style>
         </div>
     </div>
 
@@ -275,26 +410,26 @@
     <script>
         const type = "pwa";
         if ("serviceWorker" in navigator) {
-  navigator.serviceWorker.register("service-worker.js")
+            navigator.serviceWorker.register("service-worker.js")
 
-navigator.serviceWorker.register('service-worker.js').then(reg => {
-  reg.onupdatefound = () => {
-    const installingWorker = reg.installing;
-    installingWorker.onstatechange = () => {
-        window.location.reload(true);
-      if (installingWorker.state === 'installed' &&
-          navigator.serviceWorker.controller) {
-        console.log("Registered:", registration);
-      }
-    };
-  };
-}).catch(function(error) {
-    console.log("Registration failed: ", error);
-  });
+            navigator.serviceWorker.register('service-worker.js').then(reg => {
+                reg.onupdatefound = () => {
+                    const installingWorker = reg.installing;
+                    installingWorker.onstatechange = () => {
+                        window.location.reload(true);
+                        if (installingWorker.state === 'installed' &&
+                            navigator.serviceWorker.controller) {
+                            console.log("Registered:", registration);
+                        }
+                    };
+                };
+            }).catch(function (error) {
+                console.log("Registration failed: ", error);
+            });
 
         }
     </script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-dark-5@1.1.3/dist/js/darkmode.min.js"></script>
 </body>
 
 </html>
