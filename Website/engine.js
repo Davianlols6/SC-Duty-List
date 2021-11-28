@@ -14,6 +14,8 @@ function engine(data) {
         $(this).hide();
     });
 
+    updateThemeClass();
+
     $("#main").show();
     $("#top").fadeIn("slow");
 
@@ -88,7 +90,7 @@ function personalised(data) {
                 }
             });
 
-            let draft = `<div id="day${String(counter)}" class="bg-black container shadow pt-3 pb-3 mb-3 bg-white rounded-3">${personalisedBlockTextStore.join("") + personalisedBlockTitleStore.join("") + personalisedFlagDutyStore.join("") + personalisedMorningDutyStore.join("") + personalisedRecessDutyStore.join("")}</div>`;
+            let draft = `<div id="day${String(counter)}" class="container shadow pt-3 pb-3 mb-3 bg-white rounded-3">${personalisedBlockTextStore.join("") + personalisedBlockTitleStore.join("") + personalisedFlagDutyStore.join("") + personalisedMorningDutyStore.join("") + personalisedRecessDutyStore.join("")}</div>`;
             $(draft).appendTo("#main");
            if (v.today) {
                today = counter;
@@ -164,7 +166,7 @@ function recessBlock(data) {
         }
     });
     
-    let draft = "<div id='day" + String(counter1) + "' class='bg-black container shadow pt-3 pb-3 mb-3 bg-white rounded-3'>" + recessTitleStore.join("") + dutySpotsStore.join("") + "</div>";
+    let draft = "<div id='day" + String(counter1) + "' class='container shadow pt-3 pb-3 mb-3 bg-white rounded-3'>" + recessTitleStore.join("") + dutySpotsStore.join("") + "</div>";
     $(draft).appendTo("#main");
     counter1 += 1;
     if (data.active) {
@@ -191,11 +193,11 @@ function morningBlock(data) {
         }
     });
 
-    let draft = "<div class='bg-black container shadow pt-3 pb-3 mb-5 bg-white rounded-3'>" + flagRaisingDutyStore.join("") + dutySpotsStore.join("") + "</div>";
+    let draft = "<div class='container shadow pt-3 pb-3 mb-5 bg-white rounded-3'>" + flagRaisingDutyStore.join("") + dutySpotsStore.join("") + "</div>";
     $(draft).appendTo("#main");
 }
 
 function heading(data) {
-    let draft = "<h4 class='bg-black container shadow pt-3 pb-3 bg-white rounded-pill text-center'>" + data.text + "</h4>";
+    let draft = "<h4 class='container shadow pt-3 pb-3 bg-white rounded-pill text-center'>" + data.text + "</h4>";
     $(draft).appendTo("#main");
 }
