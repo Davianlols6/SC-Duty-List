@@ -33,12 +33,14 @@ function updateThemeClass() {
     $(".dark-class").css("background-color", "#000000");
     $(".list-group-item").css("border", "1px solid rgba(256,256,256,0.4)");
     $("#titleBarHead").css("background-color", "#222222");
+    document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#222222');
   } else if (localStorage.getItem("bs.prefers-color-scheme") === "light") {
   $(".bg-black").addClass( "bg-white" ).removeClass("bg-black");
   $(".symb").css("fill", "#000000");
   $(".dark-class").css("background-color", "#ffffff");
   $(".list-group-item").css("border", "1px solid rgba(0,0,0,.125)");
   $("#titleBarHead").css("background-color", "#ffffff");
+  document.querySelector('meta[name="theme-color"]').setAttribute('content',  'white');
   }
 }
 
