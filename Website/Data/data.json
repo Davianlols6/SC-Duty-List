@@ -1,6 +1,6 @@
 {
   "updated": "Data is accurate as of 10 November 2021",
-  "version": "Version 2.3.3",
+  "version": "Version 2.3.3.1",
   "releaseNotesURL": "https://github.com/Davianlols6/SC-Duty-List/releases/tag/v2.3.3",
   "weeks": {
     "1": [
@@ -922,13 +922,13 @@
   },
   "constants": {
     "morning_duty": {
-      "main_gate": ["Roshini", "Kah Sin", "Kristine"],
-      "late_coming": ["Inshirah", "Nethra", "Jin Wei"],
-      "canteen": ["Xin Rong", "Daryll", "Amelia"],
-      "stairs_to_hall": ["Sabith", "Gladys", "Xin Hui"],
-      "side_gate": ["Chang Yi", "Charlene"],
-      "lift": ["Jing Ting", "Cheslyn"],
-      "morning_patrol": ["Tiffany (Sec 2)", "Clement", "Li Xuan"],
+      "main_gate": ["Vera", "Megan"],
+      "late_coming": ["Jing Ting", "Anaqi", "Nethra"],
+      "canteen": ["Amelia", "Ally"],
+      "stairs_to_hall": ["Jervis", "Clement", "Chloe Koh"],
+      "side_gate": ["Lincoln", "Charlene"],
+      "lift": ["Firdaus", "Daryll"],
+      "morning_patrol": ["Kah Sin", "Tiffany", "Inshirah"],
       "hall": ["Suspended until further notice"]
     }
   }
