@@ -1,0 +1,14 @@
+{
+  "name": "duty-list-csv-parser",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Davian Eng Hong Rui",
+  "license": "MIT",
+  "dependencies": {
+    "csv": "^6.0.5"
+  }
+}
