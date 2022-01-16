@@ -3,13 +3,21 @@ import json
 
 startDate = datetime.strptime(input("Input Start Date (YYYY-MM-DD): "), "%Y-%m-%d")
 endDate = datetime.strptime(input("Input End Date (YYYY-MM-DD): "), "%Y-%m-%d")
-holiday = bool(input("Is it holiday? (True/False): "))
+holiday = input("Is it holiday? (true/false): ")
 startFromWeek = int(input("Start from which week? (Default is 0): "))
 
 normalDays = ["1", "2", "3", "4", "5", "11", "11", "6", "7", "8", "9", "10"]
 
 if endDate < startDate:
     print("End date cannot be earlier than start date.")
+    exit()
+
+if holiday == "true":
+    holiday = True
+elif holiday == "false":
+    holiday = False
+else:
+    print("Invalid input for holiday")
     exit()
 
 data = {"weeks": {}, "dates": {}}
@@ -24,6 +32,7 @@ while startDate != endDate:
 
     if holiday:
         data["dates"][datetime.strftime(startDate + timedelta(days=1), "%Y-%m-%d")] = 11
+        print(holiday)
     else:
         data["dates"][datetime.strftime(startDate + timedelta(days=1), "%Y-%m-%d")] = int(normalDays[counter1])
         counter1 += 1
@@ -43,5 +52,5 @@ while startDate != endDate:
 
     startDate += timedelta(days=1)
 
-with open("Duty List Helper/Helper 1/helper1output.json", 'w') as f:
+with open("./helper1output.json", 'w') as f:
     f.write(json.dumps(data))

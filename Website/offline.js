@@ -43,7 +43,8 @@ function offlineOverview(date) {
       1: {"colour": "bg-primary", "text": "First Recess (9:10 - 9:45)"},
       2: {"colour": "bg-secondary", "text": "Second Recess (9:45 - 10:20)"},
       3: {"colour": "bg-success", "text": "Third Recess (10:20 - 10:55)"},
-      4: {"colour": "bg-info", "text": "Fourth Recess (10:55 - 11:30)"}
+      4: {"colour": "bg-info", "text": "Fourth Recess (10:55 - 11:30)"},
+      5: {"colour": "bg-danger", "text": "Fifth Recess (11:30 - 12:10)"}
     };
   
     var dutyTrans = {
@@ -71,16 +72,18 @@ function offlineOverview(date) {
   
     let ongingRecess = 0;
   
-    if (checkTimeValid("09:10:00", "11:30:00") && today(String(d))) {
+    if (checkTimeValid("09:10:00", "12:10:00") && today(String(d))) {
       if (checkTimeValid("09:10:00", "09:45:00")) {
           ongingRecess = 1;
       } else if (checkTimeValid("09:45:00", "10:20:00")) {
           ongingRecess = 2;
       } else if (checkTimeValid("10:20:00", "10:55:00")) {
           ongingRecess = 3;
-      } else if (checkTimeValid("10:55:00", "23:30:00")) {
+      } else if (checkTimeValid("10:55:00", "11:30:00")) {
           ongingRecess = 4;
-      }
+      } else if (checkTimeValid("11:30:00", "12:10:00")) {
+        ongingRecess = 5;
+    }
   }
   
     for (const recess in recessDuty){
@@ -167,7 +170,8 @@ function offlinePersonalised(name, date) {
         1: {"colour": "bg-primary", "text": "First Recess (9:10 - 9:45)"},
         2: {"colour": "bg-secondary", "text": "Second Recess (9:45 - 10:20)"},
         3: {"colour": "bg-success", "text": "Third Recess (10:20 - 10:55)"},
-        4: {"colour": "bg-info", "text": "Fourth Recess (10:55 - 11:30)"}
+        4: {"colour": "bg-info", "text": "Fourth Recess (10:55 - 11:30)"},
+        5: {"colour": "bg-danger", "text": "Fifth Recess (11:30 - 12:10)"}
     };
     
     var dutyTrans = {

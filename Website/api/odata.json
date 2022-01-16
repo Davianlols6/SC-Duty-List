@@ -1,0 +1,2084 @@
+{
+    "data1": {
+        "1": {
+            "service": [
+                {
+                    "Start Time": "06:00",
+                    "End Time": "06:45",
+                    "Event Name": "Blow balloons and assemble the balloon arc",
+                    "Venue": "Foyer",
+                    "Details": "OLs & OIs to meet in school at 0600 to blow balloons and assemble the balloon arc, to be up by 0645."
+                  },
+                  {
+                    "Start Time": "06:45",
+                    "End Time": "07:20",
+                    "Event Name": "Greeting the Sec 1s",
+                    "Venue": "School",
+                    "Details": "By 0645: OLs to line up at the Main Gate to welcome Sec 1s. Other OLs to be stationed at the parade square with the signs of the Sec 1 classes.<br><br>One OL will hold the signs for each class, while another escorts the Sec 1s to them and line them up.  "
+                  },
+                  {
+                    "Start Time": "07:20",
+                    "End Time": "12:20",
+                    "Event Name": "School Leader Talks + Recess + CM Time",
+                    "Venue": "Classroom",
+                    "Details": "OLs to go back to class and leave with their bags at 1030 to start preparing for Orientation.<br><br>OLs to bring their PLDs to present the Google Slides."
+                  },
+                  {
+                    "Start Time": "12:20",
+                    "End Time": "12:35",
+                    "Event Name": "Camp Introduction & OLs Introduction & OIs Introduction ",
+                    "Venue": "Classroom",
+                    "Details": "OLs to introduce Camp Coronation and themselves, using the Google Slides at hand as well. OIs to go around and introduce themselves."
+                  },
+                  {
+                    "Start Time": "12:35",
+                    "End Time": "13:10",
+                    "Event Name": "Icebreakers & Snack Break",
+                    "Venue": "Classroom",
+                    "Details": "OLs to play icebreaker games. Snackbreak at any time the OLs want."
+                  },
+                  {
+                    "Start Time": "13:10",
+                    "End Time": "14:10",
+                    "Event Name": "Energisers",
+                    "Venue": "Classroom",
+                    "Details": "OLs to play energiser games."
+                  },
+                  {
+                    "Start Time": "14:10",
+                    "End Time": "14:20",
+                    "Event Name": "Clean Up",
+                    "Venue": "Classroom",
+                    "Details": "Arrange the chairs back."
+                  },
+                  {
+                    "Start Time": "14:20",
+                    "End Time": "14:35",
+                    "Event Name": "Camp Debrief",
+                    "Venue": "Classroom",
+                    "Details": "OLs to debrief the class based on their observation. OLs to brief the class on what to expect the next day.<br><br>Remind the Sec 1s to tell them their packing list. OLs to remind Sec 1s to bring coloured paper, stapler, etc. to decorate class notice boards and their ties."
+                  }
+            ],
+            "respect": [
+                {
+                    "Start Time": "06:00",
+                    "End Time": "06:45",
+                    "Event Name": "Blow balloons and assemble the balloon arc",
+                    "Venue": "Foyer",
+                    "Details": "OLs & OIs to meet in school at 0600 to blow balloons and assemble the balloon arc, to be up by 0645."
+                  },
+                  {
+                    "Start Time": "06:45",
+                    "End Time": "07:20",
+                    "Event Name": "Greeting the Sec 1s",
+                    "Venue": "School",
+                    "Details": "By 0645: OLs to line up at the Main Gate to welcome Sec 1s. Other OLs to be stationed at the parade square with the signs of the Sec 1 classes.<br><br>One OL will hold the signs for each class, while another escorts the Sec 1s to them and line them up.  "
+                  },
+                  {
+                    "Start Time": "07:20",
+                    "End Time": "12:20",
+                    "Event Name": "School Leader Talks + Recess + CM Time",
+                    "Venue": "Classroom",
+                    "Details": "OLs to go back to class and leave with their bags at 1030 to start preparing for Orientation.<br><br>OLs to bring their PLDs to present the Google Slides."
+                  },
+                  {
+                    "Start Time": "12:20",
+                    "End Time": "12:35",
+                    "Event Name": "Camp Introduction & OLs Introduction & OIs Introduction ",
+                    "Venue": "Classroom",
+                    "Details": "OLs to introduce Camp Coronation and themselves, using the Google Slides at hand as well. OIs to go around and introduce themselves."
+                  },
+                  {
+                    "Start Time": "12:35",
+                    "End Time": "13:10",
+                    "Event Name": "Icebreakers & Snack Break",
+                    "Venue": "Classroom",
+                    "Details": "OLs to play icebreaker games. Snackbreak at any time the OLs want."
+                  },
+                  {
+                    "Start Time": "13:10",
+                    "End Time": "14:10",
+                    "Event Name": "Energisers",
+                    "Venue": "Classroom",
+                    "Details": "OLs to play energiser games."
+                  },
+                  {
+                    "Start Time": "14:10",
+                    "End Time": "14:20",
+                    "Event Name": "Clean Up",
+                    "Venue": "Classroom",
+                    "Details": "Arrange the chairs back."
+                  },
+                  {
+                    "Start Time": "14:20",
+                    "End Time": "14:35",
+                    "Event Name": "Camp Debrief",
+                    "Venue": "Classroom",
+                    "Details": "OLs to debrief the class based on their observation. OLs to brief the class on what to expect the next day.<br><br>Remind the Sec 1s to tell them their packing list. OLs to remind Sec 1s to bring coloured paper, stapler, etc. to decorate class notice boards and their ties."
+                  }
+            ],
+            "resilience": [
+                {
+                    "Start Time": "06:00",
+                    "End Time": "06:45",
+                    "Event Name": "Blow balloons and assemble the balloon arc",
+                    "Venue": "Foyer",
+                    "Details": "OLs & OIs to meet in school at 0600 to blow balloons and assemble the balloon arc, to be up by 0645."
+                  },
+                  {
+                    "Start Time": "06:45",
+                    "End Time": "07:20",
+                    "Event Name": "Greeting the Sec 1s",
+                    "Venue": "School",
+                    "Details": "By 0645: OLs to line up at the Main Gate to welcome Sec 1s. Other OLs to be stationed at the parade square with the signs of the Sec 1 classes.<br><br>One OL will hold the signs for each class, while another escorts the Sec 1s to them and line them up.  "
+                  },
+                  {
+                    "Start Time": "07:20",
+                    "End Time": "12:20",
+                    "Event Name": "School Leader Talks + Recess + CM Time",
+                    "Venue": "Classroom",
+                    "Details": "OLs to go back to class and leave with their bags at 1030 to start preparing for Orientation.<br><br>OLs to bring their PLDs to present the Google Slides."
+                  },
+                  {
+                    "Start Time": "12:20",
+                    "End Time": "12:35",
+                    "Event Name": "Camp Introduction & OLs Introduction & OIs Introduction ",
+                    "Venue": "Classroom",
+                    "Details": "OLs to introduce Camp Coronation and themselves, using the Google Slides at hand as well. OIs to go around and introduce themselves."
+                  },
+                  {
+                    "Start Time": "12:35",
+                    "End Time": "13:10",
+                    "Event Name": "Icebreakers & Snack Break",
+                    "Venue": "Classroom",
+                    "Details": "OLs to play icebreaker games. Snackbreak at any time the OLs want."
+                  },
+                  {
+                    "Start Time": "13:10",
+                    "End Time": "14:10",
+                    "Event Name": "Energisers",
+                    "Venue": "Classroom",
+                    "Details": "OLs to play energiser games."
+                  },
+                  {
+                    "Start Time": "14:10",
+                    "End Time": "14:20",
+                    "Event Name": "Clean Up",
+                    "Venue": "Classroom",
+                    "Details": "Arrange the chairs back."
+                  },
+                  {
+                    "Start Time": "14:20",
+                    "End Time": "14:35",
+                    "Event Name": "Camp Debrief",
+                    "Venue": "Classroom",
+                    "Details": "OLs to debrief the class based on their observation. OLs to brief the class on what to expect the next day.<br><br>Remind the Sec 1s to tell them their packing list. OLs to remind Sec 1s to bring coloured paper, stapler, etc. to decorate class notice boards and their ties."
+                  }
+            ],
+            "integrity": [
+                {
+                    "Start Time": "06:00",
+                    "End Time": "06:45",
+                    "Event Name": "Blow balloons and assemble the balloon arc",
+                    "Venue": "Foyer",
+                    "Details": "OLs & OIs to meet in school at 0600 to blow balloons and assemble the balloon arc, to be up by 0645."
+                  },
+                  {
+                    "Start Time": "06:45",
+                    "End Time": "07:20",
+                    "Event Name": "Greeting the Sec 1s",
+                    "Venue": "School",
+                    "Details": "By 0645: OLs to line up at the Main Gate to welcome Sec 1s. Other OLs to be stationed at the parade square with the signs of the Sec 1 classes.<br><br>One OL will hold the signs for each class, while another escorts the Sec 1s to them and line them up.  "
+                  },
+                  {
+                    "Start Time": "07:20",
+                    "End Time": "12:20",
+                    "Event Name": "School Leader Talks + Recess + CM Time",
+                    "Venue": "Classroom",
+                    "Details": "OLs to go back to class and leave with their bags at 1030 to start preparing for Orientation.<br><br>OLs to bring their PLDs to present the Google Slides."
+                  },
+                  {
+                    "Start Time": "12:20",
+                    "End Time": "12:35",
+                    "Event Name": "Camp Introduction & OLs Introduction & OIs Introduction ",
+                    "Venue": "Classroom",
+                    "Details": "OLs to introduce Camp Coronation and themselves, using the Google Slides at hand as well. OIs to go around and introduce themselves."
+                  },
+                  {
+                    "Start Time": "12:35",
+                    "End Time": "13:10",
+                    "Event Name": "Icebreakers & Snack Break",
+                    "Venue": "Classroom",
+                    "Details": "OLs to play icebreaker games. Snackbreak at any time the OLs want."
+                  },
+                  {
+                    "Start Time": "13:10",
+                    "End Time": "14:10",
+                    "Event Name": "Energisers",
+                    "Venue": "Classroom",
+                    "Details": "OLs to play energiser games."
+                  },
+                  {
+                    "Start Time": "14:10",
+                    "End Time": "14:20",
+                    "Event Name": "Clean Up",
+                    "Venue": "Classroom",
+                    "Details": "Arrange the chairs back."
+                  },
+                  {
+                    "Start Time": "14:20",
+                    "End Time": "14:35",
+                    "Event Name": "Camp Debrief",
+                    "Venue": "Classroom",
+                    "Details": "OLs to debrief the class based on their observation. OLs to brief the class on what to expect the next day.<br><br>Remind the Sec 1s to tell them their packing list. OLs to remind Sec 1s to bring coloured paper, stapler, etc. to decorate class notice boards and their ties."
+                  }
+            ],
+            "gratitude": [
+                {
+                    "Start Time": "06:00",
+                    "End Time": "06:45",
+                    "Event Name": "Blow balloons and assemble the balloon arc",
+                    "Venue": "Foyer",
+                    "Details": "OLs & OIs to meet in school at 0600 to blow balloons and assemble the balloon arc, to be up by 0645."
+                  },
+                  {
+                    "Start Time": "06:45",
+                    "End Time": "07:20",
+                    "Event Name": "Greeting the Sec 1s",
+                    "Venue": "School",
+                    "Details": "By 0645: OLs to line up at the Main Gate to welcome Sec 1s. Other OLs to be stationed at the parade square with the signs of the Sec 1 classes.<br><br>One OL will hold the signs for each class, while another escorts the Sec 1s to them and line them up.  "
+                  },
+                  {
+                    "Start Time": "07:20",
+                    "End Time": "12:20",
+                    "Event Name": "School Leader Talks + Recess + CM Time",
+                    "Venue": "Classroom",
+                    "Details": "OLs to go back to class and leave with their bags at 1030 to start preparing for Orientation.<br><br>OLs to bring their PLDs to present the Google Slides."
+                  },
+                  {
+                    "Start Time": "12:20",
+                    "End Time": "12:35",
+                    "Event Name": "Camp Introduction & OLs Introduction & OIs Introduction ",
+                    "Venue": "Classroom",
+                    "Details": "OLs to introduce Camp Coronation and themselves, using the Google Slides at hand as well. OIs to go around and introduce themselves."
+                  },
+                  {
+                    "Start Time": "12:35",
+                    "End Time": "13:10",
+                    "Event Name": "Icebreakers & Snack Break",
+                    "Venue": "Classroom",
+                    "Details": "OLs to play icebreaker games. Snackbreak at any time the OLs want."
+                  },
+                  {
+                    "Start Time": "13:10",
+                    "End Time": "14:10",
+                    "Event Name": "Energisers",
+                    "Venue": "Classroom",
+                    "Details": "OLs to play energiser games."
+                  },
+                  {
+                    "Start Time": "14:10",
+                    "End Time": "14:20",
+                    "Event Name": "Clean Up",
+                    "Venue": "Classroom",
+                    "Details": "Arrange the chairs back."
+                  },
+                  {
+                    "Start Time": "14:20",
+                    "End Time": "14:35",
+                    "Event Name": "Camp Debrief",
+                    "Venue": "Classroom",
+                    "Details": "OLs to debrief the class based on their observation. OLs to brief the class on what to expect the next day.<br><br>Remind the Sec 1s to tell them their packing list. OLs to remind Sec 1s to bring coloured paper, stapler, etc. to decorate class notice boards and their ties."
+                  }
+            ],
+            "excellence": [
+                {
+                    "Start Time": "06:00",
+                    "End Time": "06:45",
+                    "Event Name": "Blow balloons and assemble the balloon arc",
+                    "Venue": "Foyer",
+                    "Details": "OLs & OIs to meet in school at 0600 to blow balloons and assemble the balloon arc, to be up by 0645."
+                  },
+                  {
+                    "Start Time": "06:45",
+                    "End Time": "07:20",
+                    "Event Name": "Greeting the Sec 1s",
+                    "Venue": "School",
+                    "Details": "By 0645: OLs to line up at the Main Gate to welcome Sec 1s. Other OLs to be stationed at the parade square with the signs of the Sec 1 classes.<br><br>One OL will hold the signs for each class, while another escorts the Sec 1s to them and line them up.  "
+                  },
+                  {
+                    "Start Time": "07:20",
+                    "End Time": "12:20",
+                    "Event Name": "School Leader Talks + Recess + CM Time",
+                    "Venue": "Classroom",
+                    "Details": "OLs to go back to class and leave with their bags at 1030 to start preparing for Orientation.<br><br>OLs to bring their PLDs to present the Google Slides."
+                  },
+                  {
+                    "Start Time": "12:20",
+                    "End Time": "12:35",
+                    "Event Name": "Camp Introduction & OLs Introduction & OIs Introduction ",
+                    "Venue": "Classroom",
+                    "Details": "OLs to introduce Camp Coronation and themselves, using the Google Slides at hand as well. OIs to go around and introduce themselves."
+                  },
+                  {
+                    "Start Time": "12:35",
+                    "End Time": "13:10",
+                    "Event Name": "Icebreakers & Snack Break",
+                    "Venue": "Classroom",
+                    "Details": "OLs to play icebreaker games. Snackbreak at any time the OLs want."
+                  },
+                  {
+                    "Start Time": "13:10",
+                    "End Time": "14:10",
+                    "Event Name": "Energisers",
+                    "Venue": "Classroom",
+                    "Details": "OLs to play energiser games."
+                  },
+                  {
+                    "Start Time": "14:10",
+                    "End Time": "14:20",
+                    "Event Name": "Clean Up",
+                    "Venue": "Classroom",
+                    "Details": "Arrange the chairs back."
+                  },
+                  {
+                    "Start Time": "14:20",
+                    "End Time": "14:35",
+                    "Event Name": "Camp Debrief",
+                    "Venue": "Classroom",
+                    "Details": "OLs to debrief the class based on their observation. OLs to brief the class on what to expect the next day.<br><br>Remind the Sec 1s to tell them their packing list. OLs to remind Sec 1s to bring coloured paper, stapler, etc. to decorate class notice boards and their ties."
+                  }
+            ],
+            "aspire": [
+                {
+                    "Start Time": "06:00",
+                    "End Time": "06:45",
+                    "Event Name": "Blow balloons and assemble the balloon arc",
+                    "Venue": "Foyer",
+                    "Details": "OLs & OIs to meet in school at 0600 to blow balloons and assemble the balloon arc, to be up by 0645."
+                  },
+                  {
+                    "Start Time": "06:45",
+                    "End Time": "07:20",
+                    "Event Name": "Greeting the Sec 1s",
+                    "Venue": "School",
+                    "Details": "By 0645: OLs to line up at the Main Gate to welcome Sec 1s. Other OLs to be stationed at the parade square with the signs of the Sec 1 classes.<br><br>One OL will hold the signs for each class, while another escorts the Sec 1s to them and line them up.  "
+                  },
+                  {
+                    "Start Time": "07:20",
+                    "End Time": "12:20",
+                    "Event Name": "School Leader Talks + Recess + CM Time",
+                    "Venue": "Classroom",
+                    "Details": "OLs to go back to class and leave with their bags at 1030 to start preparing for Orientation.<br><br>OLs to bring their PLDs to present the Google Slides."
+                  },
+                  {
+                    "Start Time": "12:20",
+                    "End Time": "12:35",
+                    "Event Name": "Camp Introduction & OLs Introduction & OIs Introduction ",
+                    "Venue": "Classroom",
+                    "Details": "OLs to introduce Camp Coronation and themselves, using the Google Slides at hand as well. OIs to go around and introduce themselves."
+                  },
+                  {
+                    "Start Time": "12:35",
+                    "End Time": "13:10",
+                    "Event Name": "Icebreakers & Snack Break",
+                    "Venue": "Classroom",
+                    "Details": "OLs to play icebreaker games. Snackbreak at any time the OLs want."
+                  },
+                  {
+                    "Start Time": "13:10",
+                    "End Time": "14:10",
+                    "Event Name": "Energisers",
+                    "Venue": "Classroom",
+                    "Details": "OLs to play energiser games."
+                  },
+                  {
+                    "Start Time": "14:10",
+                    "End Time": "14:20",
+                    "Event Name": "Clean Up",
+                    "Venue": "Classroom",
+                    "Details": "Arrange the chairs back."
+                  },
+                  {
+                    "Start Time": "14:20",
+                    "End Time": "14:35",
+                    "Event Name": "Camp Debrief",
+                    "Venue": "Classroom",
+                    "Details": "OLs to debrief the class based on their observation. OLs to brief the class on what to expect the next day.<br><br>Remind the Sec 1s to tell them their packing list. OLs to remind Sec 1s to bring coloured paper, stapler, etc. to decorate class notice boards and their ties."
+                  }
+            ]
+        },
+        "2": {
+            "service": [
+                {
+                    "Start Time": "07:45",
+                    "End Time": "08:00",
+                    "Event Name": "Morning Assembly",
+                    "Venue": "Classroom",
+                    "Details": "-"
+                  },
+                  {
+                    "Start Time": "08:00",
+                    "End Time": "09:00",
+                    "Event Name": "Icebreakers & Energisers ",
+                    "Venue": "Classroom",
+                    "Details": "Conducted by OLs"
+                  },
+                  {
+                    "Start Time": "09:00",
+                    "End Time": "10:20",
+                    "Event Name": "Class Noticeboard & Class Flag & Class Cheer",
+                    "Venue": "Classroom",
+                    "Details": "Recess for classes having recess <br>OLs together with the sec 1 class to brainstorm class cheer, flag, and noticeboard ideas.<br>OLs, to collect the flag materials from the OIs<br>OLs to split the class up/choose what to tackle first. <br>OIs will pass OLs the flag"
+                  },
+                  {
+                    "Start Time": "10:20",
+                    "End Time": "10:55",
+                    "Event Name": "Recess",
+                    "Venue": "Canteen",
+                    "Details": "-"
+                  },
+                  {
+                    "Start Time": "10:55",
+                    "End Time": "11:30",
+                    "Event Name": "Class Noticeboard & Class Flag & Class Cheer",
+                    "Venue": "Classroom",
+                    "Details": "Recess for classes having recess <br>OLs together with the sec 1 class to brainstorm class cheer, flag, and noticeboard ideas.<br>OLs, to collect the flag materials from the OIs<br>OLs to split the class up/choose what to tackle first. <br>OIs will pass OLs the flag"
+                  },
+                  {
+                    "Start Time": "11:30",
+                    "End Time": "13:00",
+                    "Event Name": "Learning to tie a tie +  School song + School creed",
+                    "Venue": "Classroom",
+                    "Details": "Learning to tie a tie [15-20min]<br>OLs refer to the slides/video to teach the sec 1s how to tie a tie.<br>ALL OLs MUST know how to tie a tie.<br><br>School Song [45 mins]<br>OLs to show the slides on the school song and ensure students roughly remember the school song.<br>OLs to guide them on how the school song tune goes so that they have a rough idea on the tune.<br>*OLs can play a game to test whether they remember the school song just by playing the music and asking them to sing.<br><br>\nSchool Creed[20-25 mins]<br>OLs, show the slides to the Sec 1s and guide them to memorise the school creed."
+                  },
+                  {
+                    "Start Time": "13:00",
+                    "End Time": "14:00",
+                    "Event Name": "Lunch",
+                    "Venue": "Canteen",
+                    "Details": "OIs to deliver the provided food and trashbags to the Classrooms.<br><br>OLs to make trash bins using chairs in the classroom for the Sec 1s to separate from lunchboxes, cutlery, drink packets and food wastage. "
+                  },
+                  {
+                    "Start Time": "14:00",
+                    "End Time": "18:00",
+                    "Event Name": "CCA Exposure",
+                    "Venue": "School",
+                    "Details": "OLs to follow along their Classes to the different CCA Experiences. "
+                  }
+            ],
+            "respect": [
+                {
+                    "Start Time": "07:45",
+                    "End Time": "08:00",
+                    "Event Name": "Morning Assembly",
+                    "Venue": "Classroom",
+                    "Details": "-"
+                  },
+                  {
+                    "Start Time": "08:00",
+                    "End Time": "09:00",
+                    "Event Name": "Icebreakers & Energisers ",
+                    "Venue": "Classroom",
+                    "Details": "Conducted by OLs"
+                  },
+                  {
+                    "Start Time": "09:00",
+                    "End Time": "10:55",
+                    "Event Name": "Class Noticeboard & Class Flag & Class Cheer",
+                    "Venue": "Classroom",
+                    "Details": "Recess for classes having recess. Students will be doing their class noticeboard. If they are not finished with their class cheer/flag yet, OLs can continue coming up with it with their class and split the class/choose what to tackle first. "
+                  },
+                  {
+                    "Start Time": "10:55",
+                    "End Time": "11:30 ",
+                    "Event Name": "Recess",
+                    "Venue": "Canteen",
+                    "Details": "-"
+                  },
+                  {
+                    "Start Time": "11:30",
+                    "End Time": "13:00",
+                    "Event Name": "Learning to tie a tie +  School song + School creed",
+                    "Venue": "Classroom",
+                    "Details": "Learning to tie a tie [15-20min]<br>OLs refer to the slides/video to teach the sec 1s how to tie a tie.<br>ALL OLs MUST know how to tie a tie.<br><br>School Song [45 mins]<br>OLs to show the slides on the school song and ensure students roughly remember the school song.<br>OLs to guide them on how the school song tune goes so that they have a rough idea on the tune.<br>*OLs can play a game to test whether they remember the school song just by playing the music and asking them to sing.<br><br>\nSchool Creed[20-25 mins]<br>OLs, show the slides to the Sec 1s and guide them to memorise the school creed."
+                  },
+                  {
+                    "Start Time": "13:00",
+                    "End Time": "14:00",
+                    "Event Name": "Lunch",
+                    "Venue": "Canteen",
+                    "Details": "OIs to deliver the provided food and trashbags to the Classrooms.<br><br>OLs to make trash bins using chairs in the classroom for the Sec 1s to separate from lunchboxes, cutlery, drink packets and food wastage. "
+                  },
+                  {
+                    "Start Time": "14:00",
+                    "End Time": "18:00",
+                    "Event Name": "CCA Exposure",
+                    "Venue": "School",
+                    "Details": "OLs to follow along their Classes to the different CCA Experiences."
+                  }
+            ],
+            "resilience": [
+                {
+                    "Start Time": "07:45",
+                    "End Time": "08:00",
+                    "Event Name": "Morning Assembly",
+                    "Venue": "Classroom",
+                    "Details": "-"
+                  },
+                  {
+                    "Start Time": "08:00",
+                    "End Time": "09:00",
+                    "Event Name": "Icebreakers & Energisers ",
+                    "Venue": "Classroom",
+                    "Details": "Conducted by OLs"
+                  },
+                  {
+                    "Start Time": "09:00",
+                    "End Time": "09:45",
+                    "Event Name": "Class Noticeboard & Class Flag & Class Cheer",
+                    "Venue": "Classroom",
+                    "Details": "Recess for classes having recess. Students will be doing their class noticeboard. If they are not finished with their class cheer/flag yet, OLs can continue coming up with it with their class and split the class/choose what to tackle first. "
+                  },
+                  {
+                    "Start Time": "09:45",
+                    "End Time": "10:20",
+                    "Event Name": "Recess",
+                    "Venue": "Canteen",
+                    "Details": "-"
+                  },
+                  {
+                    "Start Time": "10:20",
+                    "End Time": "11:30",
+                    "Event Name": "Class Noticeboard & Class Flag & Class Cheer",
+                    "Venue": "Classroom",
+                    "Details": "Recess for classes having recess. Students will be doing their class noticeboard. If they are not finished with their class cheer/flag yet, OLs can continue coming up with it with their class and split the class/choose what to tackle first. "
+                  },
+                  {
+                    "Start Time": "11:30",
+                    "End Time": "13:00",
+                    "Event Name": "Learning to tie a tie +  School song + School creed",
+                    "Venue": "Classroom",
+                    "Details": "Learning to tie a tie [15-20min]<br>OLs refer to the slides/video to teach the sec 1s how to tie a tie.<br>ALL OLs MUST know how to tie a tie.<br><br>School Song [45 mins]<br>OLs to show the slides on the school song and ensure students roughly remember the school song.<br>OLs to guide them on how the school song tune goes so that they have a rough idea on the tune.<br>*OLs can play a game to test whether they remember the school song just by playing the music and asking them to sing.<br><br>\nSchool Creed[20-25 mins]<br>OLs, show the slides to the Sec 1s and guide them to memorise the school creed."
+                  },
+                  {
+                    "Start Time": "13:00",
+                    "End Time": "14:00",
+                    "Event Name": "Lunch",
+                    "Venue": "Canteen",
+                    "Details": "OIs to deliver the provided food and trashbags to the Classrooms.<br><br>OLs to make trash bins using chairs in the classroom for the Sec 1s to separate from lunchboxes, cutlery, drink packets and food wastage. "
+                  },
+                  {
+                    "Start Time": "14:00",
+                    "End Time": "18:00",
+                    "Event Name": "CCA Exposure",
+                    "Venue": "School",
+                    "Details": "OLs to follow along their Classes to the different CCA Experiences. "
+                  }
+            ],
+            "integrity": [
+                {
+                    "Start Time": "07:45",
+                    "End Time": "08:00",
+                    "Event Name": "Morning Assembly",
+                    "Venue": "Classroom",
+                    "Details": "-"
+                  },
+                  {
+                    "Start Time": "08:00",
+                    "End Time": "09:00",
+                    "Event Name": "Icebreakers & Energisers ",
+                    "Venue": "Classroom",
+                    "Details": "Conducted by OLs"
+                  },
+                  {
+                    "Start Time": "09:00",
+                    "End Time": "10:20",
+                    "Event Name": "Class Noticeboard & Class Flag & Class Cheer",
+                    "Venue": "Classroom",
+                    "Details": "Recess for classes having recess. Students will be doing their class noticeboard. If they are not finished with their class cheer/flag yet, OLs can continue coming up with it with their class and split the class/choose what to tackle first. "
+                  },
+                  {
+                    "Start Time": "10:20",
+                    "End Time": "10:55",
+                    "Event Name": "Recess",
+                    "Venue": "Canteen",
+                    "Details": "-"
+                  },
+                  {
+                    "Start Time": "10:55",
+                    "End Time": "11:30",
+                    "Event Name": "Class Noticeboard & Class Flag & Class Cheer",
+                    "Venue": "Classroom",
+                    "Details": "Recess for classes having recess. Students will be doing their class noticeboard. If they are not finished with their class cheer/flag yet, OLs can continue coming up with it with their class and split the class/choose what to tackle first. "
+                  },
+                  {
+                    "Start Time": "11:30",
+                    "End Time": "13:00",
+                    "Event Name": "Learning to tie a tie +  School song + School creed",
+                    "Venue": "Classroom",
+                    "Details": "Learning to tie a tie [15-20min]<br>OLs refer to the slides/video to teach the sec 1s how to tie a tie.<br>ALL OLs MUST know how to tie a tie.<br><br>School Song [45 mins]<br>OLs to show the slides on the school song and ensure students roughly remember the school song.<br>OLs to guide them on how the school song tune goes so that they have a rough idea on the tune.<br>*OLs can play a game to test whether they remember the school song just by playing the music and asking them to sing.<br><br>\nSchool Creed[20-25 mins]<br>OLs, show the slides to the Sec 1s and guide them to memorise the school creed."
+                  },
+                  {
+                    "Start Time": "13:00",
+                    "End Time": "14:00",
+                    "Event Name": "Lunch",
+                    "Venue": "Canteen",
+                    "Details": "OIs to deliver the provided food and trashbags to the Classrooms.<br><br>OLs to make trash bins using chairs in the classroom for the Sec 1s to separate from lunchboxes, cutlery, drink packets and food wastage. "
+                  },
+                  {
+                    "Start Time": "14:00",
+                    "End Time": "18:00",
+                    "Event Name": "CCA Exposure",
+                    "Venue": "School",
+                    "Details": "OLs to follow along their Classes to the different CCA Experiences. "
+                  }
+            ],
+            "gratitude": [
+                {
+                    "Start Time": "07:45",
+                    "End Time": "08:00",
+                    "Event Name": "Morning Assembly",
+                    "Venue": "Classroom",
+                    "Details": "-"
+                  },
+                  {
+                    "Start Time": "08:00",
+                    "End Time": "09:00",
+                    "Event Name": "Icebreakers & Energisers ",
+                    "Venue": "Classroom",
+                    "Details": "Conducted by OLs"
+                  },
+                  {
+                    "Start Time": "09:00",
+                    "End Time": "09:45",
+                    "Event Name": "Class Noticeboard & Class Flag & Class Cheer",
+                    "Venue": "Classroom",
+                    "Details": "Recess for classes having recess. Students will be doing their class noticeboard. If they are not finished with their class cheer/flag yet, OLs can continue coming up with it with their class and split the class/choose what to tackle first. "
+                  },
+                  {
+                    "Start Time": "09:45",
+                    "End Time": "10:20",
+                    "Event Name": "Recess",
+                    "Venue": "Canteen",
+                    "Details": "-"
+                  },
+                  {
+                    "Start Time": "10:20",
+                    "End Time": "11:30",
+                    "Event Name": "Class Noticeboard & Class Flag & Class Cheer",
+                    "Venue": "Classroom",
+                    "Details": "Recess for classes having recess. Students will be doing their class noticeboard. If they are not finished with their class cheer/flag yet, OLs can continue coming up with it with their class and split the class/choose what to tackle first. "
+                  },
+                  {
+                    "Start Time": "11:30",
+                    "End Time": "13:00",
+                    "Event Name": "Learning to tie a tie +  School song + School creed",
+                    "Venue": "Classroom",
+                    "Details": "Learning to tie a tie [15-20min]<br>OLs refer to the slides/video to teach the sec 1s how to tie a tie.<br>ALL OLs MUST know how to tie a tie.<br><br>School Song [45 mins]<br>OLs to show the slides on the school song and ensure students roughly remember the school song.<br>OLs to guide them on how the school song tune goes so that they have a rough idea on the tune.<br>*OLs can play a game to test whether they remember the school song just by playing the music and asking them to sing.<br><br>\nSchool Creed[20-25 mins]<br>OLs, show the slides to the Sec 1s and guide them to memorise the school creed."
+                  },
+                  {
+                    "Start Time": "13:00",
+                    "End Time": "14:00",
+                    "Event Name": "Lunch",
+                    "Venue": "Canteen",
+                    "Details": "OIs to deliver the provided food and trashbags to the Classrooms.<br><br>OLs to make trash bins using chairs in the classroom for the Sec 1s to separate from lunchboxes, cutlery, drink packets and food wastage. "
+                  },
+                  {
+                    "Start Time": "14:00",
+                    "End Time": "18:00",
+                    "Event Name": "CCA Exposure",
+                    "Venue": "School",
+                    "Details": "OLs to follow along their Classes to the different CCA Experiences. "
+                  }
+            ],
+            "excellence": [
+                {
+                    "Start Time": "07:45",
+                    "End Time": "08:00",
+                    "Event Name": "Morning Assembly",
+                    "Venue": "Classroom",
+                    "Details": "-"
+                  },
+                  {
+                    "Start Time": "08:00",
+                    "End Time": "09:00",
+                    "Event Name": "Icebreakers & Energisers ",
+                    "Venue": "Classroom",
+                    "Details": "Conducted by OLs"
+                  },
+                  {
+                    "Start Time": "09:00",
+                    "End Time": "10:20",
+                    "Event Name": "Class Noticeboard & Class Flag & Class Cheer",
+                    "Venue": "Classroom",
+                    "Details": "Recess for classes having recess. Students will be doing their class noticeboard. If they are not finished with their class cheer/flag yet, OLs can continue coming up with it with their class and split the class/choose what to tackle first. "
+                  },
+                  {
+                    "Start Time": "10:20",
+                    "End Time": "10:55",
+                    "Event Name": "Recess",
+                    "Venue": "Canteen",
+                    "Details": "-"
+                  },
+                  {
+                    "Start Time": "10:55",
+                    "End Time": "11:30",
+                    "Event Name": "Class Noticeboard & Class Flag & Class Cheer",
+                    "Venue": "Classroom",
+                    "Details": "Recess for classes having recess. Students will be doing their class noticeboard. If they are not finished with their class cheer/flag yet, OLs can continue coming up with it with their class and split the class/choose what to tackle first. "
+                  },
+                  {
+                    "Start Time": "11:30",
+                    "End Time": "13:00",
+                    "Event Name": "Learning to tie a tie +  School song + School creed",
+                    "Venue": "Classroom",
+                    "Details": "Learning to tie a tie [15-20min]<br>OLs refer to the slides/video to teach the sec 1s how to tie a tie.<br>ALL OLs MUST know how to tie a tie.<br><br>School Song [45 mins]<br>OLs to show the slides on the school song and ensure students roughly remember the school song.<br>OLs to guide them on how the school song tune goes so that they have a rough idea on the tune.<br>*OLs can play a game to test whether they remember the school song just by playing the music and asking them to sing.<br><br>\nSchool Creed[20-25 mins]<br>OLs, show the slides to the Sec 1s and guide them to memorise the school creed."
+                  },
+                  {
+                    "Start Time": "13:00",
+                    "End Time": "14:00",
+                    "Event Name": "Lunch",
+                    "Venue": "Canteen",
+                    "Details": "OIs to deliver the provided food and trashbags to the Classrooms.<br><br>OLs to make trash bins using chairs in the classroom for the Sec 1s to separate from lunchboxes, cutlery, drink packets and food wastage. "
+                  },
+                  {
+                    "Start Time": "14:00",
+                    "End Time": "18:00",
+                    "Event Name": "CCA Exposure",
+                    "Venue": "School",
+                    "Details": "OLs to follow along their Classes to the different CCA Experiences. "
+                  }
+            ],
+            "aspire": [
+                {
+                    "Start Time": "07:45",
+                    "End Time": "08:00",
+                    "Event Name": "Morning Assembly",
+                    "Venue": "Classroom",
+                    "Details": "-"
+                  },
+                  {
+                    "Start Time": "08:00",
+                    "End Time": "09:00",
+                    "Event Name": "Icebreakers & Energisers ",
+                    "Venue": "Classroom",
+                    "Details": "Conducted by OLs"
+                  },
+                  {
+                    "Start Time": "09:00",
+                    "End Time": "10:55",
+                    "Event Name": "Class Noticeboard & Class Flag & Class Cheer",
+                    "Venue": "Classroom",
+                    "Details": "Recess for classes having recess. Students will be doing their class noticeboard. If they are not finished with their class cheer/flag yet, OLs can continue coming up with it with their class and split the class/choose what to tackle first. "
+                  },
+                  {
+                    "Start Time": "10:55",
+                    "End Time": "11:30",
+                    "Event Name": "Recess",
+                    "Venue": "Canteen",
+                    "Details": "-"
+                  },
+                  {
+                    "Start Time": "11:30",
+                    "End Time": "13:00",
+                    "Event Name": "Learning to tie a tie +  School song + School creed",
+                    "Venue": "Classroom",
+                    "Details": "Learning to tie a tie [15-20min]<br>OLs refer to the slides/video to teach the sec 1s how to tie a tie.<br>ALL OLs MUST know how to tie a tie.<br><br>School Song [45 mins]<br>OLs to show the slides on the school song and ensure students roughly remember the school song.<br>OLs to guide them on how the school song tune goes so that they have a rough idea on the tune.<br>*OLs can play a game to test whether they remember the school song just by playing the music and asking them to sing.<br><br>\nSchool Creed[20-25 mins]<br>OLs, show the slides to the Sec 1s and guide them to memorise the school creed."
+                  },
+                  {
+                    "Start Time": "13:00",
+                    "End Time": "14:00",
+                    "Event Name": "Lunch",
+                    "Venue": "Canteen",
+                    "Details": "OIs to deliver the provided food and trashbags to the Classrooms.<br><br>OLs to make trash bins using chairs in the classroom for the Sec 1s to separate from lunchboxes, cutlery, drink packets and food wastage. "
+                  },
+                  {
+                    "Start Time": "14:00",
+                    "End Time": "18:00",
+                    "Event Name": "CCA Exposure",
+                    "Venue": "School",
+                    "Details": "OLs to follow along their Classes to the different CCA Experiences. "
+                  }
+            ]
+        },
+        "3": {
+            "service": [
+                {
+                    "Start Time": "08:15",
+                    "End Time": "08:35",
+                    "Event Name": "Morning Assembly",
+                    "Venue": "Classroom",
+                    "Details": "OIs and OLs to prepare the materials needed for the day."
+                  },
+                  {
+                    "Start Time": "08:35",
+                    "End Time": "09:35",
+                    "Event Name": "Morning breakfast (OLs + teacher)",
+                    "Venue": "Classroom",
+                    "Details": "OIs to deliver necessary material to classes."
+                  },
+                  {
+                    "Start Time": "09:35",
+                    "End Time": "09:55",
+                    "Event Name": "Energisers",
+                    "Venue": "Classroom",
+                    "Details": "OLs to do Icebreakers and Energisers to build more team spirit."
+                  },
+                  {
+                    "Start Time": "10:00",
+                    "End Time": "11:00",
+                    "Event Name": "Cohort performance practice",
+                    "Venue": "Classroom",
+                    "Details": "OLs can make them practice their class cheer/dance while waiting (OPTIONAL) "
+                  },
+                  {
+                    "Start Time": "11:00",
+                    "End Time": "12:00",
+                    "Event Name": "Escape the Funbox",
+                    "Venue": "Funbox",
+                    "Details": "OIs to brief the classes at game venues.<br>OLs to follow the classes during the amazing race and join in the activity.<br>OIs will notify them that they are going to the next location/game."
+                  },
+                  {
+                    "Start Time": "11:00",
+                    "End Time": "12:00",
+                    "Event Name": "Cohort performance practice",
+                    "Venue": "Classroom",
+                    "Details": "OLs can make them practice their class cheer/dance while waiting (OPTIONAL) "
+                  },
+                  {
+                    "Start Time": "13:00",
+                    "End Time": "14:00",
+                    "Event Name": "Lunch",
+                    "Venue": "Canteen",
+                    "Details": "OIs spread themselves out throughout the canteen to brief on recess expectations. OLs to have recess with the juniors and bring them back to class after recess."
+                  },
+                  {
+                    "Start Time": "14:05",
+                    "End Time": "14:30",
+                    "Event Name": "Cohort Performance Training",
+                    "Venue": "Classroom",
+                    "Details": "Cohort Performance practice"
+                  },
+                  {
+                    "Start Time": "14:35",
+                    "End Time": "15:05",
+                    "Event Name": "Amazing Race - Station 2",
+                    "Venue": "Museum",
+                    "Details": "OIs to brief the classes at game venues.<br>OLs to follow the classes during the amazing race and join in the activity.<br>OIs will notify them that they are going to the next location/game."
+                  },
+                  {
+                    "Start Time": "15:11",
+                    "End Time": "15:41",
+                    "Event Name": "Amazing Race - Station 3",
+                    "Venue": "Hall",
+                    "Details": "OIs to brief the classes at game venues.<br>OLs to follow the classes during the amazing race and join in the activity.<br>OIs will notify them that they are going to the next location/game."
+                  },
+                  {
+                    "Start Time": "15:47",
+                    "End Time": "16:17",
+                    "Event Name": "Amazing Race - Station 4",
+                    "Venue": "Hallway from foyer on the way to ping pong table",
+                    "Details": "OIs to brief the classes at game venues.<br>OLs to follow the classes during the amazing race and join in the activity.<br>OIs will notify them that they are going to the next location/game."
+                  },
+                  {
+                    "Start Time": "16:23",
+                    "End Time": "16:53",
+                    "Event Name": "Amazing Race - Station 5",
+                    "Venue": "Field or if Wet Weather: Walkway outside Exco Room",
+                    "Details": "OIs to brief the classes at game venues.<br>OLs to follow the classes during the amazing race and join in the activity.<br>OIs will notify them that they are going to the next location/game."
+                  },
+                  {
+                    "Start Time": "16:59",
+                    "End Time": "17:29",
+                    "Event Name": "Amazing Race - Station 1",
+                    "Venue": "Foyer",
+                    "Details": "OIs to brief the classes at game venues.<br>OLs to follow the classes during the amazing race and join in the activity.<br>OIs will notify them that they are going to the next location/game."
+                  },
+                  {
+                    "Start Time": "17:35",
+                    "End Time": "17:55",
+                    "Event Name": "Camp debrief",
+                    "Venue": "Classroom",
+                    "Details": "OLs to debrief the class based on their observation.<br>OLs to brief the class on what to expect the next day.<br>Remind the Sec 1s to bring extra mask and their own ties and tell them their packing list "
+                  }
+            ],
+            "respect": [    
+                {
+                    "Start Time": "08:15",
+                    "End Time": "08:35",
+                    "Event Name": "Morning Assembly",
+                    "Venue": "Classroom",
+                    "Details": "OIs and OLs to prepare the materials needed for the day."
+                  },
+                  {
+                    "Start Time": "08:35",
+                    "End Time": "09:35",
+                    "Event Name": "Morning breakfast (OLs + teacher)",
+                    "Venue": "Classroom",
+                    "Details": "OIs to deliver necessary material to classes."
+                  },
+                  {
+                    "Start Time": "09:35",
+                    "End Time": "09:55",
+                    "Event Name": "Energisers",
+                    "Venue": "Classroom",
+                    "Details": "OLs to do Icebreakers and Energisers to build more team spirit."
+                  },
+                  {
+                    "Start Time": "10:00",
+                    "End Time": "10:30",
+                    "Event Name": "Amazing Race - Station 4",
+                    "Venue": "Hallway from foyer on the way to ping pong table",
+                    "Details": "OIs to brief the classes at game venues.<br>OLs to follow the classes during the amazing race and join in the activity.<br>OIs will notify them that they are going to the next location/game."
+                  },
+                  {
+                    "Start Time": "10:36",
+                    "End Time": "11:06",
+                    "Event Name": "Amazing Race - Station 5",
+                    "Venue": "Field or if Wet Weather: Walkway outside Exco Room",
+                    "Details": "OIs to brief the classes at game venues.<br>OLs to follow the classes during the amazing race and join in the activity.<br>OIs will notify them that they are going to the next location/game."
+                  },
+                  {
+                    "Start Time": "11:12",
+                    "End Time": "11:42",
+                    "Event Name": "Amazing Race - Station 1",
+                    "Venue": "Foyer",
+                    "Details": "OIs to brief the classes at game venues.<br>OLs to follow the classes during the amazing race and join in the activity.<br>OIs will notify them that they are going to the next location/game."
+                  },
+                  {
+                    "Start Time": "11:48",
+                    "End Time": "12:18",
+                    "Event Name": "Amazing Race - Station 2",
+                    "Venue": "Museum",
+                    "Details": "OIs to brief the classes at game venues.<br>OLs to follow the classes during the amazing race and join in the activity.<br>OIs will notify them that they are going to the next location/game."
+                  },
+                  {
+                    "Start Time": "12:24",
+                    "End Time": "12:54",
+                    "Event Name": "Amazing Race - Station 3",
+                    "Venue": "Hall",
+                    "Details": "OIs to brief the classes at game venues.<br>OLs to follow the classes during the amazing race and join in the activity.<br>OIs will notify them that they are going to the next location/game."
+                  },
+                  {
+                    "Start Time": "13:00",
+                    "End Time": "14:00",
+                    "Event Name": "Lunch",
+                    "Venue": "Canteen",
+                    "Details": "OIs spread themselves out throughout the canteen to brief on recess expectations. OLs to have recess with the juniors and bring them back to class after recess."
+                  },
+                  {
+                    "Start Time": "14:05",
+                    "End Time": "14:30",
+                    "Event Name": "Cohort Performance Training",
+                    "Venue": "Classroom",
+                    "Details": "Cohort Performance practice"
+                  },
+                  {
+                    "Start Time": "14:35",
+                    "End Time": "16:50",
+                    "Event Name": "Cohort performance practice",
+                    "Venue": "Classroom",
+                    "Details": "OLs can make them practice their class cheer/dance while waiting (OPTIONAL) "
+                  },
+                  {
+                    "Start Time": "16:50",
+                    "End Time": "17:35",
+                    "Event Name": "Escape the Funbox",
+                    "Venue": "Funbox",
+                    "Details": "OIs to brief the classes at game venues.<br>OLs to follow the classes during the amazing race and join in the activity.<br>OIs will notify them that they are going to the next location/game."
+                  },
+                  {
+                    "Start Time": "17:35",
+                    "End Time": "17:55",
+                    "Event Name": "Camp debrief",
+                    "Venue": "Classroom",
+                    "Details": "OLs to debrief the class based on their observation.<br>OLs to brief the class on what to expect the next day.<br>Remind the Sec 1s to bring extra mask and their own ties and tell them their packing list "
+                  }
+            ],
+            "resilience": [
+                {
+                    "Start Time": "08:15",
+                    "End Time": "08:35",
+                    "Event Name": "Morning Assembly",
+                    "Venue": "Classroom",
+                    "Details": "OIs and OLs to prepare the materials needed for the day."
+                  },
+                  {
+                    "Start Time": "08:35",
+                    "End Time": "09:35",
+                    "Event Name": "Morning breakfast (OLs + teacher)",
+                    "Venue": "Classroom",
+                    "Details": "OIs to deliver necessary material to classes."
+                  },
+                  {
+                    "Start Time": "09:35",
+                    "End Time": "09:55",
+                    "Event Name": "Energisers",
+                    "Venue": "Classroom",
+                    "Details": "OLs to do Icebreakers and Energisers to build more team spirit."
+                  },
+                  {
+                    "Start Time": "10:00",
+                    "End Time": "10:30",
+                    "Event Name": "Amazing Race - Station 3",
+                    "Venue": "Hall",
+                    "Details": "OIs to brief the classes at game venues.<br>OLs to follow the classes during the amazing race and join in the activity.<br>OIs will notify them that they are going to the next location/game."
+                  },
+                  {
+                    "Start Time": "10:36",
+                    "End Time": "11:06",
+                    "Event Name": "Amazing Race - Station 4",
+                    "Venue": "Hallway from foyer on the way to ping pong table",
+                    "Details": "OIs to brief the classes at game venues.<br>OLs to follow the classes during the amazing race and join in the activity.<br>OIs will notify them that they are going to the next location/game."
+                  },
+                  {
+                    "Start Time": "11:12",
+                    "End Time": "11:42",
+                    "Event Name": "Amazing Race - Station 5",
+                    "Venue": "Field or if Wet Weather: Walkway outside Exco Room",
+                    "Details": "OIs to brief the classes at game venues.<br>OLs to follow the classes during the amazing race and join in the activity.<br>OIs will notify them that they are going to the next location/game."
+                  },
+                  {
+                    "Start Time": "11:48",
+                    "End Time": "12:18",
+                    "Event Name": "Amazing Race - Station 1",
+                    "Venue": "Foyer",
+                    "Details": "OIs to brief the classes at game venues.<br>OLs to follow the classes during the amazing race and join in the activity.<br>OIs will notify them that they are going to the next location/game."
+                  },
+                  {
+                    "Start Time": "12:24",
+                    "End Time": "12:54",
+                    "Event Name": "Amazing Race - Station 2",
+                    "Venue": "Museum",
+                    "Details": "OIs to brief the classes at game venues.<br>OLs to follow the classes during the amazing race and join in the activity.<br>OIs will notify them that they are going to the next location/game."
+                  },
+                  {
+                    "Start Time": "13:00",
+                    "End Time": "14:00",
+                    "Event Name": "Lunch",
+                    "Venue": "Canteen",
+                    "Details": "OIs spread themselves out throughout the canteen to brief on recess expectations. OLs to have recess with the juniors and bring them back to class after recess."
+                  },
+                  {
+                    "Start Time": "14:05",
+                    "End Time": "14:30",
+                    "Event Name": "Cohort Performance Training",
+                    "Venue": "Classroom",
+                    "Details": "Cohort Performance practice"
+                  },
+                  {
+                    "Start Time": "14:35",
+                    "End Time": "16:05",
+                    "Event Name": "Cohort performance practice",
+                    "Venue": "Classroom",
+                    "Details": "OLs can make them practice their class cheer/dance while waiting (OPTIONAL) "
+                  },
+                  {
+                    "Start Time": "16:05",
+                    "End Time": "16:50",
+                    "Event Name": "Escape the Funbox",
+                    "Venue": "Funbox",
+                    "Details": "OIs to brief the classes at game venues.<br>OLs to follow the classes during the amazing race and join in the activity.<br>OIs will notify them that they are going to the next location/game."
+                  },
+                  {
+                    "Start Time": "16:50",
+                    "End Time": "17:35",
+                    "Event Name": "Cohort performance practice",
+                    "Venue": "Classroom",
+                    "Details": "OLs can make them practice their class cheer/dance while waiting (OPTIONAL) "
+                  },
+                  {
+                    "Start Time": "17:35",
+                    "End Time": "17:55",
+                    "Event Name": "Camp debrief",
+                    "Venue": "Classroom",
+                    "Details": "OLs to debrief the class based on their observation.<br>OLs to brief the class on what to expect the next day.<br>Remind the Sec 1s to bring extra mask and their own ties and tell them their packing list "
+                  }
+            ],
+            "integrity": [
+                {
+                    "Start Time": "08:15",
+                    "End Time": "08:35",
+                    "Event Name": "Morning Assembly",
+                    "Venue": "Classroom",
+                    "Details": "OIs and OLs to prepare the materials needed for the day."
+                  },
+                  {
+                    "Start Time": "08:35",
+                    "End Time": "09:35",
+                    "Event Name": "Morning breakfast (OLs + teacher)",
+                    "Venue": "Classroom",
+                    "Details": "OIs to deliver necessary material to classes."
+                  },
+                  {
+                    "Start Time": "09:35",
+                    "End Time": "09:55",
+                    "Event Name": "Energisers",
+                    "Venue": "Classroom",
+                    "Details": "OLs to do Icebreakers and Energisers to build more team spirit."
+                  },
+                  {
+                    "Start Time": "10:00",
+                    "End Time": "11:00",
+                    "Event Name": "Escape the Funbox",
+                    "Venue": "Funbox",
+                    "Details": "OIs to brief the classes at game venues.<br>OLs to follow the classes during the amazing race and join in the activity.<br>OIs will notify them that they are going to the next location/game."
+                  },
+                  {
+                    "Start Time": "11:00",
+                    "End Time": "13:00",
+                    "Event Name": "Cohort performance practice",
+                    "Venue": "Classroom",
+                    "Details": "OLs can make them practice their class cheer/dance while waiting (OPTIONAL) "
+                  },
+                  {
+                    "Start Time": "13:00",
+                    "End Time": "14:00",
+                    "Event Name": "Lunch",
+                    "Venue": "Canteen",
+                    "Details": "OIs spread themselves out throughout the canteen to brief on recess expectations. OLs to have recess with the juniors and bring them back to class after recess."
+                  },
+                  {
+                    "Start Time": "14:05",
+                    "End Time": "14:30",
+                    "Event Name": "Cohort Performance Training",
+                    "Venue": "Classroom",
+                    "Details": "Cohort Performance practice"
+                  },
+                  {
+                    "Start Time": "14:35",
+                    "End Time": "15:05",
+                    "Event Name": "Amazing Race - Station 1",
+                    "Venue": "Foyer",
+                    "Details": "OIs to brief the classes at game venues.<br>OLs to follow the classes during the amazing race and join in the activity.<br>OIs will notify them that they are going to the next location/game."
+                  },
+                  {
+                    "Start Time": "15:11",
+                    "End Time": "15:41",
+                    "Event Name": "Amazing Race - Station 2",
+                    "Venue": "Museum",
+                    "Details": "OIs to brief the classes at game venues.<br>OLs to follow the classes during the amazing race and join in the activity.<br>OIs will notify them that they are going to the next location/game."
+                  },
+                  {
+                    "Start Time": "15:47",
+                    "End Time": "16:17",
+                    "Event Name": "Amazing Race - Station 3",
+                    "Venue": "Hall",
+                    "Details": "OIs to brief the classes at game venues.<br>OLs to follow the classes during the amazing race and join in the activity.<br>OIs will notify them that they are going to the next location/game."
+                  },
+                  {
+                    "Start Time": "16:23",
+                    "End Time": "16:53",
+                    "Event Name": "Amazing Race - Station 4",
+                    "Venue": "Hallway from foyer on the way to ping pong table",
+                    "Details": "OIs to brief the classes at game venues.<br>OLs to follow the classes during the amazing race and join in the activity.<br>OIs will notify them that they are going to the next location/game."
+                  },
+                  {
+                    "Start Time": "16:59",
+                    "End Time": "17:29",
+                    "Event Name": "Amazing Race - Station 5",
+                    "Venue": "Field or if Wet Weather: Walkway outside Exco Room",
+                    "Details": "OIs to brief the classes at game venues.<br>OLs to follow the classes during the amazing race and join in the activity.<br>OIs will notify them that they are going to the next location/game."
+                  },
+                  {
+                    "Start Time": "17:35",
+                    "End Time": "17:55",
+                    "Event Name": "Camp debrief",
+                    "Venue": "Classroom",
+                    "Details": "OLs to debrief the class based on their observation.<br>OLs to brief the class on what to expect the next day.<br>Remind the Sec 1s to bring extra mask and their own ties and tell them their packing list "
+                  }
+            ],
+            "gratitude": [
+                {
+                    "Start Time": "08:15",
+                    "End Time": "08:35",
+                    "Event Name": "Morning Assembly",
+                    "Venue": "Classroom",
+                    "Details": "OIs and OLs to prepare the materials needed for the day."
+                  },
+                  {
+                    "Start Time": "08:35",
+                    "End Time": "09:35",
+                    "Event Name": "Morning breakfast (OLs + teacher)",
+                    "Venue": "Classroom",
+                    "Details": "OIs to deliver necessary material to classes."
+                  },
+                  {
+                    "Start Time": "09:35",
+                    "End Time": "09:55",
+                    "Event Name": "Energisers",
+                    "Venue": "Classroom",
+                    "Details": "OLs to do Icebreakers and Energisers to build more team spirit."
+                  },
+                  {
+                    "Start Time": "10:00",
+                    "End Time": "10:30",
+                    "Event Name": "Amazing Race - Station 1",
+                    "Venue": "Foyer",
+                    "Details": "OIs to brief the classes at game venues.<br>OLs to follow the classes during the amazing race and join in the activity.<br>OIs will notify them that they are going to the next location/game."
+                  },
+                  {
+                    "Start Time": "10:36",
+                    "End Time": "11:06",
+                    "Event Name": "Amazing Race - Station 2",
+                    "Venue": "Museum",
+                    "Details": "OIs to brief the classes at game venues.<br>OLs to follow the classes during the amazing race and join in the activity.<br>OIs will notify them that they are going to the next location/game."
+                  },
+                  {
+                    "Start Time": "11:12",
+                    "End Time": "11:42",
+                    "Event Name": "Amazing Race - Station 3",
+                    "Venue": "Hall",
+                    "Details": "OIs to brief the classes at game venues.<br>OLs to follow the classes during the amazing race and join in the activity.<br>OIs will notify them that they are going to the next location/game."
+                  },
+                  {
+                    "Start Time": "11:48",
+                    "End Time": "12:18",
+                    "Event Name": "Amazing Race - Station 4",
+                    "Venue": "Hallway from foyer on the way to ping pong table",
+                    "Details": "OIs to brief the classes at game venues.<br>OLs to follow the classes during the amazing race and join in the activity.<br>OIs will notify them that they are going to the next location/game."
+                  },
+                  {
+                    "Start Time": "12:24",
+                    "End Time": "12:54",
+                    "Event Name": "Amazing Race - Station 5",
+                    "Venue": "Field or if Wet Weather: Walkway outside Exco Room",
+                    "Details": "OIs to brief the classes at game venues.<br>OLs to follow the classes during the amazing race and join in the activity.<br>OIs will notify them that they are going to the next location/game."
+                  },
+                  {
+                    "Start Time": "13:00",
+                    "End Time": "14:00",
+                    "Event Name": "Lunch",
+                    "Venue": "Canteen",
+                    "Details": "OIs spread themselves out throughout the canteen to brief on recess expectations. OLs to have recess with the juniors and bring them back to class after recess."
+                  },
+                  {
+                    "Start Time": "14:05",
+                    "End Time": "14:30",
+                    "Event Name": "Cohort Performance Training",
+                    "Venue": "Classroom",
+                    "Details": "Cohort Performance practice"
+                  },
+                  {
+                    "Start Time": "14:35",
+                    "End Time": "15:20",
+                    "Event Name": "Escape the Funbox",
+                    "Venue": "Funbox",
+                    "Details": "OIs to brief the classes at game venues.<br>OLs to follow the classes during the amazing race and join in the activity.<br>OIs will notify them that they are going to the next location/game."
+                  },
+                  {
+                    "Start Time": "15:20",
+                    "End Time": "17:35",
+                    "Event Name": "Cohort performance practice",
+                    "Venue": "Classroom",
+                    "Details": "OLs can make them practice their class cheer/dance while waiting (OPTIONAL) "
+                  },
+                  {
+                    "Start Time": "17:35",
+                    "End Time": "17:55",
+                    "Event Name": "Camp debrief",
+                    "Venue": "Classroom",
+                    "Details": "OLs to debrief the class based on their observation.<br>OLs to brief the class on what to expect the next day.<br>Remind the Sec 1s to bring extra mask and their own ties and tell them their packing list "
+                  }
+            ],
+            "excellence": [
+                {
+                    "Start Time": "08:15",
+                    "End Time": "08:35",
+                    "Event Name": "Morning Assembly",
+                    "Venue": "Classroom",
+                    "Details": "OIs and OLs to prepare the materials needed for the day."
+                  },
+                  {
+                    "Start Time": "08:35",
+                    "End Time": "09:35",
+                    "Event Name": "Morning breakfast (OLs + teacher)",
+                    "Venue": "Classroom",
+                    "Details": "OIs to deliver necessary material to classes."
+                  },
+                  {
+                    "Start Time": "09:35",
+                    "End Time": "09:55",
+                    "Event Name": "Energisers",
+                    "Venue": "Classroom",
+                    "Details": "OLs to do Icebreakers and Energisers to build more team spirit."
+                  },
+                  {
+                    "Start Time": "10:00",
+                    "End Time": "12:00",
+                    "Event Name": "Cohort performance practice",
+                    "Venue": "Classroom",
+                    "Details": "OLs can make them practice their class cheer/dance while waiting (OPTIONAL) "
+                  },
+                  {
+                    "Start Time": "12:00",
+                    "End Time": "13:00",
+                    "Event Name": "Escape the Funbox",
+                    "Venue": "Funbox",
+                    "Details": "OIs to brief the classes at game venues.<br>OLs to follow the classes during the amazing race and join in the activity.<br>OIs will notify them that they are going to the next location/game."
+                  },
+                  {
+                    "Start Time": "13:00",
+                    "End Time": "14:00",
+                    "Event Name": "Lunch",
+                    "Venue": "Canteen",
+                    "Details": "OIs spread themselves out throughout the canteen to brief on recess expectations. OLs to have recess with the juniors and bring them back to class after recess."
+                  },
+                  {
+                    "Start Time": "14:05",
+                    "End Time": "14:30",
+                    "Event Name": "Cohort Performance Training",
+                    "Venue": "Classroom",
+                    "Details": "Cohort Performance practice"
+                  },
+                  {
+                    "Start Time": "14:35",
+                    "End Time": "15:05",
+                    "Event Name": "Amazing Race - Station 3",
+                    "Venue": "Hall",
+                    "Details": "OIs to brief the classes at game venues.<br>OLs to follow the classes during the amazing race and join in the activity.<br>OIs will notify them that they are going to the next location/game."
+                  },
+                  {
+                    "Start Time": "15:11",
+                    "End Time": "15:41",
+                    "Event Name": "Amazing Race - Station 4",
+                    "Venue": "Hallway from foyer on the way to ping pong table",
+                    "Details": "OIs to brief the classes at game venues.<br>OLs to follow the classes during the amazing race and join in the activity.<br>OIs will notify them that they are going to the next location/game."
+                  },
+                  {
+                    "Start Time": "15:47",
+                    "End Time": "16:17",
+                    "Event Name": "Amazing Race - Station 5",
+                    "Venue": "Field or if Wet Weather: Walkway outside Exco Room",
+                    "Details": "OIs to brief the classes at game venues.<br>OLs to follow the classes during the amazing race and join in the activity.<br>OIs will notify them that they are going to the next location/game."
+                  },
+                  {
+                    "Start Time": "16:23",
+                    "End Time": "16:53",
+                    "Event Name": "Amazing Race - Station 1",
+                    "Venue": "Foyer",
+                    "Details": "OIs to brief the classes at game venues.<br>OLs to follow the classes during the amazing race and join in the activity.<br>OIs will notify them that they are going to the next location/game."
+                  },
+                  {
+                    "Start Time": "16:59",
+                    "End Time": "17:29",
+                    "Event Name": "Amazing Race - Station 2",
+                    "Venue": "Museum",
+                    "Details": "OIs to brief the classes at game venues.<br>OLs to follow the classes during the amazing race and join in the activity.<br>OIs will notify them that they are going to the next location/game."
+                  },
+                  {
+                    "Start Time": "17:35",
+                    "End Time": "17:55",
+                    "Event Name": "Camp debrief",
+                    "Venue": "Classroom",
+                    "Details": "OLs to debrief the class based on their observation.<br>OLs to brief the class on what to expect the next day.<br>Remind the Sec 1s to bring extra mask and their own ties and tell them their packing list "
+                  }
+            ],
+            "aspire": [
+                {
+                    "Start Time": "08:15",
+                    "End Time": "08:35",
+                    "Event Name": "Morning Assembly",
+                    "Venue": "Classroom",
+                    "Details": "OIs and OLs to prepare the materials needed for the day."
+                  },
+                  {
+                    "Start Time": "08:35",
+                    "End Time": "09:35",
+                    "Event Name": "Morning breakfast (OLs + teacher)",
+                    "Venue": "Classroom",
+                    "Details": "OIs to deliver necessary material to classes."
+                  },
+                  {
+                    "Start Time": "09:35",
+                    "End Time": "09:55",
+                    "Event Name": "Energisers",
+                    "Venue": "Classroom",
+                    "Details": "OLs to do Icebreakers and Energisers to build more team spirit."
+                  },
+                  {
+                    "Start Time": "10:00",
+                    "End Time": "10:30",
+                    "Event Name": "Amazing Race - Station 2",
+                    "Venue": "Museum",
+                    "Details": "OIs to brief the classes at game venues.<br>OLs to follow the classes during the amazing race and join in the activity.<br>OIs will notify them that they are going to the next location/game."
+                  },
+                  {
+                    "Start Time": "10:36",
+                    "End Time": "11:06",
+                    "Event Name": "Amazing Race - Station 3",
+                    "Venue": "Hall",
+                    "Details": "OIs to brief the classes at game venues.<br>OLs to follow the classes during the amazing race and join in the activity.<br>OIs will notify them that they are going to the next location/game."
+                  },
+                  {
+                    "Start Time": "11:12",
+                    "End Time": "11:42",
+                    "Event Name": "Amazing Race - Station 4",
+                    "Venue": "allway from foyer on the way to ping pong table",
+                    "Details": "OIs to brief the classes at game venues.<br>OLs to follow the classes during the amazing race and join in the activity.<br>OIs will notify them that they are going to the next location/game."
+                  },
+                  {
+                    "Start Time": "11:48",
+                    "End Time": "12:18",
+                    "Event Name": "Amazing Race - Station 5",
+                    "Venue": "Field or if Wet Weather: Walkway outside Exco Roomc",
+                    "Details": "OIs to brief the classes at game venues.<br>OLs to follow the classes during the amazing race and join in the activity.<br>OIs will notify them that they are going to the next location/game."
+                  },
+                  {
+                    "Start Time": "12:24",
+                    "End Time": "12:54",
+                    "Event Name": "Amazing Race - Station 1",
+                    "Venue": "Foyer",
+                    "Details": "OIs to brief the classes at game venues.<br>OLs to follow the classes during the amazing race and join in the activity.<br>OIs will notify them that they are going to the next location/game."
+                  },
+                  {
+                    "Start Time": "13:00",
+                    "End Time": "14:00",
+                    "Event Name": "Lunch",
+                    "Venue": "Canteen",
+                    "Details": "OIs spread themselves out throughout the canteen to brief on recess expectations. OLs to have recess with the juniors and bring them back to class after recess."
+                  },
+                  {
+                    "Start Time": "14:05",
+                    "End Time": "14:30",
+                    "Event Name": "Cohort Performance Training",
+                    "Venue": "Classroom",
+                    "Details": "Cohort Performance practice"
+                  },
+                  {
+                    "Start Time": "14:35",
+                    "End Time": "15:20",
+                    "Event Name": "Cohort performance practice",
+                    "Venue": "Classroom",
+                    "Details": "OLs can make them practice their class cheer/dance while waiting (OPTIONAL) "
+                  },
+                  {
+                    "Start Time": "15:20",
+                    "End Time": "16:05",
+                    "Event Name": "Escape the Funbox",
+                    "Venue": "Funbox",
+                    "Details": "OIs to brief the classes at game venues.<br>OLs to follow the classes during the amazing race and join in the activity.<br>OIs will notify them that they are going to the next location/game."
+                  },
+                  {
+                    "Start Time": "16:05",
+                    "End Time": "17:35",
+                    "Event Name": "Class Performace Practice & Class Cheer",
+                    "Venue": "Classroom",
+                    "Details": "-"
+                  },
+                  {
+                    "Start Time": "17:35",
+                    "End Time": "17:55",
+                    "Event Name": "Camp debrief",
+                    "Venue": "Classroom",
+                    "Details": "OLs to debrief the class based on their observation.<br>OLs to brief the class on what to expect the next day.<br>Remind the Sec 1s to bring extra mask and their own ties and tell them their packing list "
+                  }
+            ]
+        },
+        "4": {
+            "service": [
+                {
+                    "Start Time": "07:30",
+                    "End Time": "08:00",
+                    "Event Name": "Morning Assembly",
+                    "Venue": "Classroom",
+                    "Details": "-"
+                  },
+                  {
+                    "Start Time": "08:00",
+                    "End Time": "08:15",
+                    "Event Name": "Energisers",
+                    "Venue": "Classroom",
+                    "Details": "Conducted by OLs"
+                  },
+                  {
+                    "Start Time": "08:20",
+                    "End Time": "09:10",
+                    "Event Name": "Cohort Performance Preparation",
+                    "Venue": "Classroom ",
+                    "Details": "-"
+                  },
+                  {
+                    "Start Time": "09:10",
+                    "End Time": "09:45",
+                    "Event Name": "Recess",
+                    "Venue": "Canteen",
+                    "Details": "-"
+                  },
+                  {
+                    "Start Time": "09:45",
+                    "End Time": "09:50",
+                    "Event Name": "Cohort Performance Preparation",
+                    "Venue": "Classroom ",
+                    "Details": "-"
+                  },
+                  {
+                    "Start Time": "09:50",
+                    "End Time": "10:35",
+                    "Event Name": "Trial And Error",
+                    "Venue": "Field or wet weather: Hall",
+                    "Details": "OIs to brief the classes at game venues.<br>OLs to follow the classes during the amazing race and join in the activity.<br>OIs will notify them that they are going to the next location/game."
+                  },
+                  {
+                    "Start Time": "10:35",
+                    "End Time": "11:20",
+                    "Event Name": "The Floor Is Lava",
+                    "Venue": "Parade Square, ISH or wet weather: ISH, Walkway along podium",
+                    "Details": "OIs to brief the classes at game venues.<br>OLs to follow the classes during the amazing race and join in the activity.<br>OIs will notify them that they are going to the next location/game."
+                  },
+                  {
+                    "Start Time": "11:20",
+                    "End Time": "11:45",
+                    "Event Name": "Cohort Performance Preparation",
+                    "Venue": "Classroom ",
+                    "Details": "-"
+                  },
+                  {
+                    "Start Time": "11:50",
+                    "End Time": "13:00",
+                    "Event Name": "Cohort Performance & Prize giving",
+                    "Venue": "Classroom ",
+                    "Details": "Sec 1s will perform their dances and cheers :D (will be livestreamed and filmed on the spot)<br>OIs + Camp commandants (NOT CONFIRMED) will be assessing their performance"
+                  },
+                  {
+                    "Start Time": "13:00",
+                    "End Time": "14:00",
+                    "Event Name": "Lunch",
+                    "Venue": "Canteen",
+                    "Details": "OIs spread themselves out throughout the canteen to brief on recess expectations. OLs to have recess with the juniors and bring them back to class after recess."
+                  },
+                  {
+                    "Start Time": "14:00",
+                    "End Time": "14:20",
+                    "Event Name": "Cleaning up the classroom, arranging the furniture.",
+                    "Venue": "Classroom ",
+                    "Details": "Students tidy up their classrooms."
+                  },
+                  {
+                    "Start Time": "14:30",
+                    "End Time": "17:30",
+                    "Event Name": "CCA Exposure",
+                    "Venue": "School",
+                    "Details": "OLs to follow along their Classes to the different CCA Experiences.  "
+                  }
+            ],
+            "respect": [
+                {
+                    "Start Time": "07:30",
+                    "End Time": "08:00",
+                    "Event Name": "Morning Assembly",
+                    "Venue": "Classroom",
+                    "Details": "-"
+                  },
+                  {
+                    "Start Time": "08:00",
+                    "End Time": "08:15",
+                    "Event Name": "Energisers",
+                    "Venue": "Classroom",
+                    "Details": "Conducted by OLs"
+                  },
+                  {
+                    "Start Time": "08:20",
+                    "End Time": "09:05",
+                    "Event Name": "Trial And Error",
+                    "Venue": "Field or wet weather: Hall",
+                    "Details": "OIs to brief the classes at game venues.<br>OLs to follow the classes during the amazing race and join in the activity.<br>OIs will notify them that they are going to the next location/game."
+                  },
+                  {
+                    "Start Time": "09:05",
+                    "End Time": "09:50",
+                    "Event Name": "The Floor Is Lava",
+                    "Venue": "Parade Square, ISH or wet weather: ISH, Walkway along podium",
+                    "Details": "OIs to brief the classes at game venues.<br>OLs to follow the classes during the amazing race and join in the activity.<br>OIs will notify them that they are going to the next location/game."
+                  },
+                  {
+                    "Start Time": "09:50",
+                    "End Time": "10:55",
+                    "Event Name": "Cohort Performance Preparation",
+                    "Venue": "Classroom ",
+                    "Details": "-"
+                  },
+                  {
+                    "Start Time": "10:55",
+                    "End Time": "11:30",
+                    "Event Name": "Recess",
+                    "Venue": "Canteen",
+                    "Details": "-"
+                  },
+                  {
+                    "Start Time": "11:30",
+                    "End Time": "11:20",
+                    "Event Name": "Cohort Performance Preparation",
+                    "Venue": "Classroom ",
+                    "Details": "-"
+                  },
+                  {
+                    "Start Time": "11:20",
+                    "End Time": "11:45",
+                    "Event Name": "Cohort Performance Preparation",
+                    "Venue": "Classroom ",
+                    "Details": "-"
+                  },
+                  {
+                    "Start Time": "11:50",
+                    "End Time": "13:00",
+                    "Event Name": "Cohort Performance & Prize giving",
+                    "Venue": "Classroom ",
+                    "Details": "Sec 1s will perform their dances and cheers :D (will be livestreamed and filmed on the spot)<br>OIs + Camp commandants (NOT CONFIRMED) will be assessing their performance"
+                  },
+                  {
+                    "Start Time": "13:00",
+                    "End Time": "14:00",
+                    "Event Name": "Lunch",
+                    "Venue": "Canteen",
+                    "Details": "OIs spread themselves out throughout the canteen to brief on recess expectations. OLs to have recess with the juniors and bring them back to class after recess."
+                  },
+                  {
+                    "Start Time": "14:00",
+                    "End Time": "14:20",
+                    "Event Name": "Cleaning up the classroom, arranging the furniture.",
+                    "Venue": "Classroom ",
+                    "Details": "Students tidy up their classrooms."
+                  },
+                  {
+                    "Start Time": "14:30",
+                    "End Time": "17:30",
+                    "Event Name": "CCA Exposure",
+                    "Venue": "School",
+                    "Details": "OLs to follow along their Classes to the different CCA Experiences. "
+                  }
+            ],
+            "resilience": [
+                {
+                    "Start Time": "07:30",
+                    "End Time": "08:00",
+                    "Event Name": "Morning Assembly",
+                    "Venue": "Classroom",
+                    "Details": "-"
+                  },
+                  {
+                    "Start Time": "08:00",
+                    "End Time": "08:15",
+                    "Event Name": "Energisers",
+                    "Venue": "Classroom",
+                    "Details": "Conducted by OLs"
+                  },
+                  {
+                    "Start Time": "08:20",
+                    "End Time": "09:05",
+                    "Event Name": "The Floor Is Lava",
+                    "Venue": "Parade Square, ISH or wet weather: ISH, Walkway along podium",
+                    "Details": "OIs to brief the classes at game venues.<br>OLs to follow the classes during the amazing race and join in the activity.<br>OIs will notify them that they are going to the next location/game."
+                  },
+                  {
+                    "Start Time": "09:05",
+                    "End Time": "09:45",
+                    "Event Name": "Cohort Performance Preparation",
+                    "Venue": "Classroom ",
+                    "Details": "-"
+                  },
+                  {
+                    "Start Time": "09:45",
+                    "End Time": "10:20",
+                    "Event Name": "Recess",
+                    "Venue": "Canteen",
+                    "Details": "-"
+                  },
+                  {
+                    "Start Time": "10:20",
+                    "End Time": "10:35",
+                    "Event Name": "Cohort Performance Preparation",
+                    "Venue": "Classroom ",
+                    "Details": "-"
+                  },
+                  {
+                    "Start Time": "10:35",
+                    "End Time": "11:20",
+                    "Event Name": "Trial And Error",
+                    "Venue": "Field or wet weather: Hall",
+                    "Details": "OIs to brief the classes at game venues.<br>OLs to follow the classes during the amazing race and join in the activity.<br>OIs will notify them that they are going to the next location/game."
+                  },
+                  {
+                    "Start Time": "11:20",
+                    "End Time": "11:45",
+                    "Event Name": "Cohort Performance Preparation",
+                    "Venue": "Classroom ",
+                    "Details": "-"
+                  },
+                  {
+                    "Start Time": "11:50",
+                    "End Time": "13:00",
+                    "Event Name": "Cohort Performance & Prize giving",
+                    "Venue": "Classroom ",
+                    "Details": "Sec 1s will perform their dances and cheers :D (will be livestreamed and filmed on the spot)<br>OIs + Camp commandants (NOT CONFIRMED) will be assessing their performance"
+                  },
+                  {
+                    "Start Time": "13:00",
+                    "End Time": "14:00",
+                    "Event Name": "Lunch",
+                    "Venue": "Canteen",
+                    "Details": "OIs spread themselves out throughout the canteen to brief on recess expectations. OLs to have recess with the juniors and bring them back to class after recess."
+                  },
+                  {
+                    "Start Time": "14:00",
+                    "End Time": "14:20",
+                    "Event Name": "Cleaning up the classroom, arranging the furniture.",
+                    "Venue": "Classroom ",
+                    "Details": "Students tidy up their classrooms."
+                  },
+                  {
+                    "Start Time": "14:30",
+                    "End Time": "17:30",
+                    "Event Name": "CCA Exposure",
+                    "Venue": "School",
+                    "Details": "OLs to follow along their Classes to the different CCA Experiences. "
+                  }
+            ],
+            "integrity": [
+                {
+                    "Start Time": "07:30",
+                    "End Time": "08:00",
+                    "Event Name": "Morning Assembly",
+                    "Venue": "Classroom",
+                    "Details": "-"
+                  },
+                  {
+                    "Start Time": "08:00",
+                    "End Time": "08:15",
+                    "Event Name": "Energisers",
+                    "Venue": "Classroom",
+                    "Details": "Conducted by OLs"
+                  },
+                  {
+                    "Start Time": "08:20",
+                    "End Time": "09:10",
+                    "Event Name": "Cohort Performance Preparation",
+                    "Venue": "Classroom ",
+                    "Details": "-"
+                  },
+                  {
+                    "Start Time": "09:10",
+                    "End Time": "09:45",
+                    "Event Name": "Recess",
+                    "Venue": "Canteen",
+                    "Details": "-"
+                  },
+                  {
+                    "Start Time": "09:45",
+                    "End Time": "09:50",
+                    "Event Name": "Cohort Performance Preparation",
+                    "Venue": "Classroom ",
+                    "Details": "-"
+                  },
+                  {
+                    "Start Time": "09:50",
+                    "End Time": "10:35",
+                    "Event Name": "Trial And Error",
+                    "Venue": "Field or wet weather: Hall",
+                    "Details": "OIs to brief the classes at game venues.<br>OLs to follow the classes during the amazing race and join in the activity.<br>OIs will notify them that they are going to the next location/game."
+                  },
+                  {
+                    "Start Time": "10:35",
+                    "End Time": "11:20",
+                    "Event Name": "The Floor Is Lava",
+                    "Venue": "Parade Square, ISH or wet weather: ISH, Walkway along podium",
+                    "Details": "OIs to brief the classes at game venues.<br>OLs to follow the classes during the amazing race and join in the activity.<br>OIs will notify them that they are going to the next location/game."
+                  },
+                  {
+                    "Start Time": "11:20",
+                    "End Time": "11:45",
+                    "Event Name": "Cohort Performance Preparation",
+                    "Venue": "Classroom ",
+                    "Details": "-"
+                  },
+                  {
+                    "Start Time": "11:50",
+                    "End Time": "13:00",
+                    "Event Name": "Cohort Performance & Prize giving",
+                    "Venue": "Classroom ",
+                    "Details": "Sec 1s will perform their dances and cheers :D (will be livestreamed and filmed on the spot)<br>OIs + Camp commandants (NOT CONFIRMED) will be assessing their performance"
+                  },
+                  {
+                    "Start Time": "13:00",
+                    "End Time": "14:00",
+                    "Event Name": "Lunch",
+                    "Venue": "Canteen",
+                    "Details": "OIs spread themselves out throughout the canteen to brief on recess expectations. OLs to have recess with the juniors and bring them back to class after recess."
+                  },
+                  {
+                    "Start Time": "14:00",
+                    "End Time": "14:20",
+                    "Event Name": "Cleaning up the classroom, arranging the furniture.",
+                    "Venue": "Classroom ",
+                    "Details": "Students tidy up their classrooms."
+                  },
+                  {
+                    "Start Time": "14:30",
+                    "End Time": "17:30",
+                    "Event Name": "CCA Exposure",
+                    "Venue": "School",
+                    "Details": "OLs to follow along their Classes to the different CCA Experiences. "
+                  }
+            ],
+            "gratitude": [
+                {
+                    "Start Time": "07:30",
+                    "End Time": "08:00",
+                    "Event Name": "Morning Assembly",
+                    "Venue": "Classroom",
+                    "Details": "-"
+                  },
+                  {
+                    "Start Time": "08:00",
+                    "End Time": "08:15",
+                    "Event Name": "Energisers",
+                    "Venue": "Classroom",
+                    "Details": "Conducted by OLs"
+                  },
+                  {
+                    "Start Time": "08:20",
+                    "End Time": "09:05",
+                    "Event Name": "The Floor Is Lava",
+                    "Venue": "Parade Square, ISH or wet weather: ISH, Walkway along podium",
+                    "Details": "OIs to brief the classes at game venues.<br>OLs to follow the classes during the amazing race and join in the activity.<br>OIs will notify them that they are going to the next location/game."
+                  },
+                  {
+                    "Start Time": "09:05",
+                    "End Time": "09:45",
+                    "Event Name": "Cohort Performance Preparation",
+                    "Venue": "Classroom ",
+                    "Details": "-"
+                  },
+                  {
+                    "Start Time": "09:45",
+                    "End Time": "10:20",
+                    "Event Name": "Recess",
+                    "Venue": "Canteen",
+                    "Details": "-"
+                  },
+                  {
+                    "Start Time": "10:20",
+                    "End Time": "10:35",
+                    "Event Name": "Cohort Performance Preparation",
+                    "Venue": "Classroom ",
+                    "Details": "-"
+                  },
+                  {
+                    "Start Time": "10:35",
+                    "End Time": "11:20",
+                    "Event Name": "Trial And Error",
+                    "Venue": "Field or wet weather: Hall",
+                    "Details": "OIs to brief the classes at game venues.<br>OLs to follow the classes during the amazing race and join in the activity.<br>OIs will notify them that they are going to the next location/game."
+                  },
+                  {
+                    "Start Time": "11:20",
+                    "End Time": "11:45",
+                    "Event Name": "Cohort Performance Preparation",
+                    "Venue": "Classroom ",
+                    "Details": "-"
+                  },
+                  {
+                    "Start Time": "11:50",
+                    "End Time": "13:00",
+                    "Event Name": "Cohort Performance & Prize giving",
+                    "Venue": "Classroom ",
+                    "Details": "Sec 1s will perform their dances and cheers :D (will be livestreamed and filmed on the spot)<br>OIs + Camp commandants (NOT CONFIRMED) will be assessing their performance"
+                  },
+                  {
+                    "Start Time": "13:00",
+                    "End Time": "14:00",
+                    "Event Name": "Lunch",
+                    "Venue": "Canteen",
+                    "Details": "OIs spread themselves out throughout the canteen to brief on recess expectations. OLs to have recess with the juniors and bring them back to class after recess."
+                  },
+                  {
+                    "Start Time": "14:00",
+                    "End Time": "14:20",
+                    "Event Name": "Cleaning up the classroom, arranging the furniture.",
+                    "Venue": "Classroom ",
+                    "Details": "Students tidy up their classrooms."
+                  },
+                  {
+                    "Start Time": "14:30",
+                    "End Time": "17:30",
+                    "Event Name": "CCA Exposure",
+                    "Venue": "School",
+                    "Details": "OLs to follow along their Classes to the different CCA Experiences. "
+                  }
+            ],
+            "excellence": [
+                {
+                    "Start Time": "07:30",
+                    "End Time": "08:00",
+                    "Event Name": "Morning Assembly",
+                    "Venue": "Classroom",
+                    "Details": "-"
+                  },
+                  {
+                    "Start Time": "08:00",
+                    "End Time": "08:15",
+                    "Event Name": "Energisers",
+                    "Venue": "Classroom",
+                    "Details": "Conducted by OLs"
+                  },
+                  {
+                    "Start Time": "08:20",
+                    "End Time": "09:10",
+                    "Event Name": "Cohort Performance Preparation",
+                    "Venue": "Classroom ",
+                    "Details": "-"
+                  },
+                  {
+                    "Start Time": "09:10",
+                    "End Time": "09:45",
+                    "Event Name": "Recess",
+                    "Venue": "Canteen",
+                    "Details": "-"
+                  },
+                  {
+                    "Start Time": "09:45",
+                    "End Time": "09:50",
+                    "Event Name": "Cohort Performance Preparation",
+                    "Venue": "Classroom ",
+                    "Details": "-"
+                  },
+                  {
+                    "Start Time": "09:50",
+                    "End Time": "10:35",
+                    "Event Name": "Trial And Error",
+                    "Venue": "Field or wet weather: Hall",
+                    "Details": "OIs to brief the classes at game venues.<br>OLs to follow the classes during the amazing race and join in the activity.<br>OIs will notify them that they are going to the next location/game."
+                  },
+                  {
+                    "Start Time": "10:35",
+                    "End Time": "11:20",
+                    "Event Name": "The Floor Is Lava",
+                    "Venue": "Parade Square, ISH or wet weather: ISH, Walkway along podium",
+                    "Details": "OIs to brief the classes at game venues.<br>OLs to follow the classes during the amazing race and join in the activity.<br>OIs will notify them that they are going to the next location/game."
+                  },
+                  {
+                    "Start Time": "11:20",
+                    "End Time": "11:45",
+                    "Event Name": "Cohort Performance Preparation",
+                    "Venue": "Classroom ",
+                    "Details": "-"
+                  },
+                  {
+                    "Start Time": "11:50",
+                    "End Time": "13:00",
+                    "Event Name": "Cohort Performance & Prize giving",
+                    "Venue": "Classroom ",
+                    "Details": "Sec 1s will perform their dances and cheers :D (will be livestreamed and filmed on the spot)<br>OIs + Camp commandants (NOT CONFIRMED) will be assessing their performance"
+                  },
+                  {
+                    "Start Time": "13:00",
+                    "End Time": "14:00",
+                    "Event Name": "Lunch",
+                    "Venue": "Canteen",
+                    "Details": "OIs spread themselves out throughout the canteen to brief on recess expectations. OLs to have recess with the juniors and bring them back to class after recess."
+                  },
+                  {
+                    "Start Time": "14:00",
+                    "End Time": "14:20",
+                    "Event Name": "Cleaning up the classroom, arranging the furniture.",
+                    "Venue": "Classroom ",
+                    "Details": "Students tidy up their classrooms."
+                  },
+                  {
+                    "Start Time": "14:30",
+                    "End Time": "17:30",
+                    "Event Name": "CCA Exposure",
+                    "Venue": "School",
+                    "Details": "OLs to follow along their Classes to the different CCA Experiences. "
+                  }
+            ],
+            "aspire": [
+                {
+                    "Start Time": "07:30",
+                    "End Time": "08:00",
+                    "Event Name": "Morning Assembly",
+                    "Venue": "Classroom",
+                    "Details": "-"
+                  },
+                  {
+                    "Start Time": "08:00",
+                    "End Time": "08:15",
+                    "Event Name": "Energisers",
+                    "Venue": "Classroom",
+                    "Details": "Conducted by OLs"
+                  },
+                  {
+                    "Start Time": "08:20",
+                    "End Time": "09:05",
+                    "Event Name": "Trial And Error",
+                    "Venue": "Field or wet weather: Hall",
+                    "Details": "OIs to brief the classes at game venues.<br>OLs to follow the classes during the amazing race and join in the activity.<br>OIs will notify them that they are going to the next location/game."
+                  },
+                  {
+                    "Start Time": "09:05",
+                    "End Time": "09:50",
+                    "Event Name": "The Floor Is Lava",
+                    "Venue": "Parade Square, ISH or wet weather: ISH, Walkway along podium",
+                    "Details": "OIs to brief the classes at game venues.<br>OLs to follow the classes during the amazing race and join in the activity.<br>OIs will notify them that they are going to the next location/game."
+                  },
+                  {
+                    "Start Time": "09:50",
+                    "End Time": "10:20",
+                    "Event Name": "Cohort Performance Preparation",
+                    "Venue": "Classroom ",
+                    "Details": "-"
+                  },
+                  {
+                    "Start Time": "10:20",
+                    "End Time": "10:55",
+                    "Event Name": "Recess",
+                    "Venue": "Canteen",
+                    "Details": "-"
+                  },
+                  {
+                    "Start Time": "10:55",
+                    "End Time": "11:20",
+                    "Event Name": "Cohort Performance Preparation",
+                    "Venue": "Classroom ",
+                    "Details": "-"
+                  },
+                  {
+                    "Start Time": "11:20",
+                    "End Time": "11:45",
+                    "Event Name": "Cohort Performance Preparation",
+                    "Venue": "Classroom ",
+                    "Details": "-"
+                  },
+                  {
+                    "Start Time": "11:50",
+                    "End Time": "13:00",
+                    "Event Name": "Cohort Performance & Prize giving",
+                    "Venue": "Classroom ",
+                    "Details": "Sec 1s will perform their dances and cheers :D (will be livestreamed and filmed on the spot)<br>OIs + Camp commandants (NOT CONFIRMED) will be assessing their performance"
+                  },
+                  {
+                    "Start Time": "13:00",
+                    "End Time": "14:00",
+                    "Event Name": "Lunch",
+                    "Venue": "Canteen",
+                    "Details": "OIs spread themselves out throughout the canteen to brief on recess expectations. OLs to have recess with the juniors and bring them back to class after recess."
+                  },
+                  {
+                    "Start Time": "14:00",
+                    "End Time": "14:20",
+                    "Event Name": "Cleaning up the classroom, arranging the furniture.",
+                    "Venue": "Classroom ",
+                    "Details": "Students tidy up their classrooms."
+                  },
+                  {
+                    "Start Time": "14:30",
+                    "End Time": "17:30",
+                    "Event Name": "CCA Exposure",
+                    "Venue": "School",
+                    "Details": "OLs to follow along their Classes to the different CCA Experiences. "
+                  }
+            ]
+        }
+    }
+}
