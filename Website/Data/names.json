@@ -130,9 +130,9 @@
         "8": {},
         "9": {},
         "10": {},
-        "morning_duty_check": false,
+        "morning_duty_check": true,
         "morning_duty": {
-            "duty": ""
+            "duty": "stairs_to_hall"
         }
     },
     "Carissa": {
@@ -402,9 +402,9 @@
         "8": {},
         "9": {},
         "10": {},
-        "morning_duty_check": true,
+        "morning_duty_check": false,
         "morning_duty": {
-            "duty": "stairs_to_hall"
+            "duty": ""
         }
     },
     "Danica": {
@@ -810,9 +810,9 @@
         "8": {},
         "9": {},
         "10": {},
-        "morning_duty_check": false,
+        "morning_duty_check": true,
         "morning_duty": {
-            "duty": ""
+            "duty": "side_gate_pcn"
         }
     },
     "Jing Ting": {
@@ -980,9 +980,9 @@
         "8": {},
         "9": {},
         "10": {},
-        "morning_duty_check": false,
+        "morning_duty_check": true,
         "morning_duty": {
-            "duty": ""
+            "duty": "side_gate_pcn"
         }
     },
     "Megan": {
@@ -1150,9 +1150,9 @@
         "8": {},
         "9": {},
         "10": {},
-        "morning_duty_check": false,
+        "morning_duty_check": true,
         "morning_duty": {
-            "duty": ""
+            "duty": "side_gate_pcn"
         }
     },
     "Roshini": {

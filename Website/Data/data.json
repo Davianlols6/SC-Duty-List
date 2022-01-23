@@ -1,7 +1,7 @@
 {
   "updated": "Data is accurate as of 23 January 2022",
-  "version": "Version 2.4.0.1",
-  "releaseNotesURL": "https://github.com/Davianlols6/SC-Duty-List/releases/tag/v2.4.0",
+  "version": "Version 2.5.0",
+  "releaseNotesURL": "https://github.com/Davianlols6/SC-Duty-List/releases/tag/v2.5.0",
   "weeks": {
     "0": [
         "2022-01-17",
@@ -764,14 +764,14 @@
 },
   "constants": {
     "morning_duty": {
-      "main_gate": ["Xin Rong", "Song"],
-      "late_coming": ["Roshini", "Gladys"],
-      "canteen": ["Tiffany (Sec 3)", "Sabith", "Anaqi"],
-      "stairs_to_hall": ["Inshirah", "Ally", "Cristian"],
-      "side_gate": ["Clement", "Chang Yi"],
-      "lift": ["Chloe Koh", "Nethra"],
-      "morning_patrol": ["Danica", "Zachary"],
-      "hall": ["Suspended until further notice"]
+        "main_gate": ["Xin Rong", "Song"],
+        "late_coming": ["Roshini", "Gladys"],
+        "canteen": ["Tiffany (Sec 3)", "Sabith", "Anaqi"],
+        "stairs_to_hall": ["Inshirah", "Ally", "Boon Hiok"],
+        "side_gate": ["Clement", "Chang Yi"],
+        "lift": ["Chloe Koh", "Nethra"],
+        "morning_patrol": ["Danica", "Zachary"],
+        "side_gate_pcn": ["Jin Wei", "Lincoln", "Rosanne"]
     }
   }
 }

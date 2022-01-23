@@ -66,6 +66,7 @@ function offlineOverview(date) {
       side_gate: "Side Gate",
       morning_patrol: "Morning Patrol",
       hall: "Hall",
+      side_gate_pcn: "Side Gate @ PCN"
     };
   
     let counter1 = 1;
@@ -116,7 +117,8 @@ function offlineOverview(date) {
       "side_gate": "Side Gate",
       "lift": "Lift",
       "morning_patrol": "Morning Patrol",
-      "hall": "Hall"
+      "hall": "Hall",
+      "side_gate_pcn": "Side Gate @ PCN"
   };
   
   for (const duty in morningDutyData){
@@ -193,6 +195,7 @@ function offlinePersonalised(name, date) {
         side_gate: "Side Gate",
         morning_patrol: "Morning Patrol",
         hall: "Hall",
+        side_gate_pcn: "Side Gate @ PCN"
     };
 
     var counter = 0;
