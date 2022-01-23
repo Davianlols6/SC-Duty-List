@@ -6,11 +6,11 @@ var morningDuty = {
     "main_gate": ["Xin Rong", "Song"],
     "late_coming": ["Roshini", "Gladys"],
     "canteen": ["Tiffany (Sec 3)", "Sabith", "Anaqi"],
-    "stairs_to_hall": ["Inshirah", "Ally", "Cristian"],
+    "stairs_to_hall": ["Inshirah", "Ally", "Boon Hiok"],
     "side_gate": ["Clement", "Chang Yi"],
     "lift": ["Chloe Koh", "Nethra"],
     "morning_patrol": ["Danica", "Zachary"],
-    "hall": ["Suspended until further notice"]
+    "side_gate_pcn": ["Jin Wei", "Lincoln", "Rosanne"]
   }
 
 var dutyData=[];

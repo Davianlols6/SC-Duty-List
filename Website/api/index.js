@@ -290,6 +290,7 @@ app.get("/overview/:date", (req, res) => {
     side_gate: "Side Gate",
     morning_patrol: "Morning Patrol",
     hall: "Hall",
+    side_gate_pcn: "Side Gate @ PCN"
   };
 
   let counter1 = 1;
@@ -340,7 +341,8 @@ var morningDutyTrans = {
     "side_gate": "Side Gate",
     "lift": "Lift",
     "morning_patrol": "Morning Patrol",
-    "hall": "Hall"
+    "hall": "Hall",
+    "side_gate_pcn": "Side Gate @ PCN"
 };
 
 for (const duty in morningDutyData){
@@ -422,6 +424,7 @@ app.get("/personalised/:name/:date", (req, res) => {
         side_gate: "Side Gate",
         morning_patrol: "Morning Patrol",
         hall: "Hall",
+        side_gate_pcn: "Side Gate @ PCN"
     };
 
     var counter = 0;
