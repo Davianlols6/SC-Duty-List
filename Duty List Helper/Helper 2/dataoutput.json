@@ -20,12 +20,12 @@
                     "Carissa"
                 ],
                 "nb2": [
-                    "Nethra",
-                    "Yun Ji"
+                    "Yun Ji",
+                    "Jerome"
                 ],
                 "nb3": [
                     "Megan",
-                    "Rachel"
+                    "Xin Hui"
                 ],
                 "stall": [
                     "Shannen",
@@ -49,13 +49,13 @@
                     "Cristian",
                     "Jin Wei",
                     "Kristine",
+                    "Nethra",
                     "Qian Wen",
+                    "Rachel",
                     "Vera",
                     "Li Xuan",
                     "Tiffany (Sec 3)",
-                    "Xin Hui",
                     "Daryll",
-                    "Jerome",
                     "Danica",
                     "Gladys",
                     "Jervis",
@@ -184,12 +184,12 @@
                     "Xin Rong"
                 ],
                 "central": [
-                    "Jerome",
-                    "Firdaus"
+                    "Kristine",
+                    "Jerome"
                 ],
                 "on_break": [
-                    "Kristine",
                     "Shannen",
+                    "Firdaus",
                     "Ally",
                     "Chang Yi",
                     "Rosanne"
@@ -407,7 +407,7 @@
                     "Ally"
                 ],
                 "nb2": [
-                    "Jervis",
+                    "Tiffany (Sec 3)",
                     "Amelia"
                 ],
                 "nb3": [
@@ -423,8 +423,8 @@
                     "Lincoln"
                 ],
                 "lift": [
-                    "Danica",
-                    "Gladys"
+                    "Li Xuan",
+                    "Danica"
                 ],
                 "central": [
                     "Carissa",
@@ -434,11 +434,11 @@
                     "Cheslyn",
                     "Chloe Koh",
                     "Gerald",
-                    "Li Xuan",
-                    "Tiffany (Sec 3)",
                     "Yun Ji",
                     "Daryll",
                     "Jerome",
+                    "Gladys",
+                    "Jervis",
                     "Song",
                     "Yu Herng",
                     "Xin Rong"
@@ -446,9 +446,9 @@
             },
             "fifth_recess": {
                 "nb1": [
+                    "Kristine",
                     "Qian Wen",
-                    "Sabith",
-                    "Charlene"
+                    "Kah Sin"
                 ],
                 "nb2": [
                     "Chloe",
@@ -467,19 +467,19 @@
                     "Vera"
                 ],
                 "lift": [
-                    "Hong Wei",
+                    "Jin Wei",
                     "Tiffany (Sec 4)"
                 ],
                 "central": [
                     "Cristian"
                 ],
                 "on_break": [
-                    "Jin Wei",
-                    "Kristine",
                     "Megan",
+                    "Hong Wei",
+                    "Sabith",
                     "Firdaus",
-                    "Inshirah",
-                    "Kah Sin"
+                    "Charlene",
+                    "Inshirah"
                 ]
             }
         }
@@ -554,7 +554,7 @@
                     "Inshirah"
                 ],
                 "pond": [
-                    "Yun Ji",
+                    "Chloe Koh",
                     "Lincoln"
                 ],
                 "lift": [
@@ -576,18 +576,137 @@
                     "Rachel",
                     "Shannen",
                     "Vera",
-                    "Chloe Koh",
                     "Denise",
                     "Gerald",
                     "Li Xuan",
                     "Tiffany (Sec 3)",
                     "Xin Hui",
+                    "Yun Ji",
                     "Jerome",
                     "Gerris",
                     "Charlene",
                     "Kah Sin",
                     "Roshini",
                     "Tiffany (Sec 4)"
+                ]
+            },
+            "fifth_recess": {
+                "nb1": [],
+                "nb2": [],
+                "nb3": [],
+                "stall": [],
+                "pond": [],
+                "lift": [],
+                "central": [],
+                "on_break": []
+            }
+        }
+    },
+    "6": {
+        "exco_morning_duty": {},
+        "constant_morning_duty": "morning_duty",
+        "recess_duty": {
+            "first_recess": {
+                "nb1": [],
+                "nb2": [],
+                "nb3": [],
+                "stall": [],
+                "pond": [],
+                "lift": [],
+                "central": [],
+                "on_break": []
+            },
+            "second_recess": {
+                "nb1": [
+                    "Xin Rong"
+                ],
+                "nb2": [],
+                "nb3": [],
+                "stall": [],
+                "pond": [
+                    "Rosanne"
+                ],
+                "lift": [],
+                "central": [],
+                "on_break": []
+            },
+            "third_recess": {
+                "nb1": [
+                    "Carissa",
+                    "Gerris",
+                    "Lincoln"
+                ],
+                "nb2": [
+                    "Jervis",
+                    "Yu Herng"
+                ],
+                "nb3": [
+                    "Sabith",
+                    "Danica"
+                ],
+                "stall": [
+                    "Gladys"
+                ],
+                "pond": [
+                    "Jing Ting",
+                    "Song"
+                ],
+                "lift": [
+                    "Anaqi"
+                ],
+                "central": [
+                    "Hong Wei"
+                ],
+                "on_break": []
+            },
+            "fourth_recess": {
+                "nb1": [
+                    "Megan",
+                    "Qian Wen",
+                    "Vera"
+                ],
+                "nb2": [
+                    "Clement",
+                    "Jin Wei"
+                ],
+                "nb3": [
+                    "Gerald",
+                    "Tiffany (Sec 3)"
+                ],
+                "stall": [
+                    "Cristian",
+                    "Xin Hui"
+                ],
+                "pond": [
+                    "Kah Sin",
+                    "Roshini"
+                ],
+                "lift": [
+                    "Chloe Koh",
+                    "Zachary"
+                ],
+                "central": [
+                    "Rachel",
+                    "Amelia"
+                ],
+                "on_break": [
+                    "Chloe",
+                    "Kristine",
+                    "Nethra",
+                    "Shannen",
+                    "Cheslyn",
+                    "Denise",
+                    "Li Xuan",
+                    "Yun Ji",
+                    "Daryll",
+                    "Jerome",
+                    "Firdaus",
+                    "Charlene",
+                    "Inshirah",
+                    "Tiffany (Sec 4)",
+                    "Ally",
+                    "Boon Hiok",
+                    "Chang Yi"
                 ]
             },
             "fifth_recess": {
