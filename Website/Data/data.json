@@ -1,6 +1,6 @@
 {
-  "updated": "Data is accurate as of 23 January 2022",
-  "version": "Version 2.5.0",
+  "updated": "Data is accurate as of 24 January 2022",
+  "version": "Version 2.5.0.1",
   "releaseNotesURL": "https://github.com/Davianlols6/SC-Duty-List/releases/tag/v2.5.0",
   "weeks": {
     "0": [
@@ -31,8 +31,8 @@
     "2022-01-22": 11,
     "2022-01-23": 11,
     "2022-01-24": 6,
-    "2022-01-25": 11,
-    "2022-01-26": 11,
+    "2022-01-25": 7,
+    "2022-01-26": 8,
     "2022-01-27": 11,
     "2022-01-28": 11,
     "2022-01-29": 11,
@@ -747,6 +747,263 @@
                     "Ally",
                     "Boon Hiok",
                     "Chang Yi"
+                ]
+            },
+            "fifth_recess": {
+                "nb1": [],
+                "nb2": [],
+                "nb3": [],
+                "stall": [],
+                "pond": [],
+                "lift": [],
+                "central": [],
+                "on_break": []
+            }
+        }
+    },
+    "7": {
+        "exco_morning_duty": {},
+        "constant_morning_duty": "morning_duty",
+        "recess_duty": {
+            "first_recess": {
+                "nb1": [
+                    "Chloe",
+                    "Clement"
+                ],
+                "nb2": [
+                    "Jin Wei",
+                    "Kristine"
+                ],
+                "nb3": [
+                    "Cristian",
+                    "Shannen",
+                    "Sabith"
+                ],
+                "stall": [
+                    "Rachel",
+                    "Vera"
+                ],
+                "pond": [
+                    "Nethra",
+                    "Hong Wei"
+                ],
+                "lift": [],
+                "central": [
+                    "Megan"
+                ],
+                "on_break": [
+                    "Qian Wen"
+                ]
+            },
+            "second_recess": {
+                "nb1": [
+                    "Charlene",
+                    "Inshirah"
+                ],
+                "nb2": [
+                    "Kah Sin",
+                    "Zachary"
+                ],
+                "nb3": [
+                    "Tiffany (Sec 4)"
+                ],
+                "stall": [],
+                "pond": [],
+                "lift": [
+                    "Roshini"
+                ],
+                "central": [],
+                "on_break": []
+            },
+            "third_recess": {
+                "nb1": [
+                    "Chloe Koh",
+                    "Amelia",
+                    "Boon Hiok",
+                    "Xin Rong"
+                ],
+                "nb2": [
+                    "Denise",
+                    "Gerald"
+                ],
+                "nb3": [
+                    "Li Xuan"
+                ],
+                "stall": [
+                    "Chang Yi"
+                ],
+                "pond": [
+                    "Daryll",
+                    "Jerome"
+                ],
+                "lift": [
+                    "Cheslyn"
+                ],
+                "central": [
+                    "Xin Hui",
+                    "Rosanne"
+                ],
+                "on_break": [
+                    "Tiffany (Sec 3)",
+                    "Yun Ji",
+                    "Ally"
+                ]
+            },
+            "fourth_recess": {
+                "nb1": [
+                    "Firdaus",
+                    "Anaqi",
+                    "Song"
+                ],
+                "nb2": [
+                    "Jing Ting",
+                    "Yu Herng"
+                ],
+                "nb3": [
+                    "Gerris",
+                    "Gladys"
+                ],
+                "stall": [
+                    "Carissa",
+                    "Danica"
+                ],
+                "pond": [
+                    "Lincoln"
+                ],
+                "lift": [
+                    "Jervis"
+                ],
+                "central": [],
+                "on_break": []
+            },
+            "fifth_recess": {
+                "nb1": [],
+                "nb2": [],
+                "nb3": [],
+                "stall": [],
+                "pond": [],
+                "lift": [],
+                "central": [],
+                "on_break": []
+            }
+        }
+    },
+    "8": {
+        "exco_morning_duty": {},
+        "constant_morning_duty": "morning_duty",
+        "recess_duty": {
+            "first_recess": {
+                "nb1": [
+                    "Cheslyn",
+                    "Yun Ji",
+                    "Firdaus"
+                ],
+                "nb2": [
+                    "Denise"
+                ],
+                "nb3": [
+                    "Li Xuan"
+                ],
+                "stall": [
+                    "Tiffany (Sec 3)"
+                ],
+                "pond": [
+                    "Gerald"
+                ],
+                "lift": [
+                    "Xin Hui"
+                ],
+                "central": [],
+                "on_break": [
+                    "Chloe Koh"
+                ]
+            },
+            "second_recess": {
+                "nb1": [
+                    "Anaqi",
+                    "Carissa",
+                    "Jervis"
+                ],
+                "nb2": [
+                    "Song",
+                    "Yu Herng"
+                ],
+                "nb3": [
+                    "Danica",
+                    "Gerris"
+                ],
+                "stall": [
+                    "Gladys",
+                    "Jing Ting"
+                ],
+                "pond": [
+                    "Rosanne",
+                    "Xin Rong"
+                ],
+                "lift": [
+                    "Hong Wei",
+                    "Sabith"
+                ],
+                "central": [
+                    "Lincoln"
+                ],
+                "on_break": []
+            },
+            "third_recess": {
+                "nb1": [
+                    "Chloe",
+                    "Cristian",
+                    "Megan"
+                ],
+                "nb2": [
+                    "Shannen",
+                    "Daryll"
+                ],
+                "nb3": [
+                    "Qian Wen"
+                ],
+                "stall": [
+                    "Nethra"
+                ],
+                "pond": [
+                    "Kristine"
+                ],
+                "lift": [
+                    "Vera"
+                ],
+                "central": [
+                    "Rachel"
+                ],
+                "on_break": [
+                    "Clement",
+                    "Jin Wei",
+                    "Jerome"
+                ]
+            },
+            "fourth_recess": {
+                "nb1": [
+                    "Zachary",
+                    "Amelia"
+                ],
+                "nb2": [
+                    "Charlene",
+                    "Tiffany (Sec 4)",
+                    "Chang Yi"
+                ],
+                "nb3": [
+                    "Inshirah",
+                    "Ally"
+                ],
+                "stall": [
+                    "Kah Sin"
+                ],
+                "pond": [
+                    "Roshini"
+                ],
+                "lift": [],
+                "central": [],
+                "on_break": [
+                    "Boon Hiok"
                 ]
             },
             "fifth_recess": {

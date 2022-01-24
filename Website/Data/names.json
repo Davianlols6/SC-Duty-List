@@ -24,8 +24,14 @@
             "recess": 4,
             "duty": "on_break"
         },
-        "7": {},
-        "8": {},
+        "7": {
+            "recess": 3,
+            "duty": "on_break"
+        },
+        "8": {
+            "recess": 4,
+            "duty": "nb3"
+        },
         "9": {},
         "10": {},
         "morning_duty_check": true,
@@ -58,8 +64,14 @@
             "recess": 4,
             "duty": "central"
         },
-        "7": {},
-        "8": {},
+        "7": {
+            "recess": 3,
+            "duty": "nb1"
+        },
+        "8": {
+            "recess": 4,
+            "duty": "nb1"
+        },
         "9": {},
         "10": {},
         "morning_duty_check": false,
@@ -92,8 +104,14 @@
             "recess": 3,
             "duty": "lift"
         },
-        "7": {},
-        "8": {},
+        "7": {
+            "recess": 4,
+            "duty": "nb1"
+        },
+        "8": {
+            "recess": 2,
+            "duty": "nb1"
+        },
         "9": {},
         "10": {},
         "morning_duty_check": true,
@@ -126,8 +144,14 @@
             "recess": 4,
             "duty": "on_break"
         },
-        "7": {},
-        "8": {},
+        "7": {
+            "recess": 3,
+            "duty": "nb1"
+        },
+        "8": {
+            "recess": 4,
+            "duty": "on_break"
+        },
         "9": {},
         "10": {},
         "morning_duty_check": true,
@@ -160,8 +184,14 @@
             "recess": 3,
             "duty": "nb1"
         },
-        "7": {},
-        "8": {},
+        "7": {
+            "recess": 4,
+            "duty": "stall"
+        },
+        "8": {
+            "recess": 2,
+            "duty": "nb1"
+        },
         "9": {},
         "10": {},
         "morning_duty_check": false,
@@ -194,8 +224,14 @@
             "recess": 4,
             "duty": "on_break"
         },
-        "7": {},
-        "8": {},
+        "7": {
+            "recess": 3,
+            "duty": "stall"
+        },
+        "8": {
+            "recess": 4,
+            "duty": "nb2"
+        },
         "9": {},
         "10": {},
         "morning_duty_check": true,
@@ -228,8 +264,14 @@
             "recess": 4,
             "duty": "on_break"
         },
-        "7": {},
-        "8": {},
+        "7": {
+            "recess": 2,
+            "duty": "nb1"
+        },
+        "8": {
+            "recess": 4,
+            "duty": "nb2"
+        },
         "9": {},
         "10": {},
         "morning_duty_check": false,
@@ -262,8 +304,14 @@
             "recess": 4,
             "duty": "on_break"
         },
-        "7": {},
-        "8": {},
+        "7": {
+            "recess": 3,
+            "duty": "lift"
+        },
+        "8": {
+            "recess": 1,
+            "duty": "nb1"
+        },
         "9": {},
         "10": {},
         "morning_duty_check": false,
@@ -296,8 +344,14 @@
             "recess": 4,
             "duty": "on_break"
         },
-        "7": {},
-        "8": {},
+        "7": {
+            "recess": 1,
+            "duty": "nb1"
+        },
+        "8": {
+            "recess": 3,
+            "duty": "nb1"
+        },
         "9": {},
         "10": {},
         "morning_duty_check": false,
@@ -330,8 +384,14 @@
             "recess": 4,
             "duty": "lift"
         },
-        "7": {},
-        "8": {},
+        "7": {
+            "recess": 3,
+            "duty": "nb1"
+        },
+        "8": {
+            "recess": 1,
+            "duty": "on_break"
+        },
         "9": {},
         "10": {},
         "morning_duty_check": true,
@@ -364,8 +424,14 @@
             "recess": 4,
             "duty": "nb2"
         },
-        "7": {},
-        "8": {},
+        "7": {
+            "recess": 1,
+            "duty": "nb1"
+        },
+        "8": {
+            "recess": 3,
+            "duty": "on_break"
+        },
         "9": {},
         "10": {},
         "morning_duty_check": true,
@@ -398,8 +464,14 @@
             "recess": 4,
             "duty": "stall"
         },
-        "7": {},
-        "8": {},
+        "7": {
+            "recess": 1,
+            "duty": "nb3"
+        },
+        "8": {
+            "recess": 3,
+            "duty": "nb1"
+        },
         "9": {},
         "10": {},
         "morning_duty_check": false,
@@ -432,8 +504,14 @@
             "recess": 3,
             "duty": "nb3"
         },
-        "7": {},
-        "8": {},
+        "7": {
+            "recess": 4,
+            "duty": "stall"
+        },
+        "8": {
+            "recess": 2,
+            "duty": "nb3"
+        },
         "9": {},
         "10": {},
         "morning_duty_check": true,
@@ -466,8 +544,14 @@
             "recess": 4,
             "duty": "on_break"
         },
-        "7": {},
-        "8": {},
+        "7": {
+            "recess": 3,
+            "duty": "pond"
+        },
+        "8": {
+            "recess": 3,
+            "duty": "nb2"
+        },
         "9": {},
         "10": {},
         "morning_duty_check": false,
@@ -500,8 +584,14 @@
             "recess": 4,
             "duty": "on_break"
         },
-        "7": {},
-        "8": {},
+        "7": {
+            "recess": 3,
+            "duty": "nb2"
+        },
+        "8": {
+            "recess": 1,
+            "duty": "nb2"
+        },
         "9": {},
         "10": {},
         "morning_duty_check": false,
@@ -534,8 +624,14 @@
             "recess": 4,
             "duty": "on_break"
         },
-        "7": {},
-        "8": {},
+        "7": {
+            "recess": 4,
+            "duty": "nb1"
+        },
+        "8": {
+            "recess": 1,
+            "duty": "nb1"
+        },
         "9": {},
         "10": {},
         "morning_duty_check": false,
@@ -568,8 +664,14 @@
             "recess": 4,
             "duty": "nb3"
         },
-        "7": {},
-        "8": {},
+        "7": {
+            "recess": 3,
+            "duty": "nb2"
+        },
+        "8": {
+            "recess": 1,
+            "duty": "pond"
+        },
         "9": {},
         "10": {},
         "morning_duty_check": false,
@@ -602,8 +704,14 @@
             "recess": 3,
             "duty": "nb1"
         },
-        "7": {},
-        "8": {},
+        "7": {
+            "recess": 4,
+            "duty": "nb3"
+        },
+        "8": {
+            "recess": 2,
+            "duty": "nb3"
+        },
         "9": {},
         "10": {},
         "morning_duty_check": false,
@@ -636,8 +744,14 @@
             "recess": 3,
             "duty": "stall"
         },
-        "7": {},
-        "8": {},
+        "7": {
+            "recess": 4,
+            "duty": "nb3"
+        },
+        "8": {
+            "recess": 2,
+            "duty": "stall"
+        },
         "9": {},
         "10": {},
         "morning_duty_check": true,
@@ -670,8 +784,14 @@
             "recess": 3,
             "duty": "central"
         },
-        "7": {},
-        "8": {},
+        "7": {
+            "recess": 1,
+            "duty": "pond"
+        },
+        "8": {
+            "recess": 2,
+            "duty": "lift"
+        },
         "9": {},
         "10": {},
         "morning_duty_check": false,
@@ -704,8 +824,14 @@
             "recess": 4,
             "duty": "on_break"
         },
-        "7": {},
-        "8": {},
+        "7": {
+            "recess": 2,
+            "duty": "nb1"
+        },
+        "8": {
+            "recess": 4,
+            "duty": "nb3"
+        },
         "9": {},
         "10": {},
         "morning_duty_check": true,
@@ -738,8 +864,14 @@
             "recess": 4,
             "duty": "on_break"
         },
-        "7": {},
-        "8": {},
+        "7": {
+            "recess": 3,
+            "duty": "pond"
+        },
+        "8": {
+            "recess": 3,
+            "duty": "on_break"
+        },
         "9": {},
         "10": {},
         "morning_duty_check": false,
@@ -772,8 +904,14 @@
             "recess": 3,
             "duty": "nb2"
         },
-        "7": {},
-        "8": {},
+        "7": {
+            "recess": 4,
+            "duty": "lift"
+        },
+        "8": {
+            "recess": 2,
+            "duty": "nb1"
+        },
         "9": {},
         "10": {},
         "morning_duty_check": false,
@@ -806,8 +944,14 @@
             "recess": 4,
             "duty": "nb2"
         },
-        "7": {},
-        "8": {},
+        "7": {
+            "recess": 1,
+            "duty": "nb2"
+        },
+        "8": {
+            "recess": 3,
+            "duty": "on_break"
+        },
         "9": {},
         "10": {},
         "morning_duty_check": true,
@@ -840,8 +984,14 @@
             "recess": 3,
             "duty": "pond"
         },
-        "7": {},
-        "8": {},
+        "7": {
+            "recess": 4,
+            "duty": "nb2"
+        },
+        "8": {
+            "recess": 2,
+            "duty": "stall"
+        },
         "9": {},
         "10": {},
         "morning_duty_check": false,
@@ -874,8 +1024,14 @@
             "recess": 4,
             "duty": "pond"
         },
-        "7": {},
-        "8": {},
+        "7": {
+            "recess": 2,
+            "duty": "nb2"
+        },
+        "8": {
+            "recess": 4,
+            "duty": "stall"
+        },
         "9": {},
         "10": {},
         "morning_duty_check": false,
@@ -908,8 +1064,14 @@
             "recess": 4,
             "duty": "on_break"
         },
-        "7": {},
-        "8": {},
+        "7": {
+            "recess": 1,
+            "duty": "nb2"
+        },
+        "8": {
+            "recess": 3,
+            "duty": "pond"
+        },
         "9": {},
         "10": {},
         "morning_duty_check": false,
@@ -942,8 +1104,14 @@
             "recess": 4,
             "duty": "on_break"
         },
-        "7": {},
-        "8": {},
+        "7": {
+            "recess": 3,
+            "duty": "nb3"
+        },
+        "8": {
+            "recess": 1,
+            "duty": "nb3"
+        },
         "9": {},
         "10": {},
         "morning_duty_check": false,
@@ -976,8 +1144,14 @@
             "recess": 3,
             "duty": "nb1"
         },
-        "7": {},
-        "8": {},
+        "7": {
+            "recess": 4,
+            "duty": "pond"
+        },
+        "8": {
+            "recess": 2,
+            "duty": "central"
+        },
         "9": {},
         "10": {},
         "morning_duty_check": true,
@@ -1010,8 +1184,14 @@
             "recess": 4,
             "duty": "nb1"
         },
-        "7": {},
-        "8": {},
+        "7": {
+            "recess": 1,
+            "duty": "central"
+        },
+        "8": {
+            "recess": 3,
+            "duty": "nb1"
+        },
         "9": {},
         "10": {},
         "morning_duty_check": false,
@@ -1044,8 +1224,14 @@
             "recess": 4,
             "duty": "on_break"
         },
-        "7": {},
-        "8": {},
+        "7": {
+            "recess": 1,
+            "duty": "pond"
+        },
+        "8": {
+            "recess": 3,
+            "duty": "stall"
+        },
         "9": {},
         "10": {},
         "morning_duty_check": true,
@@ -1078,8 +1264,14 @@
             "recess": 4,
             "duty": "nb1"
         },
-        "7": {},
-        "8": {},
+        "7": {
+            "recess": 1,
+            "duty": "on_break"
+        },
+        "8": {
+            "recess": 3,
+            "duty": "nb3"
+        },
         "9": {},
         "10": {},
         "morning_duty_check": false,
@@ -1112,8 +1304,14 @@
             "recess": 4,
             "duty": "central"
         },
-        "7": {},
-        "8": {},
+        "7": {
+            "recess": 1,
+            "duty": "stall"
+        },
+        "8": {
+            "recess": 3,
+            "duty": "central"
+        },
         "9": {},
         "10": {},
         "morning_duty_check": false,
@@ -1146,8 +1344,14 @@
             "recess": 2,
             "duty": "pond"
         },
-        "7": {},
-        "8": {},
+        "7": {
+            "recess": 3,
+            "duty": "central"
+        },
+        "8": {
+            "recess": 2,
+            "duty": "pond"
+        },
         "9": {},
         "10": {},
         "morning_duty_check": true,
@@ -1180,8 +1384,14 @@
             "recess": 4,
             "duty": "pond"
         },
-        "7": {},
-        "8": {},
+        "7": {
+            "recess": 2,
+            "duty": "lift"
+        },
+        "8": {
+            "recess": 4,
+            "duty": "pond"
+        },
         "9": {},
         "10": {},
         "morning_duty_check": true,
@@ -1214,8 +1424,14 @@
             "recess": 3,
             "duty": "nb3"
         },
-        "7": {},
-        "8": {},
+        "7": {
+            "recess": 1,
+            "duty": "nb3"
+        },
+        "8": {
+            "recess": 2,
+            "duty": "lift"
+        },
         "9": {},
         "10": {},
         "morning_duty_check": true,
@@ -1248,8 +1464,14 @@
             "recess": 4,
             "duty": "on_break"
         },
-        "7": {},
-        "8": {},
+        "7": {
+            "recess": 1,
+            "duty": "nb3"
+        },
+        "8": {
+            "recess": 3,
+            "duty": "nb2"
+        },
         "9": {},
         "10": {},
         "morning_duty_check": false,
@@ -1282,8 +1504,14 @@
             "recess": 3,
             "duty": "pond"
         },
-        "7": {},
-        "8": {},
+        "7": {
+            "recess": 4,
+            "duty": "nb1"
+        },
+        "8": {
+            "recess": 2,
+            "duty": "nb2"
+        },
         "9": {},
         "10": {},
         "morning_duty_check": true,
@@ -1316,8 +1544,14 @@
             "recess": 4,
             "duty": "nb3"
         },
-        "7": {},
-        "8": {},
+        "7": {
+            "recess": 3,
+            "duty": "on_break"
+        },
+        "8": {
+            "recess": 1,
+            "duty": "stall"
+        },
         "9": {},
         "10": {},
         "morning_duty_check": true,
@@ -1350,8 +1584,14 @@
             "recess": 4,
             "duty": "on_break"
         },
-        "7": {},
-        "8": {},
+        "7": {
+            "recess": 2,
+            "duty": "nb3"
+        },
+        "8": {
+            "recess": 4,
+            "duty": "nb2"
+        },
         "9": {},
         "10": {},
         "morning_duty_check": false,
@@ -1384,8 +1624,14 @@
             "recess": 4,
             "duty": "nb1"
         },
-        "7": {},
-        "8": {},
+        "7": {
+            "recess": 1,
+            "duty": "stall"
+        },
+        "8": {
+            "recess": 3,
+            "duty": "lift"
+        },
         "9": {},
         "10": {},
         "morning_duty_check": false,
@@ -1418,8 +1664,14 @@
             "recess": 4,
             "duty": "stall"
         },
-        "7": {},
-        "8": {},
+        "7": {
+            "recess": 3,
+            "duty": "central"
+        },
+        "8": {
+            "recess": 1,
+            "duty": "lift"
+        },
         "9": {},
         "10": {},
         "morning_duty_check": false,
@@ -1452,8 +1704,14 @@
             "recess": 2,
             "duty": "nb1"
         },
-        "7": {},
-        "8": {},
+        "7": {
+            "recess": 3,
+            "duty": "nb1"
+        },
+        "8": {
+            "recess": 2,
+            "duty": "pond"
+        },
         "9": {},
         "10": {},
         "morning_duty_check": true,
@@ -1486,8 +1744,14 @@
             "recess": 3,
             "duty": "nb2"
         },
-        "7": {},
-        "8": {},
+        "7": {
+            "recess": 4,
+            "duty": "nb2"
+        },
+        "8": {
+            "recess": 2,
+            "duty": "nb2"
+        },
         "9": {},
         "10": {},
         "morning_duty_check": false,
@@ -1520,8 +1784,14 @@
             "recess": 4,
             "duty": "on_break"
         },
-        "7": {},
-        "8": {},
+        "7": {
+            "recess": 3,
+            "duty": "on_break"
+        },
+        "8": {
+            "recess": 1,
+            "duty": "nb1"
+        },
         "9": {},
         "10": {},
         "morning_duty_check": false,
@@ -1554,8 +1824,14 @@
             "recess": 4,
             "duty": "lift"
         },
-        "7": {},
-        "8": {},
+        "7": {
+            "recess": 2,
+            "duty": "nb2"
+        },
+        "8": {
+            "recess": 4,
+            "duty": "nb1"
+        },
         "9": {},
         "10": {},
         "morning_duty_check": true,
