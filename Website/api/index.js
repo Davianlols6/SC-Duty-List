@@ -4,8 +4,10 @@ const fs = require("fs");
 const path = require("path");
 const { v4: uuidv4 } = require('uuid');
 const url = require('url');
-
+const jsoning = require("jsoning");
 const app = express();
+
+let db = new jsoning("../logs/log.json");
 
 app.use(cors());
 
@@ -189,20 +191,30 @@ app.get("/version", (req, res) => {
   const event = new Date();
 
   var jsonPath1 = path.join(__dirname, "..", "logs/log.json");
-
-fs.readFile(jsonPath1, 'utf8', function readFileCallback(err, data){
-  if (err){
-      console.log(err);
+(async () => {
+  if(await db.has("data")) {
+    var data1 = await db.get("data");
+    data1.push({"time": event.toISOString(), "userAgent": req.headers['user-agent'], "type": queryObject.type, "uuid": queryObject.uuid});
+    await db.set("data", data1);
   } else {
-  obj = JSON.parse(data); //now it an object
-  obj.data.push({"time": event.toISOString(), "userAgent": req.headers['user-agent'], "type": queryObject.type, "uuid": queryObject.uuid}); //add some data
-  json = JSON.stringify(obj); //convert it back to json
-  fs.writeFile(jsonPath1, json, 'utf8', err => {
-    if (err) {
-     console.error('Failed to write starter kits file: ', err);
-    } else console.log('Fetched 1 file: ');
-   }); // write it back 
-}});
+    var data1 = [];
+    data1.push({"time": event.toISOString(), "userAgent": req.headers['user-agent'], "type": queryObject.type, "uuid": queryObject.uuid});
+    await db.set("data", data1);
+  }
+})();
+// fs.readFile(jsonPath1, 'utf8', function readFileCallback(err, data){
+//   if (err){
+//       console.log(err);
+//   } else {
+//   obj = JSON.parse(data); //now it an object
+//   obj.data.push({"time": event.toISOString(), "userAgent": req.headers['user-agent'], "type": queryObject.type, "uuid": queryObject.uuid}); //add some data
+//   json = JSON.stringify(obj); //convert it back to json
+//   fs.writeFile(jsonPath1, json, 'utf8', err => {
+//     if (err) {
+//      console.error('Failed to write starter kits file: ', err);
+//     } else console.log('Fetched 1 file: ');
+//    }); // write it back 
+// }});
 
   res.send(
     JSON.stringify({
