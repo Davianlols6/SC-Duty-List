@@ -768,7 +768,8 @@
             "first_recess": {
                 "nb1": [
                     "Chloe",
-                    "Clement"
+                    "Clement",
+                    "Sabith"
                 ],
                 "nb2": [
                     "Jin Wei",
@@ -776,8 +777,7 @@
                 ],
                 "nb3": [
                     "Cristian",
-                    "Shannen",
-                    "Sabith"
+                    "Shannen"
                 ],
                 "stall": [
                     "Rachel",
@@ -819,7 +819,6 @@
                 "nb1": [
                     "Chloe Koh",
                     "Amelia",
-                    "Boon Hiok",
                     "Xin Rong"
                 ],
                 "nb2": [
@@ -827,10 +826,11 @@
                     "Gerald"
                 ],
                 "nb3": [
-                    "Li Xuan"
+                    "Yun Ji"
                 ],
                 "stall": [
-                    "Chang Yi"
+                    "Chang Yi",
+                     "Li Xuan"
                 ],
                 "pond": [
                     "Daryll",
@@ -845,7 +845,7 @@
                 ],
                 "on_break": [
                     "Tiffany (Sec 3)",
-                    "Yun Ji",
+                    "Boon Hiok",
                     "Ally"
                 ]
             },
@@ -899,7 +899,8 @@
                     "Firdaus"
                 ],
                 "nb2": [
-                    "Denise"
+                    "Denise",
+                    "Chloe Koh"
                 ],
                 "nb3": [
                     "Li Xuan"
@@ -915,7 +916,7 @@
                 ],
                 "central": [],
                 "on_break": [
-                    "Chloe Koh"
+                    
                 ]
             },
             "second_recess": {

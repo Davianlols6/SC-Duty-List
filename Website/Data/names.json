@@ -146,7 +146,7 @@
         },
         "7": {
             "recess": 3,
-            "duty": "nb1"
+            "duty": "on_break"
         },
         "8": {
             "recess": 4,
@@ -390,7 +390,7 @@
         },
         "8": {
             "recess": 1,
-            "duty": "on_break"
+            "duty": "nb2"
         },
         "9": {},
         "10": {},
@@ -1106,7 +1106,7 @@
         },
         "7": {
             "recess": 3,
-            "duty": "nb3"
+            "duty": "stall"
         },
         "8": {
             "recess": 1,
@@ -1426,7 +1426,7 @@
         },
         "7": {
             "recess": 1,
-            "duty": "nb3"
+            "duty": "nb1"
         },
         "8": {
             "recess": 2,
@@ -1786,7 +1786,7 @@
         },
         "7": {
             "recess": 3,
-            "duty": "on_break"
+            "duty": "nb3"
         },
         "8": {
             "recess": 1,
