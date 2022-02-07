@@ -8,11 +8,32 @@ const jsoning = require("jsoning");
 const app = express();
 
 let db = new jsoning("../logs/log.json");
+let artdb = new jsoning("/var/www/usbs/davianeng/artlog/artdb.json");
 
 app.use(cors());
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 app.get("/", (req, res) => {
   res.send("Hello World!!!");
+});
+
+app.get("/art", (req, res) => {
+  (async () => {
+    let data = await artdb.get("data");
+    res.send(data);
+  })();
+  
+});
+
+app.post("/art", (req, res) => {
+  (async () => {
+    let data = await artdb.get("data");
+    data.push(req.body.data);
+    await artdb.set("data", data);
+    res.send(data);
+  })();
+  
 });
 
 app.get("/o/:day/:class", (req, res) => {
