@@ -1,6 +1,6 @@
 {
-  "updated": "Data is accurate as of 26 January 2022",
-  "version": "Version 2.5.0.2",
+  "updated": "Data is accurate as of 7 February 2022",
+  "version": "Version 2.5.0.4",
   "releaseNotesURL": "https://github.com/Davianlols6/SC-Duty-List/releases/tag/v2.5.0",
   "weeks": {
     "0": [
@@ -29,6 +29,24 @@
         "2022-02-04",
         "2022-02-05",
         "2022-02-06"
+    ],
+    "3": [
+        "2022-02-07",
+        "2022-02-08",
+        "2022-02-09",
+        "2022-02-10",
+        "2022-02-11",
+        "2022-02-12",
+        "2022-02-13"
+    ],
+    "4": [
+        "2022-02-14",
+        "2022-02-15",
+        "2022-02-16",
+        "2022-02-17",
+        "2022-02-18",
+        "2022-02-19",
+        "2022-02-20"
     ]
 },
 "dates": {
@@ -52,7 +70,21 @@
     "2022-02-03": 4,
     "2022-02-04": 5,
     "2022-02-05": 11,
-    "2022-02-06": 11
+    "2022-02-06": 11,
+    "2022-02-07": 6,
+    "2022-02-08": 7,
+    "2022-02-09": 8,
+    "2022-02-10": 9,
+    "2022-02-11": 10,
+    "2022-02-12": 11,
+    "2022-02-13": 11,
+    "2022-02-14": 1,
+    "2022-02-15": 2,
+    "2022-02-16": 3,
+    "2022-02-17": 4,
+    "2022-02-18": 5,
+    "2022-02-19": 11,
+    "2022-02-20": 11
 },
   "presets": {
     "1": {
@@ -216,8 +248,7 @@
             "second_recess": {
                 "nb1": [
                     "Megan",
-                    "Nethra",
-                    "Boon Hiok"
+                    "Nethra"
                 ],
                 "nb2": [
                     "Cristian",
@@ -247,6 +278,7 @@
                     "Shannen",
                     "Firdaus",
                     "Ally",
+                    "Boon Hiok",
                     "Chang Yi",
                     "Rosanne"
                 ]
@@ -321,8 +353,7 @@
                     "Nethra"
                 ],
                 "pond": [
-                    "Ally",
-                    "Boon Hiok"
+                    "Ally"
                 ],
                 "central": [
                     "Charlene",
@@ -338,7 +369,8 @@
                     "Roshini",
                     "Tiffany (Sec 4)",
                     "Zachary",
-                    "Amelia"
+                    "Amelia",
+                    "Boon Hiok"
                 ]
             },
             "second_recess": {
@@ -467,7 +499,6 @@
                     "Amelia"
                 ],
                 "nb3": [
-                    "Boon Hiok",
                     "Rosanne"
                 ],
                 "stall": [
@@ -497,6 +528,7 @@
                     "Jervis",
                     "Song",
                     "Yu Herng",
+                    "Boon Hiok",
                     "Xin Rong"
                 ]
             },
@@ -560,8 +592,7 @@
             },
             "second_recess": {
                 "nb1": [
-                    "Hong Wei",
-                    "Boon Hiok"
+                    "Hong Wei"
                 ],
                 "nb2": [
                     "Firdaus"
@@ -579,7 +610,9 @@
                     "Amelia"
                 ],
                 "lift": [],
-                "on_break": []
+                "on_break": [
+                    "Boon Hiok"
+                ]
             },
             "third_recess": {
                 "nb1": [],
@@ -784,7 +817,8 @@
             "first_recess": {
                 "nb1": [
                     "Chloe",
-                    "Clement"
+                    "Clement",
+                    "Sabith"
                 ],
                 "nb2": [
                     "Jin Wei",
@@ -792,8 +826,7 @@
                 ],
                 "nb3": [
                     "Cristian",
-                    "Shannen",
-                    "Sabith"
+                    "Shannen"
                 ],
                 "stall": [
                     "Rachel",
@@ -835,7 +868,6 @@
                 "nb1": [
                     "Chloe Koh",
                     "Amelia",
-                    "Boon Hiok",
                     "Xin Rong"
                 ],
                 "nb2": [
@@ -843,9 +875,10 @@
                     "Gerald"
                 ],
                 "nb3": [
-                    "Li Xuan"
+                    "Yun Ji"
                 ],
                 "stall": [
+                    "Li Xuan",
                     "Chang Yi"
                 ],
                 "pond": [
@@ -861,8 +894,8 @@
                 ],
                 "on_break": [
                     "Tiffany (Sec 3)",
-                    "Yun Ji",
-                    "Ally"
+                    "Ally",
+                    "Boon Hiok"
                 ]
             },
             "fourth_recess": {

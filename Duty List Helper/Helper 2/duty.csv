@@ -13,14 +13,14 @@ Cheslyn,Lift,NB3,NB1,,NB1,,Lift,NB1,Central,Central
 Chloe Koh,Lift,,Lift,,Pond,Lift,NB1,,Lift,Pond
 Denise,Stall,Stall,,NB1,,,NB2,NB2,NB2,NB1
 Gerald,NB1,Pond,Stall,,,NB3,NB2,Pond,Stall,NB1
-Li Xuan,,NB1,NB3,Lift,,,NB3,NB3,Central,
+Li Xuan,,NB1,NB3,Lift,,,Stall,NB3,Central,
 Tiffany (Sec 3),,NB1,NB1,NB2,,NB3,,Stall,NB1,Lift
 Xin Hui,NB3,NB2,,NB1,,Stall,Central,Lift,Stall,
-Yun Ji,NB2,Central,Stall,,,,,NB1,Pond,
+Yun Ji,NB2,Central,Stall,,,,NB3,NB1,Pond,
 Daryll,,Pond,NB1,,Central,,Pond,NB2,NB1,Stall
 Jerome,NB2,Central,Pond,,,,Pond,,,NB1
 Hong Wei,NB3,NB1,NB1,,NB1,Central,Pond,Lift,NB1,NB1
-Sabith,Stall,NB3,NB1,,Stall,NB3,NB3,Lift,Pond,Central
+Sabith,Stall,NB3,NB1,,Stall,NB3,NB1,Lift,Pond,Central
 Firdaus,Central,,NB2,,NB2,,NB1,NB1,NB1,NB2
 Anaqi,NB1,,Pond,Stall,Central,Lift,NB1,NB1,NB1,
 Carissa,NB1,,Pond,Central,Lift,NB1,Stall,NB1,NB2,NB3
@@ -40,7 +40,7 @@ Tiffany (Sec 4),Central,Lift,,Lift,,,NB3,NB2,,Pond
 Zachary,Pond,NB2,,Stall,NB2,Lift,NB2,NB1,,
 Ally,NB1,,Pond,NB1,NB3,,,NB3,NB1,NB1
 Amelia,NB2,Lift,,NB2,Central,Central,NB1,NB1,Lift,Pond
-Boon Hiok,,NB1,Pond,NB3,NB1,,NB1,,,
+Boon Hiok,,,,,,,,,,
 Chang Yi,Lift,,Central,Stall,Pond,,Stall,NB2,Pond,NB2
 Rosanne,NB2,,Pond,NB3,NB1,Pond,Central,Pond,NB1,
 Xin Rong,NB3,Lift,NB2,,Pond,NB1,NB1,Pond,NB3,

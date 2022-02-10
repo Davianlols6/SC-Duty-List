@@ -144,19 +144,19 @@
         },
         "2": {
             "recess": 2,
-            "duty": "nb1"
+            "duty": "on_break"
         },
         "3": {
             "recess": 1,
-            "duty": "pond"
+            "duty": "on_break"
         },
         "4": {
             "recess": 4,
-            "duty": "nb3"
+            "duty": "on_break"
         },
         "5": {
             "recess": 2,
-            "duty": "nb1"
+            "duty": "on_break"
         },
         "6": {
             "recess": 4,
@@ -164,7 +164,7 @@
         },
         "7": {
             "recess": 3,
-            "duty": "nb1"
+            "duty": "on_break"
         },
         "8": {
             "recess": 4,
@@ -1268,7 +1268,7 @@
         },
         "7": {
             "recess": 3,
-            "duty": "nb3"
+            "duty": "stall"
         },
         "8": {
             "recess": 1,
@@ -1636,7 +1636,7 @@
         },
         "7": {
             "recess": 1,
-            "duty": "nb3"
+            "duty": "nb1"
         },
         "8": {
             "recess": 2,
@@ -2050,7 +2050,7 @@
         },
         "7": {
             "recess": 3,
-            "duty": "on_break"
+            "duty": "nb3"
         },
         "8": {
             "recess": 1,
