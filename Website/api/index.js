@@ -486,7 +486,6 @@ app.get("/personalised/:name/:date", (req, res) => {
       "December",
     ];
     
-    var flagData = overviewFlagDuty(day);
     for (const i in jsonData.weeks[week]) {
         let draft1;
         let v = jsonData.weeks[week][i];
@@ -502,6 +501,7 @@ app.get("/personalised/:name/:date", (req, res) => {
           var firstDate = new Date(Object.keys(jsonData["dates"])[0]);
           var lastDate = new Date(Object.keys(jsonData["dates"])[Object.keys(jsonData["dates"]).length - 1]);            
         
+        var flagData = overviewFlagDuty(v);
         if (flagData !== null) {
             if (name === flagData.singapore_flag) {
             draft1.blocks.push({"type": "personalisedFlagDuty", "text": "Singapore Flag"});
