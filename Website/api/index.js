@@ -4,13 +4,36 @@ const fs = require("fs");
 const path = require("path");
 const { v4: uuidv4 } = require('uuid');
 const url = require('url');
-
+const jsoning = require("jsoning");
 const app = express();
 
+let db = new jsoning("../logs/log.json");
+let artdb = new jsoning("/var/www/usbs/davianeng/artlog/artdb.json");
+
 app.use(cors());
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 app.get("/", (req, res) => {
   res.send("Hello World!!!");
+});
+
+app.get("/art", (req, res) => {
+  (async () => {
+    let data = await artdb.get("data");
+    res.send(data);
+  })();
+  
+});
+
+app.post("/art", (req, res) => {
+  (async () => {
+    let data = await artdb.get("data");
+    data.push(req.body.data);
+    await artdb.set("data", data);
+    res.send(data);
+  })();
+  
 });
 
 app.get("/o/:day/:class", (req, res) => {
@@ -189,20 +212,30 @@ app.get("/version", (req, res) => {
   const event = new Date();
 
   var jsonPath1 = path.join(__dirname, "..", "logs/log.json");
-
-fs.readFile(jsonPath1, 'utf8', function readFileCallback(err, data){
-  if (err){
-      console.log(err);
+(async () => {
+  if(await db.has("data")) {
+    var data1 = await db.get("data");
+    data1.push({"time": event.toISOString(), "userAgent": req.headers['user-agent'], "type": queryObject.type, "uuid": queryObject.uuid});
+    await db.set("data", data1);
   } else {
-  obj = JSON.parse(data); //now it an object
-  obj.data.push({"time": event.toISOString(), "userAgent": req.headers['user-agent'], "type": queryObject.type, "uuid": queryObject.uuid}); //add some data
-  json = JSON.stringify(obj); //convert it back to json
-  fs.writeFile(jsonPath1, json, 'utf8', err => {
-    if (err) {
-     console.error('Failed to write starter kits file: ', err);
-    } else console.log('Fetched 1 file: ');
-   }); // write it back 
-}});
+    var data1 = [];
+    data1.push({"time": event.toISOString(), "userAgent": req.headers['user-agent'], "type": queryObject.type, "uuid": queryObject.uuid});
+    await db.set("data", data1);
+  }
+})();
+// fs.readFile(jsonPath1, 'utf8', function readFileCallback(err, data){
+//   if (err){
+//       console.log(err);
+//   } else {
+//   obj = JSON.parse(data); //now it an object
+//   obj.data.push({"time": event.toISOString(), "userAgent": req.headers['user-agent'], "type": queryObject.type, "uuid": queryObject.uuid}); //add some data
+//   json = JSON.stringify(obj); //convert it back to json
+//   fs.writeFile(jsonPath1, json, 'utf8', err => {
+//     if (err) {
+//      console.error('Failed to write starter kits file: ', err);
+//     } else console.log('Fetched 1 file: ');
+//    }); // write it back 
+// }});
 
   res.send(
     JSON.stringify({
@@ -453,7 +486,6 @@ app.get("/personalised/:name/:date", (req, res) => {
       "December",
     ];
     
-    var flagData = overviewFlagDuty(day);
     for (const i in jsonData.weeks[week]) {
         let draft1;
         let v = jsonData.weeks[week][i];
@@ -469,6 +501,7 @@ app.get("/personalised/:name/:date", (req, res) => {
           var firstDate = new Date(Object.keys(jsonData["dates"])[0]);
           var lastDate = new Date(Object.keys(jsonData["dates"])[Object.keys(jsonData["dates"]).length - 1]);            
         
+        var flagData = overviewFlagDuty(v);
         if (flagData !== null) {
             if (name === flagData.singapore_flag) {
             draft1.blocks.push({"type": "personalisedFlagDuty", "text": "Singapore Flag"});

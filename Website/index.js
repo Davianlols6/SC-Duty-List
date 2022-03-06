@@ -91,11 +91,14 @@ function version() {
 }
 
   function process(data) {
-    $("#versionurl").text("");
-    $(`<span>View the latest release details </span><a style="color: inherit;" target="_blank" href="${data.releaseNotesURL}">here</a><span></span>`).prependTo("#versionurl");
-    $("#version").text(data.version);
-    $("#updated").text(data.updated);
-    checkUpdate();
+    $.getJSON(`Data/data.json`, function (data1) {
+      data = data1;
+      $("#versionurl").text("");
+      $(`<span>View the latest release details </span><a style="color: inherit;" target="_blank" href="${data.releaseNotesURL}">here</a><span></span>`).prependTo("#versionurl");
+      $("#version").text(data.version);
+      $("#updated").text(data.updated);
+      checkUpdate();
+    });
   }
 
 }
@@ -181,6 +184,7 @@ function checkUpdate() {
     function process() {
       if (realData.version !== cacheData.version) {
         $("#updateBanner").fadeIn();
+        $("#version").text(`${cacheData.version} (Outdated)`);
       } else {
         $("#checkUpdateButton").text("No updates available");
         $("#checkUpdateButton").css("background-color", "red");

@@ -63,8 +63,8 @@ for(var i = 1; i < recessData[0].length; i++) {
             "nb3": [],
             "stall": [],
             "pond": [],
-            "lift": [],
             "central": [],
+            "lift": [],
             "on_break": []
           },
           "second_recess": {
@@ -73,8 +73,8 @@ for(var i = 1; i < recessData[0].length; i++) {
             "nb3": [],
             "stall": [],
             "pond": [],
-            "lift": [],
             "central": [],
+            "lift": [],
             "on_break": []
           },
           "third_recess": {
@@ -83,8 +83,8 @@ for(var i = 1; i < recessData[0].length; i++) {
             "nb3": [],
             "stall": [],
             "pond": [],
-            "lift": [],
             "central": [],
+            "lift": [],
             "on_break": []
           },
           "fourth_recess": {
@@ -93,8 +93,8 @@ for(var i = 1; i < recessData[0].length; i++) {
             "nb3": [],
             "stall": [],
             "pond": [],
-            "lift": [],
             "central": [],
+            "lift": [],
             "on_break": []
           },
           "fifth_recess": {
@@ -103,8 +103,8 @@ for(var i = 1; i < recessData[0].length; i++) {
             "nb3": [],
             "stall": [],
             "pond": [],
-            "lift": [],
             "central": [],
+            "lift": [],
             "on_break": []
           }
 }}
