@@ -5,7 +5,6 @@ var dataData = {};
 var dataFlag;
 var dataNames;
 
-
 $.getJSON(`Data/data.json`, function (data) {
     dataData = data;
     one();
