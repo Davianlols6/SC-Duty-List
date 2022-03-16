@@ -1,0 +1,12 @@
+{
+  "name": "helper-3",
+  "version": "1.0.0",
+  "description": "Helper 3 exists to alert the user about which duty person has < than 2 breaks or if duty spots are repeated more than 2 times a week",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Davian Eng Hong Rui",
+  "license": "MIT"
+}
