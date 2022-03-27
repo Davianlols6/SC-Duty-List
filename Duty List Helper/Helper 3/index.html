@@ -32,7 +32,7 @@
 </div>
 <script>
         $.getJSON(`https://cdn.davianeng.com/output.json`, function (data) {
-            data.oddWeek.forEach(item => {
+            data.evenWeek.forEach(item => {
                 console.log(item[Object.keys(item)]);
                 var duty = item[Object.keys(item)];
 
