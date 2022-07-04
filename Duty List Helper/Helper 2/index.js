@@ -3,14 +3,38 @@ var {parse} = require('csv');
 
 var temp = {}
 var morningDuty = {
-    "main_gate": ["Xin Rong", "Song"],
-    "late_coming": ["Roshini", "Gladys"],
-    "canteen": ["Tiffany (Sec 3)", "Sabith", "Anaqi"],
-    "stairs_to_hall": ["Inshirah", "Ally", "Boon Hiok"],
-    "side_gate": ["Clement", "Chang Yi"],
-    "lift": ["Chloe Koh", "Nethra"],
-    "morning_patrol": ["Danica", "Zachary"],
-    "side_gate_pcn": ["Jin Wei", "Lincoln", "Rosanne"]
+    "main_gate": [
+        "Chloe T",
+        "Branson",
+        "Amelia"
+    ],
+    "late_coming": [
+        "Gerald",
+        "Yu Xi",
+        "Nash"
+    ],
+    "canteen": [
+        "Wei Heng",
+        "Brenda",
+        "Nethra"
+    ],
+    "stairs_to_hall": [
+        "Jodius",
+        "Denise",
+    ],
+    "side_gate": [
+        "Phebe",
+        "Xin Hui"
+    ],
+    "lift": [
+        "Kai Xuan"
+    ],
+    "morning_patrol": ["Discontinued"],
+    "side_gate_pcn": [
+        "Muhilan",
+        "Megan",
+        "Ulfah"
+    ]
   }
 
 var dutyData=[];

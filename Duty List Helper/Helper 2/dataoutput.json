@@ -4,106 +4,114 @@
         "constant_morning_duty": "morning_duty",
         "recess_duty": {
             "first_recess": {
-                "nb1": [],
-                "nb2": [],
-                "nb3": [],
-                "stall": [],
-                "pond": [],
-                "central": [],
-                "lift": [],
+                "nb1": [
+                    "Brenda",
+                    "Shayanah",
+                    "Wen Tihng"
+                ],
+                "nb2": [
+                    "Jaswant",
+                    "Wei Heng"
+                ],
+                "nb3": [
+                    "Branson",
+                    "Muhilan",
+                    "Phebe"
+                ],
+                "stall": [
+                    "Nash",
+                    "Yu Xi"
+                ],
+                "pond": [
+                    "Kristy",
+                    "Melissa"
+                ],
+                "central": [
+                    "Alicia",
+                    "Amelia"
+                ],
+                "lift": [
+                    "Joie",
+                    "Kai Xuan"
+                ],
                 "on_break": []
             },
             "second_recess": {
                 "nb1": [
-                    "Gerald",
-                    "Anaqi",
-                    "Carissa"
+                    "Jin Wei",
+                    "Vera"
                 ],
                 "nb2": [
-                    "Yun Ji",
+                    "Jordon"
+                ],
+                "nb3": [
+                    "Nethra"
+                ],
+                "stall": [],
+                "pond": [
+                    "Kristine",
+                    "Megan"
+                ],
+                "central": [
+                    "Gerald"
+                ],
+                "lift": [
+                    "Chole T"
+                ],
+                "on_break": []
+            },
+            "third_recess": {
+                "nb1": [
+                    "Chanel",
+                    "Raihayu"
+                ],
+                "nb2": [
+                    "Chloe Hoon",
                     "Jerome"
                 ],
                 "nb3": [
-                    "Megan",
-                    "Xin Hui"
+                    "Hong Wei",
+                    "Jodius"
                 ],
                 "stall": [
-                    "Shannen",
-                    "Denise"
+                    "Evelyn",
+                    "Menerva"
                 ],
                 "pond": [
-                    "Song",
-                    "Yu Herng"
+                    "Ulfah"
                 ],
                 "central": [
-                    "Gerris"
+                    "Abby"
                 ],
                 "lift": [
-                    "Cheslyn",
-                    "Chloe Koh"
+                    "Rishini"
                 ],
                 "on_break": [
-                    "Chloe Tjahjono",
-                    "Clement",
-                    "Cristian",
-                    "Jin Wei",
-                    "Kristine",
-                    "Nethra",
-                    "Qian Wen",
-                    "Rachel",
-                    "Vera",
-                    "Li Xuan",
-                    "Tiffany (Sec 3)",
-                    "Daryll",
-                    "Danica",
-                    "Gladys",
-                    "Jervis",
-                    "Jing Ting",
-                    "Lincoln"
+                    "Daryll"
                 ]
-            },
-            "third_recess": {
-                "nb1": [],
-                "nb2": [],
-                "nb3": [],
-                "stall": [],
-                "pond": [],
-                "central": [],
-                "lift": [],
-                "on_break": []
             },
             "fourth_recess": {
                 "nb1": [
-                    "Charlene",
-                    "Inshirah",
-                    "Ally"
+                    "Denise",
+                    "Xin Hui"
                 ],
                 "nb2": [
-                    "Amelia"
+                    "Hannah"
                 ],
                 "nb3": [
-                    "Hong Wei",
-                    "Xin Rong"
+                    "Jing Wen"
                 ],
-                "stall": [
-                    "Sabith",
-                    "Kah Sin"
-                ],
+                "stall": [],
                 "pond": [
-                    "Roshini",
-                    "Zachary"
+                    "Chloe Koh",
+                    "Javen"
                 ],
-                "central": [
-                    "Firdaus",
-                    "Tiffany (Sec 4)"
-                ],
+                "central": [],
                 "lift": [
-                    "Chang Yi"
+                    "Li Xuan",
+                    "Yun Ji"
                 ],
-                "on_break": [
-                    "Boon Hiok",
-                    "Rosanne"
-                ]
+                "on_break": []
             },
             "fifth_recess": {
                 "nb1": [],
@@ -122,105 +130,6 @@
         "constant_morning_duty": "morning_duty",
         "recess_duty": {
             "first_recess": {
-                "nb1": [
-                    "Charlene",
-                    "Inshirah"
-                ],
-                "nb2": [
-                    "Roshini",
-                    "Zachary"
-                ],
-                "nb3": [
-                    "Jing Ting"
-                ],
-                "stall": [
-                    "Gladys",
-                    "Jervis"
-                ],
-                "pond": [
-                    "Danica",
-                    "Song"
-                ],
-                "central": [
-                    "Lincoln"
-                ],
-                "lift": [
-                    "Kah Sin",
-                    "Tiffany (Sec 4)"
-                ],
-                "on_break": [
-                    "Hong Wei",
-                    "Sabith",
-                    "Anaqi",
-                    "Carissa",
-                    "Gerris",
-                    "Yu Herng"
-                ]
-            },
-            "second_recess": {
-                "nb1": [
-                    "Megan",
-                    "Nethra"
-                ],
-                "nb2": [
-                    "Cristian",
-                    "Vera"
-                ],
-                "nb3": [
-                    "Qian Wen",
-                    "Rachel"
-                ],
-                "stall": [
-                    "Clement",
-                    "Jin Wei"
-                ],
-                "pond": [
-                    "Chloe Tjahjono",
-                    "Daryll"
-                ],
-                "central": [
-                    "Kristine",
-                    "Jerome"
-                ],
-                "lift": [
-                    "Amelia"
-                ],
-                "on_break": [
-                    "Shannen",
-                    "Firdaus",
-                    "Ally",
-                    "Boon Hiok",
-                    "Chang Yi",
-                    "Rosanne",
-                    "Xin Rong"
-                ]
-            },
-            "third_recess": {
-                "nb1": [
-                    "Li Xuan",
-                    "Tiffany (Sec 3)"
-                ],
-                "nb2": [
-                    "Xin Hui"
-                ],
-                "nb3": [
-                    "Cheslyn"
-                ],
-                "stall": [
-                    "Denise"
-                ],
-                "pond": [
-                    "Gerald"
-                ],
-                "central": [
-                    "Yun Ji"
-                ],
-                "lift": [],
-                "on_break": [
-                    "Chloe Koh"
-                ]
-            },
-            "fourth_recess": {
                 "nb1": [],
                 "nb2": [],
                 "nb3": [],
@@ -228,7 +137,104 @@
                 "pond": [],
                 "central": [],
                 "lift": [],
+                "on_break": [
+                    "Daryll",
+                    "Jerome"
+                ]
+            },
+            "second_recess": {
+                "nb1": [
+                    "Chloe Koh",
+                    "Jing Wen"
+                ],
+                "nb2": [
+                    "Denise"
+                ],
+                "nb3": [
+                    "Javen"
+                ],
+                "stall": [
+                    "Hannah",
+                    "Li Xuan"
+                ],
+                "pond": [
+                    "Xin Hui"
+                ],
+                "central": [
+                    "Yun Ji"
+                ],
+                "lift": [],
                 "on_break": []
+            },
+            "third_recess": {
+                "nb1": [
+                    "Gerald",
+                    "Wen Tihng"
+                ],
+                "nb2": [
+                    "Nethra"
+                ],
+                "nb3": [
+                    "Chole T"
+                ],
+                "stall": [
+                    "Megan",
+                    "Nash"
+                ],
+                "pond": [
+                    "Melissa",
+                    "Vera"
+                ],
+                "central": [
+                    "Yu Xi"
+                ],
+                "lift": [
+                    "Kristine"
+                ],
+                "on_break": [
+                    "Jaswant",
+                    "Jin Wei",
+                    "Jordon",
+                    "Wei Heng"
+                ]
+            },
+            "fourth_recess": {
+                "nb1": [
+                    "Abby",
+                    "Chanel",
+                    "Joie"
+                ],
+                "nb2": [
+                    "Amelia",
+                    "Raihayu"
+                ],
+                "nb3": [
+                    "Branson",
+                    "Jodius"
+                ],
+                "stall": [
+                    "Alicia",
+                    "Chloe Hoon"
+                ],
+                "pond": [
+                    "Rishini",
+                    "Shayanah"
+                ],
+                "central": [
+                    "Hong Wei",
+                    "Ulfah"
+                ],
+                "lift": [
+                    "Brenda",
+                    "Kai Xuan"
+                ],
+                "on_break": [
+                    "Evelyn",
+                    "Kristy",
+                    "Menerva",
+                    "Muhilan",
+                    "Phebe"
+                ]
             },
             "fifth_recess": {
                 "nb1": [],
@@ -248,111 +254,112 @@
         "recess_duty": {
             "first_recess": {
                 "nb1": [
+                    "Brenda",
                     "Jin Wei",
-                    "Rachel"
+                    "Joie"
                 ],
                 "nb2": [
-                    "Cristian",
-                    "Megan"
+                    "Gerald",
+                    "Kristy"
                 ],
                 "nb3": [
-                    "Qian Wen",
-                    "Vera"
+                    "Jaswant",
+                    "Muhilan"
                 ],
                 "stall": [
-                    "Kristine",
-                    "Nethra"
+                    "Branson",
+                    "Jordon",
+                    "Wei Heng"
                 ],
                 "pond": [
-                    "Ally"
+                    "Alicia",
+                    "Yu Xi"
                 ],
                 "central": [
-                    "Charlene"
+                    "Nethra",
+                    "Shayanah"
                 ],
                 "lift": [
-                    "Chloe Tjahjono",
-                    "Shannen"
+                    "Amelia",
+                    "Megan"
                 ],
                 "on_break": [
-                    "Clement",
-                    "Inshirah",
-                    "Kah Sin",
-                    "Roshini",
-                    "Tiffany (Sec 4)",
-                    "Zachary",
-                    "Amelia",
-                    "Boon Hiok",
-                    "Chang Yi"
+                    "Chole T",
+                    "Kristine",
+                    "Melissa",
+                    "Nash",
+                    "Vera",
+                    "Wen Tihng"
                 ]
             },
             "second_recess": {
                 "nb1": [
-                    "Cheslyn",
-                    "Tiffany (Sec 3)",
-                    "Yu Herng"
+                    "Chanel",
+                    "Kai Xuan"
                 ],
                 "nb2": [
-                    "Gerris"
+                    "Evelyn"
                 ],
                 "nb3": [
-                    "Li Xuan"
+                    "Abby"
                 ],
                 "stall": [
-                    "Gerald",
-                    "Yun Ji"
+                    "Jodius"
                 ],
                 "pond": [
-                    "Anaqi",
-                    "Carissa"
+                    "Phebe",
+                    "Ulfah"
                 ],
                 "central": [
-                    "Gladys",
-                    "Song"
+                    "Rishini"
                 ],
                 "lift": [
-                    "Chloe Koh",
-                    "Jervis"
+                    "Menerva",
+                    "Raihayu"
                 ],
                 "on_break": [
-                    "Denise",
-                    "Xin Hui",
-                    "Danica",
-                    "Jing Ting",
-                    "Lincoln"
+                    "Chloe Hoon"
                 ]
             },
             "third_recess": {
-                "nb1": [
-                    "Hong Wei",
-                    "Sabith"
-                ],
+                "nb1": [],
                 "nb2": [
-                    "Xin Rong"
+                    "Hong Wei"
                 ],
                 "nb3": [],
                 "stall": [],
-                "pond": [
-                    "Rosanne"
-                ],
+                "pond": [],
                 "central": [],
                 "lift": [],
                 "on_break": []
             },
             "fourth_recess": {
                 "nb1": [
-                    "Daryll"
-                ],
-                "nb2": [
-                    "Firdaus"
-                ],
-                "nb3": [],
-                "stall": [],
-                "pond": [
+                    "Hannah",
                     "Jerome"
                 ],
-                "central": [],
-                "lift": [],
-                "on_break": []
+                "nb2": [
+                    "Jing Wen"
+                ],
+                "nb3": [
+                    "Li Xuan"
+                ],
+                "stall": [
+                    "Javen"
+                ],
+                "pond": [
+                    "Daryll"
+                ],
+                "central": [
+                    "Denise"
+                ],
+                "lift": [
+                    "Chloe Koh"
+                ],
+                "on_break": [
+                    "Xin Hui",
+                    "Yun Ji"
+                ]
             },
             "fifth_recess": {
                 "nb1": [],
@@ -381,105 +388,114 @@
                 "on_break": []
             },
             "second_recess": {
-                "nb1": [],
-                "nb2": [],
-                "nb3": [],
-                "stall": [],
-                "pond": [],
-                "central": [],
-                "lift": [],
-                "on_break": []
+                "nb1": [
+                    "Chanel",
+                    "Chloe Hoon"
+                ],
+                "nb2": [
+                    "Phebe",
+                    "Raihayu"
+                ],
+                "nb3": [
+                    "Joie",
+                    "Rishini"
+                ],
+                "stall": [
+                    "Abby",
+                    "Brenda"
+                ],
+                "pond": [
+                    "Jodius",
+                    "Menerva"
+                ],
+                "central": [
+                    "Kai Xuan"
+                ],
+                "lift": [
+                    "Kristy"
+                ],
+                "on_break": [
+                    "Evelyn",
+                    "Muhilan",
+                    "Ulfah"
+                ]
             },
             "third_recess": {
-                "nb1": [],
-                "nb2": [],
-                "nb3": [],
-                "stall": [],
-                "pond": [],
-                "central": [],
-                "lift": [],
-                "on_break": []
-            },
-            "fourth_recess": {
                 "nb1": [
-                    "Denise",
+                    "Chloe Koh",
                     "Xin Hui"
                 ],
                 "nb2": [
-                    "Tiffany (Sec 3)"
+                    "Jerome"
                 ],
                 "nb3": [
-                    "Rosanne"
+                    "Jing Wen"
                 ],
                 "stall": [
-                    "Anaqi",
-                    "Chang Yi"
+                    "Hannah",
+                    "Li Xuan"
                 ],
                 "pond": [
-                    "Jing Ting",
-                    "Lincoln"
+                    "Daryll"
                 ],
                 "central": [
-                    "Gerris"
+                    "Denise",
+                    "Javen"
                 ],
-                "lift": [
-                    "Li Xuan",
-                    "Danica"
-                ],
+                "lift": [],
                 "on_break": [
-                    "Cheslyn",
-                    "Chloe Koh",
-                    "Gerald",
-                    "Yun Ji",
-                    "Daryll",
-                    "Jerome",
-                    "Carissa",
-                    "Gladys",
-                    "Jervis",
-                    "Song",
-                    "Yu Herng",
-                    "Ally",
-                    "Amelia",
-                    "Boon Hiok",
-                    "Xin Rong"
+                    "Yun Ji"
                 ]
+            },
+            "fourth_recess": {
+                "nb1": [
+                    "Branson"
+                ],
+                "nb2": [
+                    "Alicia"
+                ],
+                "nb3": [
+                    "Shayanah"
+                ],
+                "stall": [],
+                "pond": [
+                    "Amelia"
+                ],
+                "central": [],
+                "lift": [],
+                "on_break": []
             },
             "fifth_recess": {
                 "nb1": [
-                    "Kristine",
-                    "Qian Wen",
-                    "Kah Sin"
+                    "Hong Wei",
+                    "Jordon",
+                    "Melissa"
                 ],
                 "nb2": [
-                    "Chloe Tjahjono",
-                    "Roshini"
+                    "Nash"
                 ],
                 "nb3": [
-                    "Clement",
-                    "Shannen"
+                    "Chole T"
                 ],
                 "stall": [
-                    "Nethra",
-                    "Rachel",
-                    "Zachary"
+                    "Wen Tihng",
+                    "Yu Xi"
                 ],
                 "pond": [
-                    "Vera"
+                    "Kristine"
                 ],
                 "central": [
-                    "Cristian"
+                    "Jaswant",
+                    "Wei Heng"
                 ],
                 "lift": [
-                    "Jin Wei",
-                    "Tiffany (Sec 4)"
+                    "Jin Wei"
                 ],
                 "on_break": [
+                    "Gerald",
                     "Megan",
-                    "Hong Wei",
-                    "Sabith",
-                    "Firdaus",
-                    "Charlene",
-                    "Inshirah"
+                    "Nethra",
+                    "Vera"
                 ]
             }
         }
@@ -490,106 +506,112 @@
         "recess_duty": {
             "first_recess": {
                 "nb1": [
-                    "Rosanne"
+                    "Melissa",
+                    "Phebe",
+                    "Rishini"
                 ],
-                "nb2": [],
-                "nb3": [],
-                "stall": [],
+                "nb2": [
+                    "Jaswant",
+                    "Raihayu"
+                ],
+                "nb3": [
+                    "Abby"
+                ],
+                "stall": [
+                    "Jodius",
+                    "Wei Heng"
+                ],
                 "pond": [
-                    "Xin Rong"
+                    "Chloe Hoon"
                 ],
-                "central": [],
-                "lift": [],
+                "central": [
+                    "Evelyn",
+                    "Wen Tihng"
+                ],
+                "lift": [
+                    "Kai Xuan"
+                ],
                 "on_break": []
             },
             "second_recess": {
                 "nb1": [
-                    "Hong Wei"
+                    "Brenda",
+                    "Branson",
+                    "Yu Xi"
                 ],
                 "nb2": [
-                    "Firdaus"
+                    "Joie"
                 ],
                 "nb3": [
-                    "Ally"
+                    "Muhilan"
                 ],
                 "stall": [
-                    "Sabith"
+                    "Kristy",
+                    "Nash"
                 ],
                 "pond": [
-                    "Chang Yi"
+                    "Alicia"
                 ],
                 "central": [
+                    "Shayanah"
+                ],
+                "lift": [
                     "Amelia"
                 ],
-                "lift": [],
-                "on_break": [
-                    "Boon Hiok"
-                ]
+                "on_break": []
             },
             "third_recess": {
-                "nb1": [],
-                "nb2": [],
-                "nb3": [],
-                "stall": [],
-                "pond": [],
-                "central": [],
-                "lift": [],
-                "on_break": []
+                "nb1": [
+                    "Chole T",
+                    "Daryll",
+                    "Javen"
+                ],
+                "nb2": [
+                    "Jing Wen",
+                    "Xin Hui"
+                ],
+                "nb3": [
+                    "Jerome",
+                    "Kristine"
+                ],
+                "stall": [
+                    "Chloe Koh"
+                ],
+                "pond": [
+                    "Jin Wei",
+                    "Megan"
+                ],
+                "central": [
+                    "Hannah",
+                    "Nethra"
+                ],
+                "lift": [
+                    "Denise",
+                    "Vera"
+                ],
+                "on_break": [
+                    "Gerald",
+                    "Hong Wei",
+                    "Jordon",
+                    "Li Xuan",
+                    "Yun Ji"
+                ]
             },
             "fourth_recess": {
                 "nb1": [
-                    "Jervis",
-                    "Jing Ting"
+                    "Menerva"
                 ],
-                "nb2": [
-                    "Danica"
-                ],
+                "nb2": [],
                 "nb3": [
-                    "Gladys"
+                    "Chanel"
                 ],
-                "stall": [
-                    "Clement",
-                    "Inshirah"
-                ],
+                "stall": [],
                 "pond": [
-                    "Chloe Koh",
-                    "Lincoln"
+                    "Ulfah"
                 ],
-                "central": [
-                    "Daryll"
-                ],
-                "lift": [
-                    "Carissa",
-                    "Yu Herng"
-                ],
-                "on_break": [
-                    "Chloe Tjahjono",
-                    "Cristian",
-                    "Jin Wei",
-                    "Kristine",
-                    "Megan",
-                    "Nethra",
-                    "Qian Wen",
-                    "Rachel",
-                    "Shannen",
-                    "Vera",
-                    "Cheslyn",
-                    "Denise",
-                    "Gerald",
-                    "Li Xuan",
-                    "Tiffany (Sec 3)",
-                    "Xin Hui",
-                    "Yun Ji",
-                    "Jerome",
-                    "Anaqi",
-                    "Gerris",
-                    "Song",
-                    "Charlene",
-                    "Kah Sin",
-                    "Roshini",
-                    "Tiffany (Sec 4)",
-                    "Zachary"
-                ]
+                "central": [],
+                "lift": [],
+                "on_break": []
             },
             "fifth_recess": {
                 "nb1": [],
@@ -608,6 +630,100 @@
         "constant_morning_duty": "morning_duty",
         "recess_duty": {
             "first_recess": {
+                "nb1": [
+                    "Kristy",
+                    "Wen Tihng",
+                    "Yu Xi"
+                ],
+                "nb2": [
+                    "Chanel",
+                    "Jaswant",
+                    "Raihayu"
+                ],
+                "nb3": [
+                    "Alicia",
+                    "Muhilan"
+                ],
+                "stall": [
+                    "Brenda",
+                    "Evelyn",
+                    "Nash"
+                ],
+                "pond": [
+                    "Chloe Hoon"
+                ],
+                "central": [
+                    "Abby",
+                    "Shayanah"
+                ],
+                "lift": [
+                    "Joie",
+                    "Menerva"
+                ],
+                "on_break": [
+                    "Amelia",
+                    "Branson",
+                    "Hong Wei",
+                    "Jodius",
+                    "Melissa",
+                    "Rishini",
+                    "Ulfah",
+                    "Wei Heng"
+                ]
+            },
+            "second_recess": {
+                "nb1": [
+                    "Gerald",
+                    "Yun Ji"
+                ],
+                "nb2": [
+                    "Jin Wei",
+                    "Kristine"
+                ],
+                "nb3": [
+                    "Jordon",
+                    "Xin Hui"
+                ],
+                "stall": [
+                    "Chloe Koh",
+                    "Denise"
+                ],
+                "pond": [
+                    "Chole T",
+                    "Megan"
+                ],
+                "central": [
+                    "Jing Wen",
+                    "Li Xuan"
+                ],
+                "lift": [
+                    "Javen"
+                ],
+                "on_break": [
+                    "Hannah",
+                    "Nethra",
+                    "Vera"
+                ]
+            },
+            "third_recess": {
+                "nb1": [
+                    "Phebe"
+                ],
+                "nb2": [
+                    "Kai Xuan"
+                ],
+                "nb3": [
+                    "Jerome"
+                ],
+                "stall": [],
+                "pond": [
+                    "Daryll"
+                ],
+                "central": [],
+                "lift": [],
+                "on_break": []
+            },
+            "fourth_recess": {
                 "nb1": [],
                 "nb2": [],
                 "nb3": [],
@@ -616,99 +732,6 @@
                 "central": [],
                 "lift": [],
                 "on_break": []
-            },
-            "second_recess": {
-                "nb1": [
-                    "Rosanne"
-                ],
-                "nb2": [],
-                "nb3": [],
-                "stall": [],
-                "pond": [
-                    "Xin Rong"
-                ],
-                "central": [],
-                "lift": [],
-                "on_break": []
-            },
-            "third_recess": {
-                "nb1": [
-                    "Sabith",
-                    "Yu Herng"
-                ],
-                "nb2": [
-                    "Hong Wei"
-                ],
-                "nb3": [
-                    "Song"
-                ],
-                "stall": [
-                    "Jervis"
-                ],
-                "pond": [
-                    "Gladys",
-                    "Lincoln"
-                ],
-                "central": [],
-                "lift": [
-                    "Gerris"
-                ],
-                "on_break": [
-                    "Anaqi",
-                    "Carissa",
-                    "Danica",
-                    "Jing Ting"
-                ]
-            },
-            "fourth_recess": {
-                "nb1": [
-                    "Qian Wen",
-                    "Cheslyn"
-                ],
-                "nb2": [
-                    "Nethra",
-                    "Chloe Koh"
-                ],
-                "nb3": [
-                    "Tiffany (Sec 3)"
-                ],
-                "stall": [
-                    "Li Xuan"
-                ],
-                "pond": [
-                    "Clement",
-                    "Xin Hui"
-                ],
-                "central": [
-                    "Chloe Tjahjono"
-                ],
-                "lift": [
-                    "Rachel"
-                ],
-                "on_break": [
-                    "Cristian",
-                    "Jin Wei",
-                    "Kristine",
-                    "Megan",
-                    "Shannen",
-                    "Vera",
-                    "Denise",
-                    "Gerald",
-                    "Yun Ji",
-                    "Daryll",
-                    "Jerome",
-                    "Firdaus",
-                    "Charlene",
-                    "Inshirah",
-                    "Kah Sin",
-                    "Roshini",
-                    "Tiffany (Sec 4)",
-                    "Zachary",
-                    "Ally",
-                    "Amelia",
-                    "Boon Hiok",
-                    "Chang Yi"
-                ]
             },
             "fifth_recess": {
                 "nb1": [],
@@ -727,118 +750,108 @@
         "constant_morning_duty": "morning_duty",
         "recess_duty": {
             "first_recess": {
-                "nb1": [
-                    "Kristine",
-                    "Nethra"
-                ],
-                "nb2": [
-                    "Cristian"
-                ],
-                "nb3": [
-                    "Clement"
-                ],
-                "stall": [
-                    "Vera"
-                ],
-                "pond": [
-                    "Chloe Tjahjono",
-                    "Shannen"
-                ],
-                "central": [
-                    "Megan"
-                ],
-                "lift": [
-                    "Rachel"
-                ],
-                "on_break": [
-                    "Jin Wei",
-                    "Qian Wen",
-                    "Hong Wei",
-                    "Sabith"
-                ]
-            },
-            "second_recess": {
-                "nb1": [
-                    "Tiffany (Sec 4)",
-                    "Zachary"
-                ],
-                "nb2": [
-                    "Roshini"
-                ],
-                "nb3": [
-                    "Inshirah"
-                ],
+                "nb1": [],
+                "nb2": [],
+                "nb3": [],
                 "stall": [],
-                "pond": [
-                    "Charlene"
-                ],
-                "central": [
-                    "Kah Sin"
-                ],
+                "pond": [],
+                "central": [],
                 "lift": [],
                 "on_break": []
             },
-            "third_recess": {
+            "second_recess": {
                 "nb1": [
-                    "Chloe Koh",
-                    "Jerome"
+                    "Nethra",
+                    "Rishini",
+                    "Vera"
                 ],
                 "nb2": [
-                    "Yun Ji"
+                    "Chole T",
+                    "Jodius"
                 ],
                 "nb3": [
-                    "Rosanne"
+                    "Chloe Hoon",
+                    "Kristine"
                 ],
                 "stall": [
-                    "Tiffany (Sec 3)"
+                    "Abby",
+                    "Raihayu"
                 ],
                 "pond": [
-                    "Xin Hui",
-                    "Daryll"
-                ],
-                "central": [
-                    "Denise",
                     "Gerald"
                 ],
+                "central": [
+                    "Evelyn",
+                    "Jin Wei"
+                ],
                 "lift": [
-                    "Cheslyn"
+                    "Jerome"
                 ],
                 "on_break": [
-                    "Li Xuan",
-                    "Ally",
+                    "Daryll",
+                    "Jordon",
+                    "Kai Xuan",
+                    "Megan",
+                    "Phebe"
+                ]
+            },
+            "third_recess": {
+                "nb1": [
                     "Amelia",
-                    "Boon Hiok",
-                    "Chang Yi",
-                    "Xin Rong"
+                    "Jaswant",
+                    "Joie",
+                    "Shayanah"
+                ],
+                "nb2": [
+                    "Branson",
+                    "Hong Wei",
+                    "Wei Heng"
+                ],
+                "nb3": [
+                    "Wen Tihng"
+                ],
+                "stall": [
+                    "Alicia",
+                    "Melissa",
+                    "Muhilan"
+                ],
+                "pond": [],
+                "central": [
+                    "Kristy"
+                ],
+                "lift": [],
+                "on_break": [
+                    "Brenda",
+                    "Nash",
+                    "Yu Xi"
                 ]
             },
             "fourth_recess": {
                 "nb1": [
-                    "Firdaus",
-                    "Anaqi"
+                    "Menerva",
+                    "Yun Ji"
                 ],
-                "nb2": [
-                    "Jing Ting"
-                ],
+                "nb2": [],
                 "nb3": [
-                    "Danica"
+                    "Jing Wen",
+                    "Ulfah"
                 ],
                 "stall": [
-                    "Yu Herng"
+                    "Javen"
                 ],
                 "pond": [
-                    "Carissa"
+                    "Chanel",
+                    "Li Xuan"
                 ],
                 "central": [
-                    "Jervis"
+                    "Hannah"
                 ],
                 "lift": [
-                    "Gladys"
+                    "Denise"
                 ],
                 "on_break": [
-                    "Gerris",
-                    "Lincoln",
-                    "Song"
+                    "Chloe Koh",
+                    "Xin Hui"
                 ]
             },
             "fifth_recess": {
@@ -859,120 +872,113 @@
         "recess_duty": {
             "first_recess": {
                 "nb1": [
-                    "Gerald",
-                    "Li Xuan"
+                    "Jaswant",
+                    "Wei Heng"
                 ],
                 "nb2": [
-                    "Tiffany (Sec 3)"
+                    "Joie"
                 ],
                 "nb3": [
-                    "Chloe Koh"
+                    "Brenda"
                 ],
                 "stall": [
-                    "Yun Ji"
+                    "Melissa",
+                    "Muhilan"
                 ],
                 "pond": [
-                    "Cheslyn"
+                    "Kristy"
                 ],
                 "central": [
-                    "Xin Hui"
+                    "Wen Tihng"
                 ],
-                "lift": [
-                    "Denise"
-                ],
-                "on_break": [
-                    "Firdaus"
-                ]
+                "lift": [],
+                "on_break": []
             },
             "second_recess": {
                 "nb1": [
-                    "Gerris",
-                    "Jing Ting"
+                    "Gerald",
+                    "Kristine"
                 ],
                 "nb2": [
-                    "Carissa"
+                    "Jordon"
                 ],
                 "nb3": [
-                    "Lincoln"
+                    "Jin Wei"
                 ],
                 "stall": [
-                    "Song"
+                    "Chole T",
+                    "Nethra"
                 ],
                 "pond": [
-                    "Anaqi",
-                    "Gladys"
+                    "Megan"
                 ],
                 "central": [
-                    "Danica"
+                    "Vera"
                 ],
-                "lift": [
-                    "Xin Rong"
-                ],
-                "on_break": [
-                    "Hong Wei",
-                    "Sabith",
-                    "Jervis",
-                    "Yu Herng",
-                    "Rosanne"
-                ]
+                "lift": [],
+                "on_break": []
             },
             "third_recess": {
                 "nb1": [
-                    "Cristian",
-                    "Kristine"
+                    "Chanel",
+                    "Raihayu"
                 ],
-                "nb2": [],
+                "nb2": [
+                    "Abby",
+                    "Chloe Hoon"
+                ],
                 "nb3": [
-                    "Megan",
-                    "Vera"
+                    "Jing Wen",
+                    "Phebe"
                 ],
                 "stall": [
-                    "Daryll"
+                    "Javen",
+                    "Kai Xuan"
                 ],
                 "pond": [
-                    "Jin Wei",
-                    "Jerome"
+                    "Jodius"
                 ],
                 "central": [
-                    "Clement"
+                    "Chloe Koh"
                 ],
                 "lift": [
-                    "Qian Wen"
+                    "Denise",
+                    "Hannah"
                 ],
                 "on_break": [
-                    "Chloe Tjahjono",
-                    "Nethra",
-                    "Rachel",
-                    "Shannen"
+                    "Evelyn",
+                    "Li Xuan",
+                    "Menerva",
+                    "Rishini",
+                    "Ulfah",
+                    "Xin Hui",
+                    "Yun Ji"
                 ]
             },
             "fourth_recess": {
                 "nb1": [
-                    "Inshirah",
-                    "Chang Yi"
+                    "Hong Wei",
+                    "Nash",
+                    "Yu Xi"
                 ],
                 "nb2": [
-                    "Tiffany (Sec 4)"
+                    "Daryll",
+                    "Jerome"
                 ],
                 "nb3": [
-                    "Roshini"
+                    "Shayanah"
                 ],
-                "stall": [
-                    "Charlene",
-                    "Zachary"
-                ],
+                "stall": [],
                 "pond": [
-                    "Kah Sin"
+                    "Alicia"
                 ],
                 "central": [
-                    "Ally"
-                ],
-                "lift": [
                     "Amelia"
                 ],
-                "on_break": [
-                    "Boon Hiok"
-                ]
+                "lift": [
+                    "Branson"
+                ],
+                "on_break": []
             },
             "fifth_recess": {
                 "nb1": [],
@@ -1001,235 +1007,111 @@
                 "on_break": []
             },
             "second_recess": {
-                "nb1": [
-                    "Nethra",
-                    "Yun Ji"
-                ],
-                "nb2": [
-                    "Shannen"
-                ],
-                "nb3": [
-                    "Megan"
-                ],
-                "stall": [
-                    "Gerald"
-                ],
-                "pond": [
-                    "Jin Wei",
-                    "Zachary"
-                ],
-                "central": [
-                    "Inshirah"
-                ],
-                "lift": [
-                    "Cristian"
-                ],
-                "on_break": [
-                    "Chloe Tjahjono",
-                    "Clement",
-                    "Kristine",
-                    "Qian Wen",
-                    "Rachel",
-                    "Vera",
-                    "Cheslyn",
-                    "Chloe Koh",
-                    "Denise",
-                    "Li Xuan",
-                    "Tiffany (Sec 3)",
-                    "Xin Hui",
-                    "Daryll",
-                    "Jerome",
-                    "Charlene",
-                    "Kah Sin",
-                    "Roshini",
-                    "Tiffany (Sec 4)"
-                ]
-            },
-            "third_recess": {
-                "nb1": [
-                    "Carissa",
-                    "Jervis"
-                ],
-                "nb2": [
-                    "Danica"
-                ],
-                "nb3": [
-                    "Yu Herng"
-                ],
-                "stall": [
-                    "Lincoln"
-                ],
-                "pond": [
-                    "Gerris"
-                ],
-                "central": [],
-                "lift": [
-                    "Song"
-                ],
-                "on_break": [
-                    "Anaqi",
-                    "Gladys",
-                    "Jing Ting"
-                ]
-            },
-            "fourth_recess": {
-                "nb1": [
-                    "Hong Wei",
-                    "Firdaus"
-                ],
-                "nb2": [],
-                "nb3": [],
-                "stall": [],
-                "pond": [
-                    "Sabith"
-                ],
-                "central": [],
-                "lift": [],
-                "on_break": []
-            },
-            "fifth_recess": {
-                "nb1": [
-                    "Amelia",
-                    "Rosanne"
-                ],
-                "nb2": [
-                    "Chang Yi"
-                ],
-                "nb3": [],
-                "stall": [],
-                "pond": [
-                    "Xin Rong"
-                ],
-                "central": [],
-                "lift": [
-                    "Ally"
-                ],
-                "on_break": [
-                    "Boon Hiok"
-                ]
-            }
-        }
-    },
-    "10": {
-        "exco_morning_duty": {},
-        "constant_morning_duty": "morning_duty",
-        "recess_duty": {
-            "first_recess": {
-                "nb1": [
-                    "Chang Yi"
-                ],
-                "nb2": [
-                    "Ally"
-                ],
-                "nb3": [],
-                "stall": [],
-                "pond": [
-                    "Amelia"
-                ],
-                "central": [],
-                "lift": [],
-                "on_break": [
-                    "Boon Hiok"
-                ]
-            },
-            "second_recess": {
-                "nb1": [
-                    "Rachel",
-                    "Li Xuan"
-                ],
-                "nb2": [
-                    "Jin Wei"
-                ],
-                "nb3": [
-                    "Kristine"
-                ],
-                "stall": [
-                    "Vera"
-                ],
-                "pond": [
-                    "Chloe Tjahjono",
-                    "Qian Wen"
-                ],
-                "central": [
-                    "Shannen"
-                ],
-                "lift": [
-                    "Denise"
-                ],
-                "on_break": [
-                    "Clement",
-                    "Cristian",
-                    "Megan",
-                    "Nethra",
-                    "Cheslyn",
-                    "Chloe Koh",
-                    "Gerald",
-                    "Tiffany (Sec 3)",
-                    "Xin Hui",
-                    "Yun Ji"
-                ]
-            },
-            "third_recess": {
-                "nb1": [
-                    "Anaqi",
-                    "Roshini"
-                ],
-                "nb2": [
-                    "Jerome"
-                ],
-                "nb3": [
-                    "Charlene"
-                ],
-                "stall": [
-                    "Tiffany (Sec 4)"
-                ],
-                "pond": [
-                    "Kah Sin"
-                ],
-                "central": [
-                    "Daryll"
-                ],
-                "lift": [
-                    "Jing Ting"
-                ],
-                "on_break": [
-                    "Carissa",
-                    "Danica",
-                    "Gerris",
-                    "Gladys",
-                    "Jervis",
-                    "Lincoln",
-                    "Song",
-                    "Yu Herng",
-                    "Inshirah",
-                    "Zachary",
-                    "Rosanne",
-                    "Xin Rong"
-                ]
-            },
-            "fourth_recess": {
-                "nb1": [
-                    "Hong Wei",
-                    "Sabith"
-                ],
-                "nb2": [],
-                "nb3": [],
-                "stall": [],
-                "pond": [
-                    "Firdaus"
-                ],
-                "central": [],
-                "lift": [],
-                "on_break": []
-            },
-            "fifth_recess": {
                 "nb1": [],
                 "nb2": [],
-                "nb3": [],
-                "stall": [],
+                "nb3": [
+                    "Jing Wen"
+                ],
+                "stall": [
+                    "Javen"
+                ],
                 "pond": [],
-                "central": [],
+                "central": [
+                    "Chloe Koh"
+                ],
+                "lift": [
+                    "Denise",
+                    "Hannah"
+                ],
+                "on_break": [
+                    "Li Xuan",
+                    "Xin Hui",
+                    "Yun Ji"
+                ]
+            },
+            "third_recess": {
+                "nb1": [
+                    "Chanel",
+                    "Jaswant",
+                    "Raihayu",
+                    "Wei Heng"
+                ],
+                "nb2": [
+                    "Abby",
+                    "Chloe Hoon"
+                ],
+                "nb3": [],
+                "stall": [
+                    "Melissa"
+                ],
+                "pond": [
+                    "Jodius"
+                ],
+                "central": [
+                    "Wen Tihng"
+                ],
                 "lift": [],
+                "on_break": [
+                    "Evelyn",
+                    "Menerva",
+                    "Rishini",
+                    "Ulfah"
+                ]
+            },
+            "fourth_recess": {
+                "nb1": [
+                    "Gerald",
+                    "Kristine"
+                ],
+                "nb2": [
+                    "Daryll",
+                    "Jerome",
+                    "Jordon"
+                ],
+                "nb3": [
+                    "Jin Wei"
+                ],
+                "stall": [
+                    "Chole T",
+                    "Nethra"
+                ],
+                "pond": [
+                    "Megan"
+                ],
+                "central": [
+                    "Vera"
+                ],
+                "lift": [],
+                "on_break": []
+            },
+            "fifth_recess": {
+                "nb1": [
+                    "Hong Wei",
+                    "Nash",
+                    "Yu Xi"
+                ],
+                "nb2": [
+                    "Joie"
+                ],
+                "nb3": [
+                    "Brenda",
+                    "Phebe",
+                    "Shayanah"
+                ],
+                "stall": [
+                    "Kai Xuan",
+                    "Muhilan"
+                ],
+                "pond": [
+                    "Alicia",
+                    "Kristy"
+                ],
+                "central": [
+                    "Amelia"
+                ],
+                "lift": [
+                    "Branson"
+                ],
                 "on_break": []
             }
         }
